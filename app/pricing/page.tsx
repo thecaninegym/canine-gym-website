@@ -6,6 +6,19 @@ export default function Pricing() {
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", color: '#111', backgroundColor: 'white' }}>
       <Nav />
+      <style>{`
+        .plans-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .includes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .alacarte { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        @media (max-width: 768px) {
+          .plans-grid { grid-template-columns: 1fr; max-width: 420px; }
+          .includes-grid { grid-template-columns: repeat(2, 1fr); }
+          .alacarte { flex-direction: column; align-items: flex-start; }
+        }
+        @media (max-width: 480px) {
+          .includes-grid { grid-template-columns: 1fr; }
+        }
+      `}</style>
 
       {/* HERO */}
       <section style={{ background: 'linear-gradient(135deg, #003087 0%, #004db3 100%)', padding: '80px 24px', textAlign: 'center' }}>
@@ -19,7 +32,7 @@ export default function Pricing() {
       {/* PLANS */}
       <section style={{ padding: '80px 24px', backgroundColor: '#f8f9fa' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', margin: '0 auto' }}>
+          <div className="plans-grid">
             {[
               { name: 'Starter', sessions: 4, price: '$180', perSession: '$45', color: '#003087', popular: false, desc: 'Perfect for getting started and building a routine.' },
               { name: 'Active', sessions: 8, price: '$340', perSession: '$42.50', color: '#FF6B35', popular: true, desc: 'Our most popular plan for committed dog owners.' },
@@ -59,7 +72,7 @@ export default function Pricing() {
           </div>
 
           {/* A LA CARTE */}
-          <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '28px 32px', border: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
+          <div className="alacarte" style={{ backgroundColor: 'white', borderRadius: '12px', padding: '28px 32px', border: '1px solid #eee', marginTop: '24px' }}>
             <div>
               <h4 style={{ margin: '0 0 4px 0', color: '#111', fontWeight: '700', fontSize: '20px' }}>A La Carte</h4>
               <p style={{ margin: 0, color: '#666', fontSize: '15px' }}>No commitment — book individual sessions whenever you need them</p>
@@ -77,14 +90,14 @@ export default function Pricing() {
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
           <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Every Plan Includes</p>
           <h2 style={{ fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: '800', color: '#003087', margin: '0 0 48px 0', letterSpacing: '-0.5px' }}>Everything You Need</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+          <div className="includes-grid">
             {[
               { icon: <BarChart2 size={24} color="#FF6B35" />, title: 'Real-Time Stats', desc: 'Distance, calories, heart rate, speed — all synced instantly after every session.' },
               { icon: <Trophy size={24} color="#FF6B35" />, title: 'Achievements', desc: 'Your dog earns badges as they hit milestones. A fun way to celebrate progress.' },
               { icon: <Star size={24} color="#FF6B35" />, title: 'Leaderboard', desc: 'Compete on a city-wide monthly leaderboard and see how your dog stacks up.' },
               { icon: <Shield size={24} color="#FF6B35" />, title: 'Professional Sessions', desc: 'Every session is supervised by a trained handler using professional equipment.' },
               { icon: <Clock size={24} color="#FF6B35" />, title: 'Easy Booking', desc: 'Book, reschedule, or cancel sessions anytime from the app.' },
-              { icon: <Zap size={24} color="#FF6B35" />, title: 'Progress Tracking', desc: 'View your dog\'s fitness trend over time and watch them improve.' },
+              { icon: <Zap size={24} color="#FF6B35" />, title: 'Progress Tracking', desc: "View your dog's fitness trend over time and watch them improve." },
             ].map((item, i) => (
               <div key={i} style={{ backgroundColor: '#f8f9fa', borderRadius: '14px', padding: '28px', border: '1px solid #eee', textAlign: 'left' }}>
                 <div style={{ marginBottom: '12px' }}>{item.icon}</div>
