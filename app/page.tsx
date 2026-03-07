@@ -88,15 +88,37 @@ export default function Home() {
       </section>
 
       {/* PLACEHOLDER IMAGE STRIP */}
-      <div style={{ backgroundColor: '#f8f9fa', padding: '48px 24px', textAlign: 'center', borderBottom: '1px solid #eee' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
+      <div style={{ backgroundColor: '#f8f9fa', padding: '48px 0', borderBottom: '1px solid #eee' }}>
+        <div style={{
+          display: 'flex',
+          gap: '16px',
+          overflowX: 'auto',
+          scrollSnapType: 'x mandatory',
+          WebkitOverflowScrolling: 'touch',
+          paddingLeft: '24px',
+          paddingRight: '24px',
+          scrollbarWidth: 'none',
+        }}>
           {['Your dog. Our van. At your door.', 'Professional slatmill equipment', 'Track every run, every mile'].map((caption, i) => (
-            <div key={i} style={{ backgroundColor: '#e9ecef', borderRadius: '16px', height: '220px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+            <div key={i} style={{
+              backgroundColor: '#e9ecef',
+              borderRadius: '16px',
+              height: '220px',
+              minWidth: 'min(80vw, 340px)',
+              flex: '0 0 auto',
+              scrollSnapAlign: 'start',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '10px',
+            }}>
               <PawPrint size={36} color="#adb5bd" />
               <p style={{ color: '#adb5bd', margin: 0, fontSize: '14px', fontWeight: '500' }}>{caption}</p>
             </div>
           ))}
         </div>
+        <p style={{ textAlign: 'center', color: '#adb5bd', fontSize: '12px', marginTop: '12px', letterSpacing: '0.5px' }}>← swipe to see more →</p>
       </div>
 
       {/* HOW IT WORKS */}
