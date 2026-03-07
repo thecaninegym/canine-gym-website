@@ -17,6 +17,50 @@ export default function Home() {
 
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", color: '#111', backgroundColor: 'white' }}>
+      <style>{`
+        .nav-link { transition: color 0.2s; }
+        .nav-link:hover { color: #003087 !important; }
+
+        .btn-primary { transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,107,53,0.35); background-color: #e85d28 !important; }
+
+        .btn-secondary { transition: transform 0.2s, background-color 0.2s; }
+        .btn-secondary:hover { transform: translateY(-2px); background-color: rgba(255,255,255,0.25) !important; }
+
+        .btn-dark { transition: transform 0.2s, box-shadow 0.2s; }
+        .btn-dark:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,48,135,0.3); }
+
+        .btn-light { transition: background-color 0.2s, color 0.2s; }
+        .btn-light:hover { background-color: #003087 !important; color: white !important; }
+
+        .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1) !important; }
+
+        .card-dark-hover { transition: transform 0.2s, background-color 0.2s, border-color 0.2s; }
+        .card-dark-hover:hover { transform: translateY(-4px); background-color: rgba(255,255,255,0.12) !important; border-color: rgba(255,107,53,0.4) !important; }
+
+        .city-pill { transition: transform 0.2s, background-color 0.2s, border-color 0.2s; cursor: default; }
+        .city-pill:hover { transform: translateY(-2px); background-color: #003087 !important; border-color: #003087 !important; }
+        .city-pill:hover span { color: white !important; }
+        .city-pill:hover svg { color: white !important; stroke: white !important; }
+
+        .faq-item { transition: box-shadow 0.2s; }
+        .faq-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+        .login-link { transition: color 0.2s; }
+        .login-link:hover { color: #FF6B35 !important; }
+
+        .pricing-card { transition: transform 0.2s, box-shadow 0.2s; }
+        .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important; }
+
+        .alacarte-card { transition: box-shadow 0.2s; }
+        .alacarte-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important; }
+
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .mobile-menu-btn { display: flex !important; }
+        }
+      `}</style>
 
       {/* NAV */}
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: 'white', borderBottom: '1px solid #eee', padding: '0 24px' }}>
@@ -27,11 +71,11 @@ export default function Home() {
           </a>
           {/* Desktop nav */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }} className="desktop-nav">
-            <a href="#how-it-works" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>How It Works</a>
-            <a href="#pricing" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>Pricing</a>
-            <a href="#faq" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>FAQ</a>
-            <a href="https://app.thecaninegym.com" style={{ color: '#003087', textDecoration: 'none', fontSize: '15px', fontWeight: '600' }}>Log In</a>
-            <a href="https://app.thecaninegym.com" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '10px 22px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px' }}>
+            <a href="#how-it-works" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>How It Works</a>
+            <a href="#pricing" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>Pricing</a>
+            <a href="#faq" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>FAQ</a>
+            <a href="https://app.thecaninegym.com" className="login-link" style={{ color: '#003087', textDecoration: 'none', fontSize: '15px', fontWeight: '600' }}>Log In</a>
+            <a href="https://app.thecaninegym.com" className="btn-primary" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '10px 22px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px' }}>
               Get Started
             </a>
           </div>
@@ -71,10 +115,10 @@ export default function Home() {
             Professional dog fitness sessions delivered to your door. Your dog runs on our slatmill — right from our van, parked in your driveway.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="https://app.thecaninegym.com" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <a href="https://app.thecaninegym.com" className="btn-primary" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
               <PawPrint size={20} /> Book a Session
             </a>
-            <a href="#how-it-works" style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px', border: '1px solid rgba(255,255,255,0.3)' }}>
+            <a href="#how-it-works" className="btn-secondary" style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px', border: '1px solid rgba(255,255,255,0.3)' }}>
               See How It Works
             </a>
           </div>
@@ -108,7 +152,7 @@ export default function Home() {
               { step: '03', icon: <Zap size={28} color="#FF6B35" />, title: 'Your Dog Runs', desc: 'A 30-minute session tailored to your dog\'s pace and fitness level.' },
               { step: '04', icon: <BarChart2 size={28} color="#003087" />, title: 'Track Progress', desc: 'View stats, earn achievements, and compete on the leaderboard.' },
             ].map((item, i) => (
-              <div key={i} style={{ position: 'relative', backgroundColor: '#f8f9fa', borderRadius: '16px', padding: '32px 24px' }}>
+              <div key={i} className="card-hover" style={{ position: 'relative', backgroundColor: '#f8f9fa', borderRadius: '16px', padding: '32px 24px' }}>
                 <div style={{ position: 'absolute', top: '20px', right: '20px', fontSize: '36px', fontWeight: '900', color: '#e9ecef', lineHeight: 1 }}>{item.step}</div>
                 <div style={{ backgroundColor: 'white', width: '56px', height: '56px', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                   {item.icon}
@@ -137,7 +181,7 @@ export default function Home() {
               { icon: <Star size={24} color="#FF6B35" />, title: 'Flexible Memberships', desc: 'Choose from monthly membership plans or pay per session — whatever works for you.' },
               { icon: <PawPrint size={24} color="#FF6B35" />, title: 'Multi-Dog Households', desc: 'Have multiple dogs? No problem. We accommodate households with more than one pup.' },
             ].map((item, i) => (
-              <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '14px', padding: '28px', border: '1px solid rgba(255,255,255,0.1)' }}>
+              <div key={i} className="card-dark-hover" style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '14px', padding: '28px', border: '1px solid rgba(255,255,255,0.1)' }}>
                 <div style={{ marginBottom: '14px' }}>{item.icon}</div>
                 <h3 style={{ color: 'white', fontWeight: '700', fontSize: '17px', margin: '0 0 8px 0' }}>{item.title}</h3>
                 <p style={{ color: 'rgba(255,255,255,0.65)', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>{item.desc}</p>
@@ -161,7 +205,7 @@ export default function Home() {
               { name: 'Active', sessions: 8, price: '$340', perSession: '$42.50', color: '#FF6B35', popular: true },
               { name: 'Athlete', sessions: 12, price: '$480', perSession: '$40', color: '#003087', popular: false },
             ].map((plan) => (
-              <div key={plan.name} style={{ backgroundColor: 'white', borderRadius: '16px', padding: '32px 28px', border: plan.popular ? '2px solid #FF6B35' : '1px solid #eee', position: 'relative', boxShadow: plan.popular ? '0 8px 30px rgba(255,107,53,0.15)' : '0 2px 8px rgba(0,0,0,0.06)' }}>
+              <div key={plan.name} className="pricing-card" style={{ backgroundColor: 'white', borderRadius: '16px', padding: '32px 28px', border: plan.popular ? '2px solid #FF6B35' : '1px solid #eee', position: 'relative', boxShadow: plan.popular ? '0 8px 30px rgba(255,107,53,0.15)' : '0 2px 8px rgba(0,0,0,0.06)' }}>
                 {plan.popular && (
                   <div style={{ position: 'absolute', top: '-14px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#FF6B35', color: 'white', padding: '4px 18px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold', whiteSpace: 'nowrap' }}>
                     MOST POPULAR
@@ -186,20 +230,20 @@ export default function Home() {
                     <span style={{ fontSize: '14px', color: '#444' }}>{feature}</span>
                   </div>
                 ))}
-                <a href="https://app.thecaninegym.com" style={{ display: 'block', marginTop: '24px', backgroundColor: plan.popular ? '#FF6B35' : '#003087', color: 'white', padding: '13px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px', textAlign: 'center' }}>
+                <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'block', marginTop: '24px', backgroundColor: plan.popular ? '#FF6B35' : '#003087', color: 'white', padding: '13px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px', textAlign: 'center' }}>
                   Get Started
                 </a>
               </div>
             ))}
           </div>
-          <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '24px 28px', border: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+          <div className="alacarte-card" style={{ backgroundColor: 'white', borderRadius: '12px', padding: '24px 28px', border: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
             <div>
               <h4 style={{ margin: '0 0 4px 0', color: '#111', fontWeight: '700' }}>A La Carte</h4>
               <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>No commitment — book individual sessions as needed</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
               <span style={{ fontSize: '28px', fontWeight: '800', color: '#111' }}>$55<span style={{ fontSize: '14px', color: '#999', fontWeight: '400' }}>/session</span></span>
-              <a href="https://app.thecaninegym.com" style={{ backgroundColor: '#f0f2f5', color: '#003087', padding: '12px 24px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px' }}>
+              <a href="https://app.thecaninegym.com" className="btn-light" style={{ backgroundColor: '#f0f2f5', color: '#003087', padding: '12px 24px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px' }}>
                 Book Now
               </a>
             </div>
@@ -215,7 +259,7 @@ export default function Home() {
           <p style={{ color: '#666', fontSize: '17px', margin: '0 0 48px 0' }}>Currently serving Hamilton County, Indiana</p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {['Carmel', 'Zionsville', 'Fishers', 'Geist', 'Westfield', 'Noblesville'].map(city => (
-              <div key={city} style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: '#f0f4ff', border: '1px solid #d0daf5', borderRadius: '30px', padding: '10px 20px' }}>
+              <div key={city} className="city-pill" style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: '#f0f4ff', border: '1px solid #d0daf5', borderRadius: '30px', padding: '10px 20px' }}>
                 <MapPin size={15} color="#003087" />
                 <span style={{ fontWeight: '600', color: '#003087', fontSize: '15px' }}>{city}</span>
               </div>
@@ -233,7 +277,7 @@ export default function Home() {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {faqs.map((faq, i) => (
-              <div key={i} style={{ backgroundColor: 'white', borderRadius: '12px', border: '1px solid #eee', overflow: 'hidden' }}>
+              <div key={i} className="faq-item" style={{ backgroundColor: 'white', borderRadius: '12px', border: '1px solid #eee', overflow: 'hidden' }}>
                 <button onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   style={{ width: '100%', padding: '20px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', gap: '16px' }}>
                   <span style={{ fontWeight: '600', fontSize: '16px', color: '#111' }}>{faq.q}</span>
@@ -254,7 +298,7 @@ export default function Home() {
           <PawPrint size={48} color="rgba(255,255,255,0.3)" style={{ marginBottom: '24px' }} />
           <h2 style={{ color: 'white', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Ready to Get Running?</h2>
           <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '18px', margin: '0 0 40px 0', lineHeight: 1.6 }}>Sign up today and give your dog the workout they deserve — without leaving your driveway.</p>
-          <a href="https://app.thecaninegym.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', backgroundColor: '#FF6B35', color: 'white', padding: '18px 40px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px' }}>
+          <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', backgroundColor: '#FF6B35', color: 'white', padding: '18px 40px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px' }}>
             <PawPrint size={22} /> Create Your Account
           </a>
         </div>
