@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation, Gauge, Heart, Thermometer, Timer, TrendingUp, Activity, Plus } from 'lucide-react'
+import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation, Gauge, Heart, Thermometer, Timer, Activity, Plus } from 'lucide-react'
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -38,50 +38,26 @@ export default function Home() {
       <style>{`
         .nav-link { transition: color 0.2s; }
         .nav-link:hover { color: #003087 !important; }
-
         .btn-primary { transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,107,53,0.35); background-color: #e85d28 !important; }
-
         .btn-secondary { transition: transform 0.2s, background-color 0.2s; }
         .btn-secondary:hover { transform: translateY(-2px); background-color: rgba(255,255,255,0.25) !important; }
-
-        .btn-dark { transition: transform 0.2s, box-shadow 0.2s; }
-        .btn-dark:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,48,135,0.3); }
-
         .btn-light { transition: background-color 0.2s, color 0.2s; }
         .btn-light:hover { background-color: #003087 !important; color: white !important; }
-
         .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
         .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1) !important; }
-
         .card-dark-hover { transition: transform 0.2s, background-color 0.2s, border-color 0.2s; }
         .card-dark-hover:hover { transform: translateY(-4px); background-color: rgba(255,255,255,0.12) !important; border-color: rgba(255,107,53,0.4) !important; }
-
-        .city-pill { transition: transform 0.2s, background-color 0.2s, border-color 0.2s; cursor: default; }
-        .city-pill:hover { transform: translateY(-2px); background-color: #003087 !important; border-color: #003087 !important; }
-        .city-pill:hover span { color: white !important; }
-        .city-pill:hover svg { color: white !important; stroke: white !important; }
-
         .faq-item { transition: box-shadow 0.2s; }
         .faq-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-
         .login-link { transition: color 0.2s; }
         .login-link:hover { color: #FF6B35 !important; }
-
         .pricing-card { transition: transform 0.2s, box-shadow 0.2s; }
         .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important; }
-
         .alacarte-card { transition: box-shadow 0.2s; }
         .alacarte-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important; }
-
         .stat-card { transition: transform 0.2s, box-shadow 0.2s; }
         .stat-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12) !important; }
-
-        .metric-pill { transition: transform 0.2s, background-color 0.2s, border-color 0.2s; }
-        .metric-pill:hover { transform: translateY(-2px); background-color: #003087 !important; border-color: #003087 !important; color: white !important; }
-        .metric-pill:hover span { color: white !important; }
-        .metric-pill:hover svg { stroke: white !important; }
-
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: flex !important; }
@@ -95,31 +71,24 @@ export default function Home() {
             <PawPrint size={28} color="#003087" />
             <span style={{ fontWeight: 'bold', fontSize: '18px', color: '#003087' }}>The Canine Gym</span>
           </a>
-          {/* Desktop nav */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }} className="desktop-nav">
             <a href="#how-it-works" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>How It Works</a>
             <a href="#pricing" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>Pricing</a>
             <a href="#faq" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>FAQ</a>
             <a href="https://app.thecaninegym.com" className="login-link" style={{ color: '#003087', textDecoration: 'none', fontSize: '15px', fontWeight: '600' }}>Log In</a>
-            <a href="https://app.thecaninegym.com" className="btn-primary" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '10px 22px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px' }}>
-              Get Started
-            </a>
+            <a href="https://app.thecaninegym.com" className="btn-primary" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '10px 22px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px' }}>Get Started</a>
           </div>
-          {/* Mobile menu button */}
           <button onClick={() => setMenuOpen(!menuOpen)} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: '4px' }} className="mobile-menu-btn">
             {menuOpen ? <X size={24} color="#003087" /> : <Menu size={24} color="#003087" />}
           </button>
         </div>
-        {/* Mobile menu */}
         {menuOpen && (
           <div style={{ borderTop: '1px solid #eee', padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <a href="#how-it-works" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>How It Works</a>
             <a href="#pricing" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>Pricing</a>
             <a href="#faq" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>FAQ</a>
             <a href="https://app.thecaninegym.com" style={{ color: '#003087', textDecoration: 'none', fontWeight: '600', fontSize: '16px' }}>Log In</a>
-            <a href="https://app.thecaninegym.com" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '12px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '16px', textAlign: 'center' }}>
-              Get Started
-            </a>
+            <a href="https://app.thecaninegym.com" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '12px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '16px', textAlign: 'center' }}>Get Started</a>
           </div>
         )}
       </nav>
@@ -134,8 +103,7 @@ export default function Home() {
             <span style={{ color: '#FF6B35', fontSize: '13px', fontWeight: '600' }}>Now serving Hamilton County, IN</span>
           </div>
           <h1 style={{ color: 'white', fontSize: 'clamp(36px, 6vw, 64px)', fontWeight: '800', margin: '0 0 20px 0', lineHeight: 1.1, letterSpacing: '-1px' }}>
-            The Run Comes<br />
-            <span style={{ color: '#FF6B35' }}>To You.</span>
+            The Run Comes<br /><span style={{ color: '#FF6B35' }}>To You.</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: 'clamp(16px, 2.5vw, 20px)', lineHeight: 1.6, margin: '0 0 40px 0', maxWidth: '560px', marginLeft: 'auto', marginRight: 'auto' }}>
             Professional dog fitness sessions delivered to your door. Your dog runs on our slatmill — right from our van, parked in your driveway.
@@ -191,106 +159,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURES */}
-      <section style={{ padding: '80px 24px', backgroundColor: '#003087' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-            <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Why Choose Us</p>
-            <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: 'white', margin: 0, letterSpacing: '-0.5px' }}>Everything Your Dog Needs</h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            {[
-              { icon: <Shield size={24} color="#FF6B35" />, title: 'Safe & Professional', desc: 'Our slatmills are designed specifically for dogs. Every session is supervised by trained staff.' },
-              { icon: <Clock size={24} color="#FF6B35" />, title: 'Convenient', desc: 'No driving, no waiting rooms. We park in your driveway and handle everything.' },
-              { icon: <BarChart2 size={24} color="#FF6B35" />, title: 'Track Every Run', desc: 'Miles, calories, and sessions are all logged. Watch your dog improve over time.' },
-              { icon: <Trophy size={24} color="#FF6B35" />, title: 'Achievements & Leaderboard', desc: 'Your dog earns badges and can compete on a city-wide leaderboard.' },
-              { icon: <Star size={24} color="#FF6B35" />, title: 'Flexible Memberships', desc: 'Choose from monthly membership plans or pay per session — whatever works for you.' },
-              { icon: <PawPrint size={24} color="#FF6B35" />, title: 'Multi-Dog Households', desc: 'Have multiple dogs? No problem. We accommodate households with more than one pup.' },
-            ].map((item, i) => (
-              <div key={i} className="card-dark-hover" style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '14px', padding: '28px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                <div style={{ marginBottom: '14px' }}>{item.icon}</div>
-                <h3 style={{ color: 'white', fontWeight: '700', fontSize: '17px', margin: '0 0 8px 0' }}>{item.title}</h3>
-                <p style={{ color: 'rgba(255,255,255,0.65)', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-{/* HEALTH SCIENCE */}
-      <section style={{ padding: '80px 24px', backgroundColor: 'white' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-            <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Backed By Science</p>
-            <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: '#003087', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Your Dog's Health Depends On It</h2>
-            <p style={{ color: '#666', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.6 }}>
-              The research is clear — regular, consistent exercise is one of the most powerful things you can do for your dog's quality and length of life.
-            </p>
-          </div>
-
-          {/* Stats row */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '56px' }}>
-            {[
-              { stat: '2.5', unit: 'years', label: 'Lifespan lost to obesity', color: '#dc3545' },
-              { stat: '50%', unit: '', label: 'Reduction in obesity with regular exercise', color: '#22c55e' },
-              { stat: '56%', unit: '', label: 'Of US dogs are overweight or obese', color: '#f59e0b' },
-              { stat: '30+', unit: 'min', label: 'Of aerobic activity recommended daily', color: '#003087' },
-            ].map((item, i) => (
-              <div key={i} className="stat-card" style={{ backgroundColor: '#f8f9fa', borderRadius: '16px', padding: '28px 24px', textAlign: 'center', border: '1px solid #eee' }}>
-                <div style={{ fontSize: '42px', fontWeight: '900', color: item.color, lineHeight: 1, marginBottom: '6px' }}>
-                  {item.stat}<span style={{ fontSize: '22px' }}>{item.unit}</span>
-                </div>
-                <p style={{ color: '#555', fontSize: '14px', margin: 0, lineHeight: 1.5 }}>{item.label}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Benefits grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
-            {[
-              {
-                icon: <span style={{ fontSize: '28px' }}>❤️</span>,
-                title: 'Cardiovascular Health',
-                desc: 'Regular aerobic exercise strengthens your dog\'s heart, improves circulation, and builds endurance — just like it does for humans.'
-              },
-              {
-                icon: <span style={{ fontSize: '28px' }}>🦴</span>,
-                title: 'Joint & Muscle Strength',
-                desc: 'Consistent movement keeps joints flexible and muscles strong, reducing the risk of arthritis and mobility issues as your dog ages.'
-              },
-              {
-                icon: <span style={{ fontSize: '28px' }}>🧠</span>,
-                title: 'Mental & Cognitive Health',
-                desc: 'Research shows physical activity is directly linked to better cognitive health and reduced anxiety, stress, and destructive behaviors.'
-              },
-              {
-                icon: <span style={{ fontSize: '28px' }}>⚖️</span>,
-                title: 'Weight Management',
-                desc: 'Obesity is linked to diabetes, heart disease, and a shorter life. Regular sessions on the slatmill keep your dog lean and healthy.'
-              },
-              {
-                icon: <span style={{ fontSize: '28px' }}>🛡️</span>,
-                title: 'Immune System Boost',
-                desc: 'Exercise promotes circulation, decreases blood pressure, and reduces stress hormones — all of which strengthen your dog\'s immune response.'
-              },
-              {
-                icon: <span style={{ fontSize: '28px' }}>📈</span>,
-                title: 'Longer, Healthier Life',
-                desc: 'Studies show that lean, regularly exercised dogs live significantly longer. Consistent activity is the single most impactful thing you can do.'
-              },
-            ].map((item, i) => (
-              <div key={i} className="card-hover" style={{ backgroundColor: '#f8f9fa', borderRadius: '14px', padding: '28px', border: '1px solid #eee', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                <div style={{ flexShrink: 0, marginTop: '2px' }}>{item.icon}</div>
-                <div>
-                  <h3 style={{ fontWeight: '700', fontSize: '17px', color: '#111', margin: '0 0 8px 0' }}>{item.title}</h3>
-                  <p style={{ color: '#666', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* TECHNOLOGY */}
       <section style={{ padding: '80px 24px', background: 'linear-gradient(135deg, #001a4d 0%, #003087 100%)' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
@@ -301,10 +169,7 @@ export default function Home() {
               Every dog wears our fitness tracker during their session. The moment your session ends, all metrics are instantly synced to your dashboard — no waiting, no guessing.
             </p>
           </div>
-
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'center' }}>
-
-            {/* Left: Metrics */}
             <div>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Metrics Tracked Per Session</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
@@ -329,8 +194,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* Right: Dashboard preview card */}
             <div style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '20px', padding: '32px', border: '1px solid rgba(255,255,255,0.12)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
                 <div style={{ width: '40px', height: '40px', backgroundColor: '#FF6B35', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -359,7 +222,78 @@ export default function Home() {
                 <PawPrint size={16} /> See Your Dog's Dashboard
               </a>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* HEALTH SCIENCE */}
+      <section style={{ padding: '80px 24px', backgroundColor: 'white' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
+            <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Backed By Science</p>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: '#003087', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Your Dog's Health Depends On It</h2>
+            <p style={{ color: '#666', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.6 }}>
+              The research is clear — regular, consistent exercise is one of the most powerful things you can do for your dog's quality and length of life.
+            </p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '56px' }}>
+            {[
+              { stat: '2.5', unit: 'years', label: 'Lifespan lost to obesity', color: '#dc3545' },
+              { stat: '50%', unit: '', label: 'Reduction in obesity with regular exercise', color: '#22c55e' },
+              { stat: '56%', unit: '', label: 'Of US dogs are overweight or obese', color: '#f59e0b' },
+              { stat: '30+', unit: 'min', label: 'Of aerobic activity recommended daily', color: '#003087' },
+            ].map((item, i) => (
+              <div key={i} className="stat-card" style={{ backgroundColor: '#f8f9fa', borderRadius: '16px', padding: '28px 24px', textAlign: 'center', border: '1px solid #eee' }}>
+                <div style={{ fontSize: '42px', fontWeight: '900', color: item.color, lineHeight: 1, marginBottom: '6px' }}>
+                  {item.stat}<span style={{ fontSize: '22px' }}>{item.unit}</span>
+                </div>
+                <p style={{ color: '#555', fontSize: '14px', margin: 0, lineHeight: 1.5 }}>{item.label}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+            {[
+              { icon: '❤️', title: 'Cardiovascular Health', desc: 'Regular aerobic exercise strengthens your dog\'s heart, improves circulation, and builds endurance — just like it does for humans.' },
+              { icon: '🦴', title: 'Joint & Muscle Strength', desc: 'Consistent movement keeps joints flexible and muscles strong, reducing the risk of arthritis and mobility issues as your dog ages.' },
+              { icon: '🧠', title: 'Mental & Cognitive Health', desc: 'Research shows physical activity is directly linked to better cognitive health and reduced anxiety, stress, and destructive behaviors.' },
+              { icon: '⚖️', title: 'Weight Management', desc: 'Obesity is linked to diabetes, heart disease, and a shorter life. Regular sessions on the slatmill keep your dog lean and healthy.' },
+              { icon: '🛡️', title: 'Immune System Boost', desc: 'Exercise promotes circulation, decreases blood pressure, and reduces stress hormones — all of which strengthen your dog\'s immune response.' },
+              { icon: '📈', title: 'Longer, Healthier Life', desc: 'Studies show that lean, regularly exercised dogs live significantly longer. Consistent activity is the single most impactful thing you can do.' },
+            ].map((item, i) => (
+              <div key={i} className="card-hover" style={{ backgroundColor: '#f8f9fa', borderRadius: '14px', padding: '28px', border: '1px solid #eee', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, marginTop: '2px', fontSize: '28px' }}>{item.icon}</div>
+                <div>
+                  <h3 style={{ fontWeight: '700', fontSize: '17px', color: '#111', margin: '0 0 8px 0' }}>{item.title}</h3>
+                  <p style={{ color: '#666', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURES */}
+      <section style={{ padding: '80px 24px', backgroundColor: '#003087' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
+            <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Why Choose Us</p>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: 'white', margin: 0, letterSpacing: '-0.5px' }}>Everything Your Dog Needs</h2>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+            {[
+              { icon: <Shield size={24} color="#FF6B35" />, title: 'Safe & Professional', desc: 'Our slatmills are designed specifically for dogs. Every session is supervised by trained staff.' },
+              { icon: <Clock size={24} color="#FF6B35" />, title: 'Convenient', desc: 'No driving, no waiting rooms. We park in your driveway and handle everything.' },
+              { icon: <BarChart2 size={24} color="#FF6B35" />, title: 'Track Every Run', desc: 'Miles, calories, and sessions are all logged. Watch your dog improve over time.' },
+              { icon: <Trophy size={24} color="#FF6B35" />, title: 'Achievements & Leaderboard', desc: 'Your dog earns badges and can compete on a city-wide leaderboard.' },
+              { icon: <Star size={24} color="#FF6B35" />, title: 'Flexible Memberships', desc: 'Choose from monthly membership plans or pay per session — whatever works for you.' },
+              { icon: <PawPrint size={24} color="#FF6B35" />, title: 'Multi-Dog Households', desc: 'Have multiple dogs? No problem. We accommodate households with more than one pup.' },
+            ].map((item, i) => (
+              <div key={i} className="card-dark-hover" style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '14px', padding: '28px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ marginBottom: '14px' }}>{item.icon}</div>
+                <h3 style={{ color: 'white', fontWeight: '700', fontSize: '17px', margin: '0 0 8px 0' }}>{item.title}</h3>
+                <p style={{ color: 'rgba(255,255,255,0.65)', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -380,9 +314,7 @@ export default function Home() {
             ].map((plan) => (
               <div key={plan.name} className="pricing-card" style={{ backgroundColor: 'white', borderRadius: '16px', padding: '32px 28px', border: plan.popular ? '2px solid #FF6B35' : '1px solid #eee', position: 'relative', boxShadow: plan.popular ? '0 8px 30px rgba(255,107,53,0.15)' : '0 2px 8px rgba(0,0,0,0.06)' }}>
                 {plan.popular && (
-                  <div style={{ position: 'absolute', top: '-14px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#FF6B35', color: 'white', padding: '4px 18px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold', whiteSpace: 'nowrap' }}>
-                    MOST POPULAR
-                  </div>
+                  <div style={{ position: 'absolute', top: '-14px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#FF6B35', color: 'white', padding: '4px 18px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold', whiteSpace: 'nowrap' }}>MOST POPULAR</div>
                 )}
                 <h3 style={{ fontWeight: '800', fontSize: '22px', color: plan.color, margin: '0 0 6px 0' }}>{plan.name}</h3>
                 <p style={{ color: '#999', fontSize: '14px', margin: '0 0 20px 0' }}>{plan.sessions} sessions per month</p>
@@ -391,21 +323,13 @@ export default function Home() {
                   <span style={{ color: '#999', fontSize: '14px' }}>/month</span>
                   <p style={{ color: '#999', fontSize: '13px', margin: '4px 0 0 0' }}>{plan.perSession} per session</p>
                 </div>
-                {[
-                  `${plan.sessions} sessions/month`,
-                  'Stat tracking & history',
-                  'Achievements & badges',
-                  'Leaderboard access',
-                  'Booking app access',
-                ].map((feature) => (
+                {[`${plan.sessions} sessions/month`, 'Stat tracking & history', 'Achievements & badges', 'Leaderboard access', 'Booking app access'].map((feature) => (
                   <div key={feature} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                     <Check size={16} color="#22c55e" />
                     <span style={{ fontSize: '14px', color: '#444' }}>{feature}</span>
                   </div>
                 ))}
-                <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'block', marginTop: '24px', backgroundColor: plan.popular ? '#FF6B35' : '#003087', color: 'white', padding: '13px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px', textAlign: 'center' }}>
-                  Get Started
-                </a>
+                <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'block', marginTop: '24px', backgroundColor: plan.popular ? '#FF6B35' : '#003087', color: 'white', padding: '13px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px', textAlign: 'center' }}>Get Started</a>
               </div>
             ))}
           </div>
@@ -416,9 +340,7 @@ export default function Home() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
               <span style={{ fontSize: '28px', fontWeight: '800', color: '#111' }}>$55<span style={{ fontSize: '14px', color: '#999', fontWeight: '400' }}>/session</span></span>
-              <a href="https://app.thecaninegym.com" className="btn-light" style={{ backgroundColor: '#f0f2f5', color: '#003087', padding: '12px 24px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px' }}>
-                Book Now
-              </a>
+              <a href="https://app.thecaninegym.com" className="btn-light" style={{ backgroundColor: '#f0f2f5', color: '#003087', padding: '12px 24px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px' }}>Book Now</a>
             </div>
           </div>
         </div>
@@ -439,7 +361,6 @@ export default function Home() {
               </button>
             ))}
           </div>
-
           {selectedCity && (
             <div style={{ backgroundColor: '#f8f9fa', border: '1px solid #e0e7ff', borderRadius: '16px', padding: '32px', maxWidth: '500px', margin: '0 auto', textAlign: 'left' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
@@ -512,9 +433,7 @@ export default function Home() {
             <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: '600', fontSize: '15px' }}>The Canine Gym</span>
           </div>
           <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '13px', margin: 0 }}>© {new Date().getFullYear()} The Canine Gym · Hamilton County, IN</p>
-          <a href="https://app.thecaninegym.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>
-            Client Login →
-          </a>
+          <a href="https://app.thecaninegym.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>Client Login →</a>
         </div>
       </footer>
 
