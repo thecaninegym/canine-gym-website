@@ -89,16 +89,29 @@ export default function Home() {
 
       {/* PLACEHOLDER IMAGE STRIP */}
       <div style={{ backgroundColor: '#f8f9fa', padding: '48px 0', borderBottom: '1px solid #eee' }}>
-        <div style={{
-          display: 'flex',
-          gap: '16px',
-          overflowX: 'auto',
-          scrollSnapType: 'x mandatory',
-          WebkitOverflowScrolling: 'touch',
-          paddingLeft: '24px',
-          paddingRight: '24px',
-          scrollbarWidth: 'none',
-        }}>
+        <style>{`
+          .image-strip {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding-left: 40px;
+            padding-right: 40px;
+            scrollbar-width: none;
+            justify-content: center;
+          }
+          .image-strip-hint { display: none; }
+          @media (max-width: 768px) {
+            .image-strip {
+              justify-content: flex-start;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+            .image-strip-hint { display: block; }
+          }
+        `}</style>
+        <div className="image-strip">
           {['Your dog. Our van. At your door.', 'Professional slatmill equipment', 'Track every run, every mile'].map((caption, i) => (
             <div key={i} style={{
               backgroundColor: '#e9ecef',
@@ -118,7 +131,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p style={{ textAlign: 'center', color: '#adb5bd', fontSize: '12px', marginTop: '12px', letterSpacing: '0.5px' }}>← swipe to see more →</p>
+        <p className="image-strip-hint" style={{ textAlign: 'center', color: '#adb5bd', fontSize: '12px', marginTop: '12px', letterSpacing: '0.5px' }}>← swipe to see more →</p>
       </div>
 
       {/* HOW IT WORKS */}
