@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation } from 'lucide-react'
+import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation, Gauge, Heart, Thermometer, Timer, TrendingUp, Activity, Plus } from 'lucide-react'
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -291,20 +291,24 @@ export default function Home() {
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Metrics Tracked Per Session</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                 {[
-                  { icon: '🏃', label: 'Distance (Miles)' },
-                  { icon: '🔥', label: 'Calories Burned' },
-                  { icon: '⏱️', label: 'Session Duration' },
-                  { icon: '💓', label: 'Heart Rate' },
-                  { icon: '⚡', label: 'Top Speed' },
-                  { icon: '📊', label: 'Avg. Pace' },
-                  { icon: '🌡️', label: 'Body Temperature' },
-                  { icon: '💪', label: 'Exertion Level' },
+                  { icon: <Navigation size={14} />, label: 'Distance (Miles)' },
+                  { icon: <Flame size={14} />, label: 'Calories Burned' },
+                  { icon: <Timer size={14} />, label: 'Session Duration' },
+                  { icon: <Heart size={14} />, label: 'Heart Rate' },
+                  { icon: <Zap size={14} />, label: 'Top Speed' },
+                  { icon: <Gauge size={14} />, label: 'Avg. Pace' },
+                  { icon: <Thermometer size={14} />, label: 'Body Temperature' },
+                  { icon: <Activity size={14} />, label: 'Exertion Level' },
                 ].map((metric, i) => (
-                  <div key={i} className="metric-pill" style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 16px', cursor: 'default' }}>
-                    <span>{metric.icon}</span>
-                    <span style={{ color: 'white', fontSize: '13px', fontWeight: '600' }}>{metric.label}</span>
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 16px', color: 'white' }}>
+                    {metric.icon}
+                    <span style={{ fontSize: '13px', fontWeight: '600' }}>{metric.label}</span>
                   </div>
                 ))}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', backgroundColor: 'rgba(255,107,53,0.2)', border: '1px solid rgba(255,107,53,0.3)', borderRadius: '30px', padding: '8px 16px', color: '#FF6B35' }}>
+                  <Plus size={14} />
+                  <span style={{ fontSize: '13px', fontWeight: '600' }}>More Coming Soon</span>
+                </div>
               </div>
             </div>
 
