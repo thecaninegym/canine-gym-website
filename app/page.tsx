@@ -1,6 +1,8 @@
 'use client'
 import { useState } from 'react'
 import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation, Gauge, Heart, Thermometer, Timer, Activity, Plus } from 'lucide-react'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -36,8 +38,6 @@ export default function Home() {
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", color: '#111', backgroundColor: 'white' }}>
       <style>{`
-        .nav-link { transition: color 0.2s; }
-        .nav-link:hover { color: #003087 !important; }
         .btn-primary { transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,107,53,0.35); background-color: #e85d28 !important; }
         .btn-secondary { transition: transform 0.2s, background-color 0.2s; }
@@ -50,48 +50,16 @@ export default function Home() {
         .card-dark-hover:hover { transform: translateY(-4px); background-color: rgba(255,255,255,0.12) !important; border-color: rgba(255,107,53,0.4) !important; }
         .faq-item { transition: box-shadow 0.2s; }
         .faq-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-        .login-link { transition: color 0.2s; }
-        .login-link:hover { color: #FF6B35 !important; }
         .pricing-card { transition: transform 0.2s, box-shadow 0.2s; }
         .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important; }
         .alacarte-card { transition: box-shadow 0.2s; }
         .alacarte-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important; }
         .stat-card { transition: transform 0.2s, box-shadow 0.2s; }
         .stat-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12) !important; }
-        @media (max-width: 768px) {
-          .desktop-nav { display: none !important; }
-          .mobile-menu-btn { display: flex !important; }
-        }
       `}</style>
 
       {/* NAV */}
-      <nav style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: 'white', borderBottom: '1px solid #eee', padding: '0 24px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px' }}>
-          <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
-            <PawPrint size={28} color="#003087" />
-            <span style={{ fontWeight: 'bold', fontSize: '18px', color: '#003087' }}>The Canine Gym</span>
-          </a>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }} className="desktop-nav">
-            <a href="#how-it-works" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>How It Works</a>
-            <a href="#pricing" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>Pricing</a>
-            <a href="#faq" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>FAQ</a>
-            <a href="https://app.thecaninegym.com" className="login-link" style={{ color: '#003087', textDecoration: 'none', fontSize: '15px', fontWeight: '600' }}>Log In</a>
-            <a href="https://app.thecaninegym.com" className="btn-primary" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '10px 22px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px' }}>Get Started</a>
-          </div>
-          <button onClick={() => setMenuOpen(!menuOpen)} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: '4px' }} className="mobile-menu-btn">
-            {menuOpen ? <X size={24} color="#003087" /> : <Menu size={24} color="#003087" />}
-          </button>
-        </div>
-        {menuOpen && (
-          <div style={{ borderTop: '1px solid #eee', padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <a href="#how-it-works" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>How It Works</a>
-            <a href="#pricing" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>Pricing</a>
-            <a href="#faq" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>FAQ</a>
-            <a href="https://app.thecaninegym.com" style={{ color: '#003087', textDecoration: 'none', fontWeight: '600', fontSize: '16px' }}>Log In</a>
-            <a href="https://app.thecaninegym.com" style={{ backgroundColor: '#FF6B35', color: 'white', padding: '12px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '16px', textAlign: 'center' }}>Get Started</a>
-          </div>
-        )}
-      </nav>
+      <Nav />
 
       {/* HERO */}
       <section style={{ background: 'linear-gradient(135deg, #003087 0%, #004db3 100%)', padding: '80px 24px 100px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
@@ -426,16 +394,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer style={{ backgroundColor: '#001a4d', padding: '40px 24px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <PawPrint size={22} color="rgba(255,255,255,0.6)" />
-            <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: '600', fontSize: '15px' }}>The Canine Gym</span>
-          </div>
-          <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '13px', margin: 0 }}>© {new Date().getFullYear()} The Canine Gym · Hamilton County, IN</p>
-          <a href="https://app.thecaninegym.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>Client Login →</a>
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   )
