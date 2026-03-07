@@ -5,6 +5,24 @@ import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Ch
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [selectedCity, setSelectedCity] = useState<string | null>(null)
+
+  const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+  const SCHEDULE: Record<string, { day: number, start: number, end: number }[]> = {
+    Carmel:     [{ day: 1, start: 6, end: 12 }, { day: 4, start: 13, end: 19 }],
+    Zionsville: [{ day: 1, start: 13, end: 19 }, { day: 4, start: 6, end: 12 }],
+    Fishers:    [{ day: 2, start: 6, end: 12 }, { day: 5, start: 13, end: 19 }],
+    Geist:      [{ day: 2, start: 13, end: 19 }, { day: 5, start: 6, end: 12 }],
+    Westfield:  [{ day: 3, start: 6, end: 12 }, { day: 6, start: 13, end: 19 }],
+    Noblesville:[{ day: 3, start: 13, end: 19 }, { day: 6, start: 6, end: 12 }],
+  }
+
+  const formatHour = (h: number) => {
+    const ampm = h >= 12 ? 'PM' : 'AM'
+    const hour = h > 12 ? h - 12 : h === 0 ? 12 : h
+    return `${hour}:00 ${ampm}`
+  }
 
   const faqs = [
     { q: 'What is a slatmill?', a: 'A slatmill is a non-motorized dog treadmill powered entirely by your dog. Unlike electric treadmills, the belt only moves when your dog walks or runs — making it safer, more natural, and more effective for building strength and endurance.' },
@@ -411,15 +429,42 @@ export default function Home() {
         <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
           <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Service Area</p>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: '#003087', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>We Come To You</h2>
-          <p style={{ color: '#666', fontSize: '17px', margin: '0 0 48px 0' }}>Currently serving Hamilton County, Indiana</p>
-          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <p style={{ color: '#666', fontSize: '17px', margin: '0 0 48px 0' }}>Currently serving Hamilton County, Indiana — click your city to see our schedule</p>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '32px' }}>
             {['Carmel', 'Zionsville', 'Fishers', 'Geist', 'Westfield', 'Noblesville'].map(city => (
-              <div key={city} className="city-pill" style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: '#f0f4ff', border: '1px solid #d0daf5', borderRadius: '30px', padding: '10px 20px' }}>
-                <MapPin size={15} color="#003087" />
-                <span style={{ fontWeight: '600', color: '#003087', fontSize: '15px' }}>{city}</span>
-              </div>
+              <button key={city} onClick={() => setSelectedCity(selectedCity === city ? null : city)}
+                style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: selectedCity === city ? '#003087' : '#f0f4ff', border: `1px solid ${selectedCity === city ? '#003087' : '#d0daf5'}`, borderRadius: '30px', padding: '10px 20px', cursor: 'pointer', transition: 'all 0.2s' }}>
+                <MapPin size={15} color={selectedCity === city ? 'white' : '#003087'} />
+                <span style={{ fontWeight: '600', color: selectedCity === city ? 'white' : '#003087', fontSize: '15px' }}>{city}</span>
+              </button>
             ))}
           </div>
+
+          {selectedCity && (
+            <div style={{ backgroundColor: '#f8f9fa', border: '1px solid #e0e7ff', borderRadius: '16px', padding: '32px', maxWidth: '500px', margin: '0 auto', textAlign: 'left' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
+                <MapPin size={20} color="#003087" />
+                <h3 style={{ color: '#003087', margin: 0, fontSize: '20px', fontWeight: '800' }}>{selectedCity}</h3>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {SCHEDULE[selectedCity].map((slot, i) => (
+                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'white', border: '1px solid #eee', borderRadius: '10px', padding: '14px 18px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <Calendar size={16} color="#FF6B35" />
+                      <span style={{ fontWeight: '700', color: '#111', fontSize: '15px' }}>{DAYS[slot.day]}</span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Clock size={14} color="#666" />
+                      <span style={{ color: '#555', fontSize: '14px', fontWeight: '500' }}>{formatHour(slot.start)} – {formatHour(slot.end)}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '20px', backgroundColor: '#FF6B35', color: 'white', padding: '13px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px' }}>
+                <PawPrint size={16} /> Book a Session in {selectedCity}
+              </a>
+            </div>
+          )}
         </div>
       </section>
 
