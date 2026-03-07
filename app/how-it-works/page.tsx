@@ -91,7 +91,29 @@ export default function HowItWorks() {
 
       {/* WHAT IS A SLATMILL */}
       <section style={{ padding: '80px 24px', backgroundColor: '#003087' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+        <style>{`
+          .slatmill-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+          }
+          .slatmill-photo {
+            height: 320px;
+          }
+          @media (max-width: 768px) {
+            .slatmill-grid {
+              grid-template-columns: 1fr;
+              gap: 32px;
+            }
+            .slatmill-photo {
+              height: 200px;
+            }
+          }
+        `}</style>
+        <div className="slatmill-grid">
           <div>
             <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>The Equipment</p>
             <h2 style={{ color: 'white', fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: '800', margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>What Is a Slatmill?</h2>
@@ -108,7 +130,7 @@ export default function HowItWorks() {
               </div>
             ))}
           </div>
-          <div style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '24px', height: '320px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '12px', border: '1px solid rgba(255,255,255,0.1)' }}>
+          <div className="slatmill-photo" style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '12px', border: '1px solid rgba(255,255,255,0.1)' }}>
             <PawPrint size={48} color="rgba(255,255,255,0.2)" />
             <p style={{ color: 'rgba(255,255,255,0.3)', fontSize: '13px', margin: 0 }}>Photo coming soon</p>
           </div>
