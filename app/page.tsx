@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock } from 'lucide-react'
+import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation } from 'lucide-react'
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -55,6 +55,14 @@ export default function Home() {
 
         .alacarte-card { transition: box-shadow 0.2s; }
         .alacarte-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important; }
+
+        .stat-card { transition: transform 0.2s, box-shadow 0.2s; }
+        .stat-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12) !important; }
+
+        .metric-pill { transition: transform 0.2s, background-color 0.2s, border-color 0.2s; }
+        .metric-pill:hover { transform: translateY(-2px); background-color: #003087 !important; border-color: #003087 !important; color: white !important; }
+        .metric-pill:hover span { color: white !important; }
+        .metric-pill:hover svg { stroke: white !important; }
 
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
@@ -187,6 +195,149 @@ export default function Home() {
                 <p style={{ color: 'rgba(255,255,255,0.65)', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+{/* HEALTH SCIENCE */}
+      <section style={{ padding: '80px 24px', backgroundColor: 'white' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
+            <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Backed By Science</p>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: '#003087', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Your Dog's Health Depends On It</h2>
+            <p style={{ color: '#666', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.6 }}>
+              The research is clear — regular, consistent exercise is one of the most powerful things you can do for your dog's quality and length of life.
+            </p>
+          </div>
+
+          {/* Stats row */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '56px' }}>
+            {[
+              { stat: '2.5', unit: 'years', label: 'Lifespan lost to obesity', color: '#dc3545' },
+              { stat: '50%', unit: '', label: 'Reduction in obesity with regular exercise', color: '#22c55e' },
+              { stat: '56%', unit: '', label: 'Of US dogs are overweight or obese', color: '#f59e0b' },
+              { stat: '30+', unit: 'min', label: 'Of aerobic activity recommended daily', color: '#003087' },
+            ].map((item, i) => (
+              <div key={i} className="stat-card" style={{ backgroundColor: '#f8f9fa', borderRadius: '16px', padding: '28px 24px', textAlign: 'center', border: '1px solid #eee' }}>
+                <div style={{ fontSize: '42px', fontWeight: '900', color: item.color, lineHeight: 1, marginBottom: '6px' }}>
+                  {item.stat}<span style={{ fontSize: '22px' }}>{item.unit}</span>
+                </div>
+                <p style={{ color: '#555', fontSize: '14px', margin: 0, lineHeight: 1.5 }}>{item.label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Benefits grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+            {[
+              {
+                icon: <span style={{ fontSize: '28px' }}>❤️</span>,
+                title: 'Cardiovascular Health',
+                desc: 'Regular aerobic exercise strengthens your dog\'s heart, improves circulation, and builds endurance — just like it does for humans.'
+              },
+              {
+                icon: <span style={{ fontSize: '28px' }}>🦴</span>,
+                title: 'Joint & Muscle Strength',
+                desc: 'Consistent movement keeps joints flexible and muscles strong, reducing the risk of arthritis and mobility issues as your dog ages.'
+              },
+              {
+                icon: <span style={{ fontSize: '28px' }}>🧠</span>,
+                title: 'Mental & Cognitive Health',
+                desc: 'Research shows physical activity is directly linked to better cognitive health and reduced anxiety, stress, and destructive behaviors.'
+              },
+              {
+                icon: <span style={{ fontSize: '28px' }}>⚖️</span>,
+                title: 'Weight Management',
+                desc: 'Obesity is linked to diabetes, heart disease, and a shorter life. Regular sessions on the slatmill keep your dog lean and healthy.'
+              },
+              {
+                icon: <span style={{ fontSize: '28px' }}>🛡️</span>,
+                title: 'Immune System Boost',
+                desc: 'Exercise promotes circulation, decreases blood pressure, and reduces stress hormones — all of which strengthen your dog\'s immune response.'
+              },
+              {
+                icon: <span style={{ fontSize: '28px' }}>📈</span>,
+                title: 'Longer, Healthier Life',
+                desc: 'Studies show that lean, regularly exercised dogs live significantly longer. Consistent activity is the single most impactful thing you can do.'
+              },
+            ].map((item, i) => (
+              <div key={i} className="card-hover" style={{ backgroundColor: '#f8f9fa', borderRadius: '14px', padding: '28px', border: '1px solid #eee', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, marginTop: '2px' }}>{item.icon}</div>
+                <div>
+                  <h3 style={{ fontWeight: '700', fontSize: '17px', color: '#111', margin: '0 0 8px 0' }}>{item.title}</h3>
+                  <p style={{ color: '#666', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TECHNOLOGY */}
+      <section style={{ padding: '80px 24px', background: 'linear-gradient(135deg, #001a4d 0%, #003087 100%)' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
+            <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Real-Time Tracking</p>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: 'white', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Technology That Sets Us Apart</h2>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.6 }}>
+              Every dog wears our fitness tracker during their session. The moment your session ends, all metrics are instantly synced to your dashboard — no waiting, no guessing.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'center' }}>
+
+            {/* Left: Metrics */}
+            <div>
+              <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Metrics Tracked Per Session</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                {[
+                  { icon: '🏃', label: 'Distance (Miles)' },
+                  { icon: '🔥', label: 'Calories Burned' },
+                  { icon: '⏱️', label: 'Session Duration' },
+                  { icon: '💓', label: 'Heart Rate' },
+                  { icon: '⚡', label: 'Top Speed' },
+                  { icon: '📊', label: 'Avg. Pace' },
+                  { icon: '🌡️', label: 'Body Temperature' },
+                  { icon: '💪', label: 'Exertion Level' },
+                ].map((metric, i) => (
+                  <div key={i} className="metric-pill" style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 16px', cursor: 'default' }}>
+                    <span>{metric.icon}</span>
+                    <span style={{ color: 'white', fontSize: '13px', fontWeight: '600' }}>{metric.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right: Dashboard preview card */}
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '20px', padding: '32px', border: '1px solid rgba(255,255,255,0.12)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
+                <div style={{ width: '40px', height: '40px', backgroundColor: '#FF6B35', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <BarChart2 size={20} color="white" />
+                </div>
+                <div>
+                  <p style={{ color: 'white', fontWeight: '700', margin: 0, fontSize: '15px' }}>Live Dashboard</p>
+                  <p style={{ color: 'rgba(255,255,255,0.5)', margin: 0, fontSize: '12px' }}>Updated after every session</p>
+                </div>
+              </div>
+              {[
+                { label: 'Total Sessions This Month', value: '8', icon: <Calendar size={16} color="#FF6B35" /> },
+                { label: 'Total Miles Run', value: '12.4 mi', icon: <Navigation size={16} color="#FF6B35" /> },
+                { label: 'Calories Burned', value: '3,840 cal', icon: <Flame size={16} color="#FF6B35" /> },
+                { label: 'Achievements Earned', value: '5 badges', icon: <Trophy size={16} color="#FFD700" /> },
+              ].map((item, i) => (
+                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 0', borderBottom: i < 3 ? '1px solid rgba(255,255,255,0.08)' : 'none' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    {item.icon}
+                    <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '13px' }}>{item.label}</span>
+                  </div>
+                  <span style={{ color: 'white', fontWeight: '700', fontSize: '15px' }}>{item.value}</span>
+                </div>
+              ))}
+              <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '20px', backgroundColor: '#FF6B35', color: 'white', padding: '13px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px' }}>
+                <PawPrint size={16} /> See Your Dog's Dashboard
+              </a>
+            </div>
+
           </div>
         </div>
       </section>
