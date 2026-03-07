@@ -8,10 +8,29 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ name: '', email: '', city: '', message: '' })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: wire up to email/form service (Resend, Formspree, etc.)
-    setSubmitted(true)
+    setLoading(true)
+    setError(false)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        setError(true)
+      }
+    } catch {
+      setError(true)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -103,8 +122,11 @@ export default function Contact() {
                       style={{ width: '100%', padding: '12px 14px', borderRadius: '8px', border: '1px solid #ddd', fontSize: '15px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }}
                     />
                   </div>
-                  <button type="submit" style={{ width: '100%', backgroundColor: '#FF6B35', color: 'white', padding: '14px', borderRadius: '8px', border: 'none', fontWeight: 'bold', fontSize: '16px', cursor: 'pointer' }}>
-                    Send Message
+                  {error && (
+                    <p style={{ color: '#dc3545', fontSize: '14px', margin: '0 0 12px 0' }}>Something went wrong. Please try again or email us directly at info@thecaninegym.com</p>
+                  )}
+                  <button type="submit" disabled={loading} style={{ width: '100%', backgroundColor: loading ? '#ccc' : '#FF6B35', color: 'white', padding: '14px', borderRadius: '8px', border: 'none', fontWeight: 'bold', fontSize: '16px', cursor: loading ? 'not-allowed' : 'pointer' }}>
+                    {loading ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               </>
