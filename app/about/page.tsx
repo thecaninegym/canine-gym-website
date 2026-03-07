@@ -6,6 +6,20 @@ export default function About() {
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", color: '#111', backgroundColor: 'white' }}>
       <Nav />
+      <style>{`
+        .founder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .stats-row { display: flex; gap: 16px; flex-wrap: wrap; }
+        @media (max-width: 768px) {
+          .founder-grid { grid-template-columns: 1fr; gap: 40px; }
+          .why-grid { grid-template-columns: repeat(2, 1fr); }
+          .founder-photo { order: 2; }
+          .founder-text { order: 1; }
+        }
+        @media (max-width: 480px) {
+          .why-grid { grid-template-columns: 1fr; }
+        }
+      `}</style>
 
       {/* HERO */}
       <section style={{ background: 'linear-gradient(135deg, #003087 0%, #004db3 100%)', padding: '100px 24px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
@@ -24,22 +38,20 @@ export default function About() {
 
       {/* FOUNDER */}
       <section style={{ padding: '100px 24px', backgroundColor: 'white' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
-          <div>
-            {/* Photo placeholder */}
+        <div className="founder-grid">
+          <div className="founder-photo">
             <div style={{ position: 'relative' }}>
               <div style={{ backgroundColor: '#f0f4ff', borderRadius: '24px', height: '480px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '12px' }}>
                 <PawPrint size={56} color="#003087" style={{ opacity: 0.2 }} />
                 <p style={{ color: '#aaa', fontSize: '13px', margin: 0 }}>Photo of Mia coming soon</p>
               </div>
-              {/* Floating badge */}
               <div style={{ position: 'absolute', bottom: '24px', right: '-20px', backgroundColor: '#FF6B35', borderRadius: '16px', padding: '16px 20px', boxShadow: '0 8px 32px rgba(255,107,53,0.35)' }}>
                 <p style={{ color: 'white', fontWeight: '800', fontSize: '22px', margin: 0, lineHeight: 1 }}>6+</p>
                 <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '12px', margin: '4px 0 0 0' }}>Years with Dogs</p>
               </div>
             </div>
           </div>
-          <div>
+          <div className="founder-text">
             <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Meet the Founder</p>
             <h2 style={{ fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: '800', color: '#003087', margin: '0 0 24px 0', letterSpacing: '-0.5px' }}>Hi, I'm Mia.</h2>
             <p style={{ color: '#555', fontSize: '16px', lineHeight: 1.8, margin: '0 0 20px 0' }}>
@@ -51,7 +63,7 @@ export default function About() {
             <p style={{ color: '#555', fontSize: '16px', lineHeight: 1.8, margin: '0 0 32px 0' }}>
               Every dog I've worked with has a different personality, energy level, and set of needs. That's why we take a personalized approach — because cookie-cutter fitness doesn't work for dogs any more than it works for people.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div className="stats-row">
               {[
                 { value: '6+', label: 'Years Experience' },
                 { value: '100+', label: 'Dogs Worked With' },
@@ -77,14 +89,14 @@ export default function About() {
               Over 56% of dogs in the US are overweight. Most aren't getting the daily exercise they need. We're here to change that — one session at a time.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+          <div className="why-grid">
             {[
               { icon: <Heart size={28} color="#FF6B35" />, title: 'Dog-First Always', desc: 'Every decision we make starts with one question: is this good for the dog? Safety, comfort, and wellbeing are never compromised.' },
               { icon: <Zap size={28} color="#FF6B35" />, title: 'Real Results', desc: 'We track every metric so you can see your dog actually improving — not just trust that they had a good time.' },
-              { icon: <MapPin size={28} color="#FF6B35" />, title: 'Built for Hamilton County', desc: 'We\'re a local business built for this community. We know these neighborhoods, and we\'re invested in the dogs that live here.' },
-              { icon: <Users size={28} color="#FF6B35" />, title: 'Personal Relationships', desc: 'We get to know every dog we work with. Your dog isn\'t a number — they\'re a client with a name, a personality, and a fitness journey.' },
+              { icon: <MapPin size={28} color="#FF6B35" />, title: 'Built for Hamilton County', desc: "We're a local business built for this community. We know these neighborhoods, and we're invested in the dogs that live here." },
+              { icon: <Users size={28} color="#FF6B35" />, title: 'Personal Relationships', desc: "We get to know every dog we work with. Your dog isn't a number — they're a client with a name, a personality, and a fitness journey." },
               { icon: <Trophy size={28} color="#FF6B35" />, title: 'Raising the Bar', desc: 'Dog fitness deserves the same technology and professionalism as human fitness. We built the app, the tracking, and the experience to match.' },
-              { icon: <Star size={28} color="#FF6B35" />, title: 'Convenient by Design', desc: 'Convenience isn\'t a nice-to-have — it\'s the whole point. If it\'s not easy, it won\'t happen consistently. We come to you so it always does.' },
+              { icon: <Star size={28} color="#FF6B35" />, title: 'Convenient by Design', desc: "Convenience isn't a nice-to-have — it's the whole point. If it's not easy, it won't happen consistently. We come to you so it always does." },
             ].map((item, i) => (
               <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '16px', padding: '28px', border: '1px solid rgba(255,255,255,0.1)' }}>
                 <div style={{ marginBottom: '14px' }}>{item.icon}</div>
