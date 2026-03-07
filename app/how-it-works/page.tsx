@@ -18,59 +18,71 @@ export default function HowItWorks() {
 
       {/* STEPS */}
       <section style={{ padding: '80px 24px', backgroundColor: 'white' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '720px', margin: '0 auto' }}>
           {[
             {
               step: '01',
-              icon: <Calendar size={36} color="#003087" />,
+              icon: <Calendar size={28} color="#003087" />,
               title: 'Book Online',
               desc: 'Create your account at app.thecaninegym.com, add your dog\'s profile, and pick a date and time that works for you. Our booking system shows real-time availability for your area so you always know exactly when we can come.',
               details: ['Choose your city and available time slot', 'Add one or more dogs to your session', 'Pick a membership plan or book a la carte', 'Receive instant confirmation by email'],
+              color: '#f0f4ff',
+              accent: '#003087',
             },
             {
               step: '02',
-              icon: <MapPin size={36} color="#FF6B35" />,
+              icon: <MapPin size={28} color="#FF6B35" />,
               title: 'We Come To You',
               desc: 'No loading up the car, no waiting rooms, no stress. Our van arrives at your home fully equipped with a professional slatmill. We set up right in your driveway — your dog never has to leave their comfort zone.',
               details: ['We arrive in a fully equipped van', 'Setup takes just a few minutes', 'No need to leave your home', 'A trained handler manages everything'],
+              color: '#fff5f0',
+              accent: '#FF6B35',
             },
             {
               step: '03',
-              icon: <Zap size={36} color="#FF6B35" />,
+              icon: <Zap size={28} color="#FF6B35" />,
               title: 'Your Dog Runs',
               desc: 'Your dog gets a 30-minute session on our slatmill — a non-motorized treadmill powered entirely by your dog. The belt only moves when they do, making it safe, natural, and incredibly effective for building fitness.',
               details: ['30-minute structured workout', 'Slatmill speed is dog-controlled — always safe', 'First-timers get an intro session to get comfortable', 'Your dog wears our fitness tracker throughout'],
+              color: '#fff5f0',
+              accent: '#FF6B35',
             },
             {
               step: '04',
-              icon: <BarChart2 size={36} color="#003087" />,
+              icon: <BarChart2 size={28} color="#003087" />,
               title: 'Stats Instantly Tracked',
               desc: 'The moment your session ends, all metrics sync to your dashboard. See exactly how far your dog ran, how many calories they burned, their heart rate, speed, and more. Watch them improve session over session.',
               details: ['Distance, calories, heart rate, speed and more', 'Stats appear in your dashboard instantly', 'Earn achievements and badges as you progress', 'Compete on the city-wide leaderboard'],
+              color: '#f0f4ff',
+              accent: '#003087',
             },
           ].map((item, i) => (
-            <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center', marginBottom: '80px', direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
-              <div style={{ direction: 'ltr' }}>
-                <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '72px', height: '72px', backgroundColor: i % 2 === 0 ? '#f0f4ff' : '#fff5f0', borderRadius: '20px', marginBottom: '20px' }}>
+            <div key={i} style={{ display: 'flex', gap: '0', marginBottom: i < 3 ? '0' : '0' }}>
+              {/* Timeline spine */}
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: '28px', flexShrink: 0 }}>
+                <div style={{ width: '52px', height: '52px', borderRadius: '50%', backgroundColor: item.color, border: `2px solid ${item.accent}20`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, zIndex: 1 }}>
                   {item.icon}
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-                  <span style={{ fontSize: '48px', fontWeight: '900', color: '#eee', lineHeight: 1 }}>{item.step}</span>
-                  <h2 style={{ fontSize: '28px', fontWeight: '800', color: '#003087', margin: 0 }}>{item.title}</h2>
+                {i < 3 && (
+                  <div style={{ width: '2px', flex: 1, minHeight: '40px', backgroundColor: '#eee', margin: '8px 0' }} />
+                )}
+              </div>
+
+              {/* Content */}
+              <div style={{ paddingBottom: i < 3 ? '48px' : '0', flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: '800', color: item.accent, letterSpacing: '1px' }}>STEP {item.step}</span>
                 </div>
-                <p style={{ color: '#555', fontSize: '16px', lineHeight: 1.7, margin: '0 0 24px 0' }}>{item.desc}</p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <h2 style={{ fontSize: 'clamp(22px, 3vw, 28px)', fontWeight: '800', color: '#003087', margin: '0 0 12px 0', letterSpacing: '-0.5px' }}>{item.title}</h2>
+                <p style={{ color: '#555', fontSize: '15px', lineHeight: 1.75, margin: '0 0 20px 0' }}>{item.desc}</p>
+                <div style={{ backgroundColor: item.color, borderRadius: '12px', padding: '20px 24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {item.details.map((d, j) => (
                     <div key={j} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <CheckCircle size={16} color="#22c55e" style={{ flexShrink: 0 }} />
+                      <CheckCircle size={15} color={item.accent} style={{ flexShrink: 0 }} />
                       <span style={{ fontSize: '14px', color: '#444' }}>{d}</span>
                     </div>
                   ))}
                 </div>
-              </div>
-              <div style={{ direction: 'ltr', backgroundColor: i % 2 === 0 ? '#f0f4ff' : '#fff5f0', borderRadius: '24px', height: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '12px' }}>
-                {item.icon}
-                <p style={{ color: '#aaa', fontSize: '13px', margin: 0 }}>Photo coming soon</p>
               </div>
             </div>
           ))}
