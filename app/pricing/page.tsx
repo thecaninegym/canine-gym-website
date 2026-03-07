@@ -19,7 +19,7 @@ export default function Pricing() {
       {/* PLANS */}
       <section style={{ padding: '80px 24px', backgroundColor: '#f8f9fa' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px', marginBottom: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', margin: '0 auto' }}>
             {[
               { name: 'Starter', sessions: 4, price: '$180', perSession: '$45', color: '#003087', popular: false, desc: 'Perfect for getting started and building a routine.' },
               { name: 'Active', sessions: 8, price: '$340', perSession: '$42.50', color: '#FF6B35', popular: true, desc: 'Our most popular plan for committed dog owners.' },
@@ -77,7 +77,7 @@ export default function Pricing() {
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
           <p style={{ color: '#FF6B35', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Every Plan Includes</p>
           <h2 style={{ fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: '800', color: '#003087', margin: '0 0 48px 0', letterSpacing: '-0.5px' }}>Everything You Need</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
             {[
               { icon: <BarChart2 size={24} color="#FF6B35" />, title: 'Real-Time Stats', desc: 'Distance, calories, heart rate, speed — all synced instantly after every session.' },
               { icon: <Trophy size={24} color="#FF6B35" />, title: 'Achievements', desc: 'Your dog earns badges as they hit milestones. A fun way to celebrate progress.' },
