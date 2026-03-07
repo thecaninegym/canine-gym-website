@@ -150,7 +150,7 @@ export default function HowItWorks() {
               { icon: <Shield size={24} color="#003087" />, title: 'Always Safe', desc: 'Trained handlers supervise every single session' },
             ].map((item, i) => (
               <div key={i} style={{ backgroundColor: 'white', borderRadius: '16px', padding: '28px 20px', border: '1px solid #eee', textAlign: 'center' }}>
-                <div style={{ marginBottom: '12px' }}>{item.icon}</div>
+                <div style={{ marginBottom: '12px', display: 'flex', justifyContent: 'center' }}>{item.icon}</div>
                 <h3 style={{ fontWeight: '700', fontSize: '17px', color: '#111', margin: '0 0 8px 0' }}>{item.title}</h3>
                 <p style={{ color: '#666', fontSize: '14px', margin: 0, lineHeight: 1.5 }}>{item.desc}</p>
               </div>
