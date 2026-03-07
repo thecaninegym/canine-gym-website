@@ -48,7 +48,11 @@ export default function Contact() {
 
       {/* CONTACT CONTENT */}
       <section style={{ padding: '80px 24px', backgroundColor: '#f8f9fa' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '56px', alignItems: 'start' }}>
+        <style>{`
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: start; max-width: 900px; margin: 0 auto; }
+  @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+`}</style>
+<div className="contact-grid">
 
           {/* Left: Info */}
           <div>
