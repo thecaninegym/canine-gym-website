@@ -33,7 +33,7 @@ export default function MaintenancePage() {
 
         <div style={{ animation: 'fadeUp 0.5s ease 0.15s both', marginBottom: '28px' }}>
           <p style={{ color: '#666', fontSize: '16px', margin: 0, lineHeight: '1.7' }}>
-            The Canine Gym app is almost here! We're putting the finishing touches on Hamilton County's premier mobile dog fitness experience. Stay tuned — your pup's fitness journey is about to begin!
+            The Canine Gym and our proprietary app is almost here! We're putting the finishing touches on Hamilton County's premier mobile dog fitness experience. Stay tuned, your pup's fitness journey is about to begin!
           </p>
         </div>
 
