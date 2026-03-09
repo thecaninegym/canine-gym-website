@@ -7,7 +7,7 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '32px', marginBottom: '40px' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-              <img src="/logo.png" alt="The Canine Gym" style={{ height: '36px', width: 'auto', mixBlendMode: 'screen' }} />
+              <img src="/logo.png" alt="The Canine Gym" style={{ height: '36px', width: 'auto' }} />
             </div>
             <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '13px', lineHeight: 1.7, margin: 0 }}>Professional dog fitness sessions delivered to your door. Hamilton County, Indiana.</p>
           </div>

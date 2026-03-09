@@ -21,7 +21,7 @@ export default function Nav() {
       `}</style>
       <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px' }}>
         <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-          <img src="/logo.png" alt="The Canine Gym" style={{ height: '44px', width: 'auto', mixBlendMode: 'multiply' }} />
+          <img src="/logo.png" alt="The Canine Gym" style={{ height: '44px', width: 'auto' }} />
         </a>
         <div style={{ display: 'flex', alignItems: 'center', gap: '28px' }} className="desktop-nav">
           <a href="/how-it-works" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>How It Works</a>
