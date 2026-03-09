@@ -3,44 +3,50 @@ import { PawPrint } from 'lucide-react'
 
 export default function MaintenancePage() {
   return (
-    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #001840 0%, #2c5a9e 100%)', fontFamily: "'Montserrat', system-ui, sans-serif", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px' }}>
+    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #001840 0%, #2c5a9e 100%)', fontFamily: "'Montserrat', system-ui, sans-serif", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px', textAlign: 'center' }}>
       <style>{`
         @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
         @keyframes run { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
       `}</style>
 
-      {/* Logo */}
-      <div style={{ animation: 'fadeUp 0.5s ease', marginBottom: '48px' }}>
-        <img src="/logo.png" alt="The Canine Gym" style={{ height: '80px', width: 'auto' }} />
-      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '480px', margin: '0 auto' }}>
 
-      {/* Animated dog icon */}
-      <div style={{ animation: 'run 1.4s ease-in-out infinite', marginBottom: '32px' }}>
-        <PawPrint size={52} color="#f88124" />
-      </div>
+        {/* Logo */}
+        <div style={{ animation: 'fadeUp 0.5s ease', marginBottom: '40px', background: 'white', borderRadius: '16px', padding: '16px 28px', display: 'inline-block' }}>
+          <img src="/logo.png" alt="The Canine Gym" style={{ height: '64px', width: 'auto', display: 'block' }} />
+        </div>
 
-      {/* Heading */}
-      <div style={{ animation: 'fadeUp 0.5s ease 0.1s both', textAlign: 'center', marginBottom: '20px' }}>
-        <h1 style={{ color: 'white', fontSize: '36px', fontWeight: '800', margin: '0 0 12px', letterSpacing: '-0.5px' }}>
-          We're Getting Ready to Run.
-        </h1>
-        <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '17px', margin: 0, lineHeight: '1.6', maxWidth: '420px' }}>
-          The Canine Gym app is currently undergoing maintenance. We'll be back up shortly — your pup's fitness journey continues soon!
-        </p>
-      </div>
+        {/* Animated paw */}
+        <div style={{ animation: 'run 1.4s ease-in-out infinite', marginBottom: '28px' }}>
+          <PawPrint size={48} color="#f88124" />
+        </div>
 
-      {/* Orange divider */}
-      <div style={{ animation: 'fadeUp 0.5s ease 0.2s both', width: '60px', height: '4px', background: '#f88124', borderRadius: '2px', margin: '24px 0' }} />
+        {/* Heading */}
+        <div style={{ animation: 'fadeUp 0.5s ease 0.1s both', marginBottom: '16px' }}>
+          <h1 style={{ color: 'white', fontSize: '34px', fontWeight: '800', margin: 0, letterSpacing: '-0.5px' }}>
+            We're Getting Ready to Run.
+          </h1>
+        </div>
 
-      {/* Contact line */}
-      <div style={{ animation: 'fadeUp 0.5s ease 0.3s both', textAlign: 'center' }}>
-        <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '14px', margin: 0 }}>
-          Questions? Reach us at{' '}
-          <a href="mailto:hello@thecaninegym.com" style={{ color: '#f88124', textDecoration: 'none', fontWeight: '600' }}>
-            hello@thecaninegym.com
-          </a>
-        </p>
+        <div style={{ animation: 'fadeUp 0.5s ease 0.15s both', marginBottom: '28px' }}>
+          <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '16px', margin: 0, lineHeight: '1.7' }}>
+            The Canine Gym app is currently undergoing maintenance. We'll be back up shortly — your pup's fitness journey continues soon!
+          </p>
+        </div>
+
+        {/* Orange divider */}
+        <div style={{ animation: 'fadeUp 0.5s ease 0.2s both', width: '56px', height: '4px', background: '#f88124', borderRadius: '2px', marginBottom: '28px' }} />
+
+        {/* Contact */}
+        <div style={{ animation: 'fadeUp 0.5s ease 0.25s both' }}>
+          <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '14px', margin: 0 }}>
+            Questions? Reach us at{' '}
+            <a href="mailto:hello@thecaninegym.com" style={{ color: '#f88124', textDecoration: 'none', fontWeight: '600' }}>
+              hello@thecaninegym.com
+            </a>
+          </p>
+        </div>
+
       </div>
 
       {/* Bottom paw prints */}
