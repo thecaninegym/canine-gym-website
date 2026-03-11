@@ -12,7 +12,7 @@ export default function HowItWorks() {
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 16px 0' }}>Simple Process</p>
           <h1 style={{ color: 'white', fontSize: 'clamp(32px, 5vw, 54px)', fontWeight: '800', margin: '0 0 20px 0', letterSpacing: '-1px', lineHeight: 1.1 }}>How It Works</h1>
-          <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '18px', lineHeight: 1.6, margin: 0 }}>From booking to post-session stats — here's exactly what to expect every time.</p>
+          <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '18px', lineHeight: 1.6, margin: 0 }}>From booking to post-session stats, here's exactly what to expect every time.</p>
         </div>
       </section>
 
@@ -33,7 +33,7 @@ export default function HowItWorks() {
               step: '02',
               icon: <MapPin size={28} color="#f88124" />,
               title: 'We Come To You',
-              desc: 'No loading up the car, no waiting rooms, no stress. Our van arrives at your home fully equipped with a professional slatmill. We set up right in your driveway — your dog never has to leave their comfort zone.',
+              desc: 'No loading up the car, no waiting rooms, no stress. Our van arrives at your home fully equipped with a professional slatmill. We set up right in your driveway, your dog never has to leave their comfort zone.',
               details: ['We arrive in a fully equipped van', 'Setup takes just a few minutes', 'No need to leave your home', 'A trained handler manages everything'],
               color: '#fff4e6',
               accent: '#f88124',
@@ -42,8 +42,8 @@ export default function HowItWorks() {
               step: '03',
               icon: <Zap size={28} color="#f88124" />,
               title: 'Your Dog Runs',
-              desc: 'Your dog gets a 30-minute session on our slatmill — a non-motorized treadmill powered entirely by your dog. The belt only moves when they do, making it safe, natural, and incredibly effective for building fitness.',
-              details: ['30-minute structured workout', 'Slatmill speed is dog-controlled — always safe', 'First-timers get an intro session to get comfortable', 'Your dog wears our fitness tracker throughout'],
+              desc: 'Your dog gets a 30-minute session on our slatmill, a non-motorized treadmill powered entirely by your dog. The belt only moves when they do, making it safe, natural, and incredibly effective for building fitness.',
+              details: ['30-minute structured workout', 'Slatmill speed is dog-controlled, always safe', 'First-timers get an intro session to get comfortable', 'Your dog wears our fitness tracker throughout'],
               color: '#fff4e6',
               accent: '#f88124',
             },
@@ -118,12 +118,12 @@ export default function HowItWorks() {
             <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>The Equipment</p>
             <h2 style={{ color: 'white', fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: '800', margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>What Is a Slatmill?</h2>
             <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '16px', lineHeight: 1.7, margin: '0 0 24px 0' }}>
-              A slatmill is a non-motorized treadmill designed specifically for dogs. Unlike electric treadmills, the belt only moves when your dog walks or runs — they control the speed entirely.
+              A slatmill is a non-motorized treadmill designed specifically for dogs. Unlike electric treadmills, the belt only moves when your dog walks or runs, they control the speed entirely.
             </p>
             <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '16px', lineHeight: 1.7, margin: '0 0 24px 0' }}>
               This makes it safer, more natural, and more effective than motorized alternatives. Dogs instinctively understand how to use it, and the workout builds real strength and cardiovascular endurance.
             </p>
-            {['Dog-controlled speed — always safe', 'Builds strength, endurance, and muscle', 'Natural movement pattern mirrors running outdoors', 'Low-impact on joints compared to pavement running'].map((point, i) => (
+            {['Dog-controlled speed, always safe', 'Builds strength, endurance, and muscle', 'Natural movement pattern mirrors running outdoors', 'Low-impact on joints compared to pavement running'].map((point, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                 <CheckCircle size={16} color="#f88124" style={{ flexShrink: 0 }} />
                 <span style={{ color: 'rgba(255,255,255,0.8)', fontSize: '14px' }}>{point}</span>
@@ -145,7 +145,7 @@ export default function HowItWorks() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
             {[
               { icon: <Clock size={24} color="#2c5a9e" />, title: '30 Minutes', desc: 'Every session is a focused 30-minute workout' },
-              { icon: <MapPin size={24} color="#2c5a9e" />, title: 'At Your Home', desc: 'We park right in your driveway — no travel needed' },
+              { icon: <MapPin size={24} color="#2c5a9e" />, title: 'At Your Home', desc: 'We park right in your driveway, no travel needed' },
               { icon: <Heart size={24} color="#f88124" />, title: 'All Breeds', desc: 'We work with dogs of most breeds and sizes' },
               { icon: <Shield size={24} color="#2c5a9e" />, title: 'Always Safe', desc: 'Trained handlers supervise every single session' },
             ].map((item, i) => (

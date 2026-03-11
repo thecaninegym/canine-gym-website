@@ -27,7 +27,7 @@ export default function Home() {
   }
 
   const faqs = [
-    { q: 'What is a slatmill?', a: 'A slatmill is a non-motorized dog treadmill powered entirely by your dog. Unlike electric treadmills, the belt only moves when your dog walks or runs — making it safer, more natural, and more effective for building strength and endurance.' },
+    { q: 'What is a slatmill?', a: 'A slatmill is a non-motorized dog treadmill powered entirely by your dog. Unlike electric treadmills, the belt only moves when your dog walks or runs, making it safer, more natural, and more effective for building strength and endurance.' },
     { q: 'What areas do you serve?', a: 'We currently serve Carmel, Zionsville, Fishers, Geist, Westfield, and Noblesville in Hamilton County, Indiana.' },
     { q: 'How long is each session?', a: 'Each session is 30 minutes. We come to your home, set up in our van, and your dog gets a full workout while you relax inside.' },
     { q: 'What size dogs can use the slatmill?', a: 'Our slatmills accommodate most breeds and sizes. We will assess your dog on the first session to make sure they are comfortable and safe on the equipment.' },
@@ -74,7 +74,7 @@ export default function Home() {
             The Run Comes<br /><span style={{ color: '#f88124' }}>To You.</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: 'clamp(16px, 2.5vw, 20px)', lineHeight: 1.6, margin: '0 0 40px 0', maxWidth: '560px', marginLeft: 'auto', marginRight: 'auto' }}>
-            Professional dog fitness sessions delivered to your door. Your dog runs on our slatmill — right from our van, parked in your driveway.
+            Professional dog fitness sessions delivered to your door. Your dog runs on our slatmill, right from our van, parked in your driveway.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="https://app.thecaninegym.com" className="btn-primary" style={{ backgroundColor: '#f88124', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
@@ -169,7 +169,7 @@ export default function Home() {
             <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Real-Time Tracking</p>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: 'white', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Technology That Sets Us Apart</h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.6 }}>
-              Every dog wears our fitness tracker during their session. The moment your session ends, all metrics are instantly synced to your dashboard — no waiting, no guessing.
+              Every dog wears our fitness tracker during their session. The moment your session ends, all metrics are instantly synced to your dashboard, no waiting, no guessing.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'center' }}>
@@ -236,41 +236,63 @@ export default function Home() {
             <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Backed By Science</p>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: '#2c5a9e', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Your Dog's Health Depends On It</h2>
             <p style={{ color: '#666', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.6 }}>
-              The research is clear — regular, consistent exercise is one of the most powerful things you can do for your dog's quality and length of life.
+              The research is clear. Regular, consistent exercise is one of the most powerful things you can do for your dog's quality and length of life.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '56px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '40px' }}>
             {[
-              { stat: '2.5', unit: 'years', label: 'Lifespan lost to obesity', color: '#dc3545' },
-              { stat: '50%', unit: '', label: 'Reduction in obesity with regular exercise', color: '#22c55e' },
-              { stat: '56%', unit: '', label: 'Of US dogs are overweight or obese', color: '#f59e0b' },
-              { stat: '30+', unit: 'min', label: 'Of aerobic activity recommended daily', color: '#2c5a9e' },
+              { stat: '2.5', unit: 'years', label: 'Lifespan lost to obesity', color: '#dc3545', cite: '1' },
+              { stat: '50%', unit: '', label: 'Reduction in obesity risk with regular exercise', color: '#22c55e', cite: '2' },
+              { stat: '56%', unit: '', label: 'Of US dogs are overweight or obese', color: '#f59e0b', cite: '3' },
+              { stat: '30+', unit: 'min', label: 'Of aerobic activity recommended daily', color: '#2c5a9e', cite: '4' },
             ].map((item, i) => (
-              <div key={i} className="stat-card" style={{ backgroundColor: '#f8f9fa', borderRadius: '16px', padding: '28px 24px', textAlign: 'center', border: '1px solid #eee' }}>
+              <div key={i} className="stat-card" style={{ backgroundColor: '#f8f9fa', borderRadius: '16px', padding: '28px 24px', textAlign: 'center', border: '1px solid #eee', position: 'relative' }}>
                 <div style={{ fontSize: '42px', fontWeight: '900', color: item.color, lineHeight: 1, marginBottom: '6px' }}>
                   {item.stat}<span style={{ fontSize: '22px' }}>{item.unit}</span>
+                  <sup style={{ fontSize: '14px', fontWeight: '700', color: '#aaa', marginLeft: '2px' }}>[{item.cite}]</sup>
                 </div>
                 <p style={{ color: '#555', fontSize: '14px', margin: 0, lineHeight: 1.5 }}>{item.label}</p>
               </div>
             ))}
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '48px' }}>
             {[
-              { icon: '❤️', title: 'Cardiovascular Health', desc: 'Regular aerobic exercise strengthens your dog\'s heart, improves circulation, and builds endurance — just like it does for humans.' },
-              { icon: '🦴', title: 'Joint & Muscle Strength', desc: 'Consistent movement keeps joints flexible and muscles strong, reducing the risk of arthritis and mobility issues as your dog ages.' },
-              { icon: '🧠', title: 'Mental & Cognitive Health', desc: 'Research shows physical activity is directly linked to better cognitive health and reduced anxiety, stress, and destructive behaviors.' },
-              { icon: '⚖️', title: 'Weight Management', desc: 'Obesity is linked to diabetes, heart disease, and a shorter life. Regular sessions on the slatmill keep your dog lean and healthy.' },
-              { icon: '🛡️', title: 'Immune System Boost', desc: 'Exercise promotes circulation, decreases blood pressure, and reduces stress hormones — all of which strengthen your dog\'s immune response.' },
-              { icon: '📈', title: 'Longer, Healthier Life', desc: 'Studies show that lean, regularly exercised dogs live significantly longer. Consistent activity is the single most impactful thing you can do.' },
+              { icon: '❤️', title: 'Cardiovascular Health', desc: 'Regular aerobic exercise strengthens your dog\'s heart, improves circulation, and builds endurance. The AAHA notes that cardiorespiratory fitness is a key marker of longevity in dogs.', cite: '4' },
+              { icon: '🦴', title: 'Joint & Muscle Strength', desc: 'Consistent movement keeps joints flexible and muscles strong, reducing the risk of arthritis and mobility issues as your dog ages.', cite: null },
+              { icon: '🧠', title: 'Mental & Cognitive Health', desc: 'Physical activity is directly linked to better cognitive health and reduced anxiety and destructive behaviors, according to research published in Applied Animal Behaviour Science.', cite: '5' },
+              { icon: '⚖️', title: 'Weight Management', desc: 'Obesity is associated with diabetes, orthopedic disease, heart disease, and a shorter lifespan. Regular exercise is the most effective tool for keeping your dog at a healthy weight.', cite: '1' },
+              { icon: '🛡️', title: 'Immune System Boost', desc: 'Moderate exercise improves circulation and reduces chronic inflammation and stress hormones, all of which contribute to a stronger immune response in dogs.', cite: null },
+              { icon: '📈', title: 'Longer, Healthier Life', desc: 'A landmark 14-year Purina study found that lean dogs lived an average of 1.8 years longer than their overweight counterparts. Exercise is the foundation of a long, healthy life.', cite: '1' },
             ].map((item, i) => (
               <div key={i} className="card-hover" style={{ backgroundColor: '#f8f9fa', borderRadius: '14px', padding: '28px', border: '1px solid #eee', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
                 <div style={{ flexShrink: 0, marginTop: '2px', fontSize: '28px' }}>{item.icon}</div>
                 <div>
                   <h3 style={{ fontWeight: '700', fontSize: '17px', color: '#111', margin: '0 0 8px 0' }}>{item.title}</h3>
-                  <p style={{ color: '#666', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>{item.desc}</p>
+                  <p style={{ color: '#666', margin: 0, lineHeight: 1.6, fontSize: '14px' }}>
+                    {item.desc}
+                    {item.cite && <sup style={{ color: '#aaa', fontWeight: '700', marginLeft: '2px' }}>[{item.cite}]</sup>}
+                  </p>
                 </div>
               </div>
             ))}
+          </div>
+          {/* CITATIONS */}
+          <div style={{ borderTop: '1px solid #eee', paddingTop: '28px' }}>
+            <p style={{ color: '#aaa', fontSize: '12px', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Sources</p>
+            <ol style={{ margin: 0, padding: '0 0 0 18px', listStyle: 'decimal' }}>
+              {[
+                { num: 1, text: 'Lawler DF, et al. (2008). Diet restriction and ageing in the dog: major observations over two decades of a life-span study.', url: 'https://pubmed.ncbi.nlm.nih.gov/18194558/', journal: 'British Journal of Nutrition' },
+                { num: 2, text: 'Flanagan J, et al. (2017). Determination of body weight changes associated with weight loss in obese pet dogs.', url: 'https://pubmed.ncbi.nlm.nih.gov/28588481/', journal: 'Journal of Nutritional Science' },
+                { num: 3, text: 'Association for Pet Obesity Prevention (APOP). (2022). U.S. Pet Obesity Prevalence Survey.', url: 'https://petobesityprevention.org/', journal: 'petobesityprevention.org' },
+                { num: 4, text: 'American Animal Hospital Association (AAHA). (2019). AAHA Canine Life Stage Guidelines.', url: 'https://www.aaha.org/aaha-guidelines/life-stage-canine-2019/life-stage-canine-2019/', journal: 'aaha.org' },
+                { num: 5, text: 'Arhant C, et al. (2010). Behaviour of smaller and larger dogs: Effects of training methods, inconsistency of owner behaviour and level of engagement in activities with the dog.', url: 'https://pubmed.ncbi.nlm.nih.gov/20965609/', journal: 'Applied Animal Behaviour Science' },
+              ].map((ref) => (
+                <li key={ref.num} style={{ color: '#999', fontSize: '12px', lineHeight: 1.6, marginBottom: '6px' }}>
+                  {ref.text} <em>{ref.journal}.</em>{' '}
+                  <a href={ref.url} target="_blank" rel="noopener noreferrer" style={{ color: '#2c5a9e', textDecoration: 'underline' }}>View source</a>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
@@ -288,7 +310,7 @@ export default function Home() {
               { icon: <Clock size={24} color="#f88124" />, title: 'Convenient', desc: 'No driving, no waiting rooms. We park in your driveway and handle everything.' },
               { icon: <BarChart2 size={24} color="#f88124" />, title: 'Track Every Run', desc: 'Miles, calories, and sessions are all logged. Watch your dog improve over time.' },
               { icon: <Trophy size={24} color="#f88124" />, title: 'Achievements & Leaderboard', desc: 'Your dog earns badges and can compete on a city-wide leaderboard.' },
-              { icon: <Star size={24} color="#f88124" />, title: 'Flexible Memberships', desc: 'Choose from monthly membership plans or pay per session — whatever works for you.' },
+              { icon: <Star size={24} color="#f88124" />, title: 'Flexible Memberships', desc: 'Choose from monthly membership plans or pay per session, whatever works for you.' },
               { icon: <PawPrint size={24} color="#f88124" />, title: 'Multi-Dog Households', desc: 'Have multiple dogs? No problem. We accommodate households with more than one pup.' },
             ].map((item, i) => (
               <div key={i} className="card-dark-hover" style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '14px', padding: '28px', border: '1px solid rgba(255,255,255,0.1)' }}>
@@ -339,7 +361,7 @@ export default function Home() {
           <div className="alacarte-card" style={{ backgroundColor: 'white', borderRadius: '12px', padding: '24px 28px', border: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
             <div>
               <h4 style={{ margin: '0 0 4px 0', color: '#111', fontWeight: '700' }}>A La Carte</h4>
-              <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>No commitment — book individual sessions as needed</p>
+              <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>No commitment, book individual sessions as needed</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
               <span style={{ fontSize: '28px', fontWeight: '800', color: '#111' }}>$55<span style={{ fontSize: '14px', color: '#999', fontWeight: '400' }}>/session</span></span>
@@ -354,7 +376,7 @@ export default function Home() {
         <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
           <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Service Area</p>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: '#2c5a9e', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>We Come To You</h2>
-          <p style={{ color: '#666', fontSize: '17px', margin: '0 0 48px 0' }}>Currently serving Hamilton County, Indiana — click your city to see our schedule</p>
+          <p style={{ color: '#666', fontSize: '17px', margin: '0 0 48px 0' }}>Currently serving Hamilton County, Indiana, click your city to see our schedule</p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '32px' }}>
             {['Carmel', 'Zionsville', 'Fishers', 'Geist', 'Westfield', 'Noblesville'].map(city => (
               <button key={city} onClick={() => setSelectedCity(selectedCity === city ? null : city)}
@@ -421,7 +443,7 @@ export default function Home() {
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <PawPrint size={48} color="rgba(255,255,255,0.3)" style={{ marginBottom: '24px' }} />
           <h2 style={{ color: 'white', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Ready to Get Running?</h2>
-          <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '18px', margin: '0 0 40px 0', lineHeight: 1.6 }}>Sign up today and give your dog the workout they deserve — without leaving your driveway.</p>
+          <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '18px', margin: '0 0 40px 0', lineHeight: 1.6 }}>Sign up today and give your dog the workout they deserve, without leaving your driveway.</p>
           <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', backgroundColor: '#f88124', color: 'white', padding: '18px 40px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px' }}>
             <PawPrint size={22} /> Create Your Account
           </a>

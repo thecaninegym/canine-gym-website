@@ -75,7 +75,7 @@ export default function Pricing() {
           <div className="alacarte" style={{ backgroundColor: 'white', borderRadius: '12px', padding: '28px 32px', border: '1px solid #eee', marginTop: '24px' }}>
             <div>
               <h4 style={{ margin: '0 0 4px 0', color: '#111', fontWeight: '700', fontSize: '20px' }}>A La Carte</h4>
-              <p style={{ margin: 0, color: '#666', fontSize: '15px' }}>No commitment — book individual sessions whenever you need them</p>
+              <p style={{ margin: 0, color: '#666', fontSize: '15px' }}>No commitment, book individual sessions whenever you need them</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
               <span style={{ fontSize: '32px', fontWeight: '800', color: '#111' }}>$55<span style={{ fontSize: '15px', color: '#999', fontWeight: '400' }}>/session</span></span>
@@ -92,7 +92,7 @@ export default function Pricing() {
           <h2 style={{ fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: '800', color: '#2c5a9e', margin: '0 0 48px 0', letterSpacing: '-0.5px' }}>Everything You Need</h2>
           <div className="includes-grid">
             {[
-              { icon: <BarChart2 size={24} color="#f88124" />, title: 'Real-Time Stats', desc: 'Distance, calories, heart rate, speed — all synced instantly after every session.' },
+              { icon: <BarChart2 size={24} color="#f88124" />, title: 'Real-Time Stats', desc: 'Distance, calories, heart rate, speed, all synced instantly after every session.' },
               { icon: <Trophy size={24} color="#f88124" />, title: 'Achievements', desc: 'Your dog earns badges as they hit milestones. A fun way to celebrate progress.' },
               { icon: <Star size={24} color="#f88124" />, title: 'Leaderboard', desc: 'Compete on a city-wide monthly leaderboard and see how your dog stacks up.' },
               { icon: <Shield size={24} color="#f88124" />, title: 'Professional Sessions', desc: 'Every session is supervised by a trained handler using professional equipment.' },

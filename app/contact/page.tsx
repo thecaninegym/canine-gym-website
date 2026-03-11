@@ -57,7 +57,7 @@ export default function Contact() {
           {/* Left: Info */}
           <div>
             <h2 style={{ fontSize: '26px', fontWeight: '800', color: '#2c5a9e', margin: '0 0 8px 0' }}>We're Here to Help</h2>
-            <p style={{ color: '#666', fontSize: '15px', lineHeight: 1.7, margin: '0 0 36px 0' }}>Whether you have a question about our service, need help with your account, or want to find out when we're coming to your area — just reach out.</p>
+            <p style={{ color: '#666', fontSize: '15px', lineHeight: 1.7, margin: '0 0 36px 0' }}>Whether you have a question about our service, need help with your account, or want to find out when we're coming to your area, just reach out.</p>
 
             {[
               { icon: <Mail size={20} color="#f88124" />, label: 'Email', value: 'info@thecaninegym.com', href: 'mailto:info@thecaninegym.com' },

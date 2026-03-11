@@ -11,9 +11,9 @@ export default function FAQ() {
     {
       label: 'The Service',
       faqs: [
-        { q: 'What is The Canine Gym?', a: 'The Canine Gym is a mobile dog fitness service. We bring a professional slatmill treadmill to your home in our van and give your dog a structured 30-minute workout — right in your driveway.' },
-        { q: 'What is a slatmill?', a: 'A slatmill is a non-motorized treadmill designed specifically for dogs. Unlike electric treadmills, the belt only moves when your dog walks or runs — they control the speed entirely. This makes it safer, more natural, and more effective for building real fitness.' },
-        { q: 'How long is each session?', a: 'Each session is 30 minutes. We arrive, set up, run your dog, and pack up — typically in about 45 minutes total from arrival to departure.' },
+        { q: 'What is The Canine Gym?', a: 'The Canine Gym is a mobile dog fitness service. We bring a professional slatmill treadmill to your home in our van and give your dog a structured 30-minute workout, right in your driveway.' },
+        { q: 'What is a slatmill?', a: 'A slatmill is a non-motorized treadmill designed specifically for dogs. Unlike electric treadmills, the belt only moves when your dog walks or runs, they control the speed entirely. This makes it safer, more natural, and more effective for building real fitness.' },
+        { q: 'How long is each session?', a: 'Each session is 30 minutes. We arrive, set up, run your dog, and pack up, typically in about 45 minutes total from arrival to departure.' },
         { q: 'Do I need to be home during the session?', a: 'Yes, a responsible adult must be present at your home during the session.' },
         { q: 'What happens during the first session?', a: 'First-time dogs get an introductory session where we ease them onto the slatmill at their own pace. Some dogs jump right on, others take a few minutes to get comfortable. We never rush the process.' },
       ]
@@ -22,7 +22,7 @@ export default function FAQ() {
       label: 'Dogs & Breeds',
       faqs: [
         { q: 'What size dogs can use the slatmill?', a: 'Our slatmills accommodate most breeds and sizes, from medium to large dogs. We will assess your dog at the first session to make sure they are comfortable and safe on the equipment.' },
-        { q: 'My dog is very high energy — is this right for them?', a: 'Absolutely. High-energy breeds tend to love the slatmill. It gives them a real outlet for their energy in a structured, controlled way.' },
+        { q: 'My dog is very high energy, is this right for them?', a: 'Absolutely. High-energy breeds tend to love the slatmill. It gives them a real outlet for their energy in a structured, controlled way.' },
         { q: 'Can older dogs use the slatmill?', a: 'Yes, with modifications. Senior dogs often benefit greatly from low-impact, consistent exercise. We tailor the pace and duration to your dog\'s fitness level and physical condition.' },
         { q: 'Can I bring multiple dogs?', a: 'Yes! If you have multiple dogs, they each get their own session time on the slatmill. We accommodate multi-dog households.' },
       ]
@@ -39,10 +39,10 @@ export default function FAQ() {
     {
       label: 'Stats & Tracking',
       faqs: [
-        { q: 'How does the stat tracking work?', a: 'Your dog wears our fitness tracker during each session. When the session ends, all data — distance, calories, heart rate, speed, duration, and more — is automatically synced to your dashboard in the app.' },
+        { q: 'How does the stat tracking work?', a: 'Your dog wears our fitness tracker during each session. When the session ends, all data, distance, calories, heart rate, speed, duration, and more, is automatically synced to your dashboard in the app.' },
         { q: 'What stats are tracked?', a: 'We track distance (miles), calories burned, session duration, heart rate, top speed, average pace, body temperature, and exertion level. More metrics are coming soon.' },
         { q: 'What is the leaderboard?', a: 'The leaderboard ranks dogs in your city by total sessions, miles run, or calories burned for the current month. It resets monthly. You can choose to participate publicly, anonymously, or opt out entirely.' },
-        { q: 'What are achievements?', a: 'Achievements are badges your dog earns by hitting milestones — like completing their first session, running 10 miles total, or booking 5 sessions in a month. They show up on your dashboard and leaderboard profile.' },
+        { q: 'What are achievements?', a: 'Achievements are badges your dog earns by hitting milestones, like completing their first session, running 10 miles total, or booking 5 sessions in a month. They show up on your dashboard and leaderboard profile.' },
       ]
     },
     {

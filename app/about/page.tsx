@@ -31,7 +31,7 @@ export default function About() {
             Born From a Love<br /><span style={{ color: '#f88124' }}>of Dogs.</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '18px', lineHeight: 1.7, margin: 0, maxWidth: '560px', marginLeft: 'auto', marginRight: 'auto' }}>
-            The Canine Gym was founded by Mia — a lifelong dog lover with over 6 years of hands-on experience working with dogs of all breeds and sizes.
+            The Canine Gym was founded by Mia, a lifelong dog lover with over 6 years of hands-on experience working with dogs of all breeds and sizes.
           </p>
         </div>
       </section>
@@ -55,13 +55,13 @@ export default function About() {
             <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Meet the Founder</p>
             <h2 style={{ fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: '800', color: '#2c5a9e', margin: '0 0 24px 0', letterSpacing: '-0.5px' }}>Hi, I'm Mia.</h2>
             <p style={{ color: '#555', fontSize: '16px', lineHeight: 1.8, margin: '0 0 20px 0' }}>
-              I've spent the last 6 years working closely with dogs — and one thing became crystal clear: most dogs aren't getting nearly enough real exercise. Not because their owners don't care, but because life gets in the way.
+              I've spent the last 6 years working closely with dogs, and one thing became crystal clear: most dogs aren't getting nearly enough real exercise. Not because their owners don't care, but because life gets in the way.
             </p>
             <p style={{ color: '#555', fontSize: '16px', lineHeight: 1.8, margin: '0 0 20px 0' }}>
               I started The Canine Gym to solve that problem. By bringing professional fitness sessions directly to your door, I wanted to make consistent, structured exercise something every dog owner could actually stick to.
             </p>
             <p style={{ color: '#555', fontSize: '16px', lineHeight: 1.8, margin: '0 0 32px 0' }}>
-              Every dog I've worked with has a different personality, energy level, and set of needs. That's why we take a personalized approach — because cookie-cutter fitness doesn't work for dogs any more than it works for people.
+              Every dog I've worked with has a different personality, energy level, and set of needs. That's why we take a personalized approach, because cookie-cutter fitness doesn't work for dogs any more than it works for people.
             </p>
             <div className="stats-row">
               {[
@@ -86,17 +86,17 @@ export default function About() {
             <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Why We Exist</p>
             <h2 style={{ color: 'white', fontSize: 'clamp(28px, 3vw, 42px)', fontWeight: '800', margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>The Problem We're Solving</h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.7 }}>
-              Over 56% of dogs in the US are overweight. Most aren't getting the daily exercise they need. We're here to change that — one session at a time.
+              Over 56% of dogs in the US are overweight. Most aren't getting the daily exercise they need. We're here to change that, one session at a time.
             </p>
           </div>
           <div className="why-grid">
             {[
               { icon: <Heart size={28} color="#f88124" />, title: 'Dog-First Always', desc: 'Every decision we make starts with one question: is this good for the dog? Safety, comfort, and wellbeing are never compromised.' },
-              { icon: <Zap size={28} color="#f88124" />, title: 'Real Results', desc: 'We track every metric so you can see your dog actually improving — not just trust that they had a good time.' },
+              { icon: <Zap size={28} color="#f88124" />, title: 'Real Results', desc: 'We track every metric so you can see your dog actually improving, not just trust that they had a good time.' },
               { icon: <MapPin size={28} color="#f88124" />, title: 'Built for Hamilton County', desc: "We're a local business built for this community. We know these neighborhoods, and we're invested in the dogs that live here." },
-              { icon: <Users size={28} color="#f88124" />, title: 'Personal Relationships', desc: "We get to know every dog we work with. Your dog isn't a number — they're a client with a name, a personality, and a fitness journey." },
+              { icon: <Users size={28} color="#f88124" />, title: 'Personal Relationships', desc: "We get to know every dog we work with. Your dog isn't a number, they're a client with a name, a personality, and a fitness journey." },
               { icon: <Trophy size={28} color="#f88124" />, title: 'Raising the Bar', desc: 'Dog fitness deserves the same technology and professionalism as human fitness. We built the app, the tracking, and the experience to match.' },
-              { icon: <Star size={28} color="#f88124" />, title: 'Convenient by Design', desc: "Convenience isn't a nice-to-have — it's the whole point. If it's not easy, it won't happen consistently. We come to you so it always does." },
+              { icon: <Star size={28} color="#f88124" />, title: 'Convenient by Design', desc: "Convenience isn't a nice-to-have, it's the whole point. If it's not easy, it won't happen consistently. We come to you so it always does." },
             ].map((item, i) => (
               <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '16px', padding: '28px', border: '1px solid rgba(255,255,255,0.1)' }}>
                 <div style={{ marginBottom: '14px' }}>{item.icon}</div>
@@ -116,7 +116,7 @@ export default function About() {
             <h2 style={{ fontSize: 'clamp(28px, 3vw, 42px)', fontWeight: '800', color: '#2c5a9e', margin: 0, letterSpacing: '-0.5px' }}>How We Got Here</h2>
           </div>
           {[
-            { year: '2018', title: 'It All Started With Dogs', desc: 'Mia began her career working professionally with dogs — training, boarding, and learning everything she could about canine health and behavior.' },
+            { year: '2018', title: 'It All Started With Dogs', desc: 'Mia began her career working professionally with dogs, training, boarding, and learning everything she could about canine health and behavior.' },
             { year: '2022', title: 'Discovering the Slatmill', desc: 'After seeing the transformative impact structured, consistent exercise had on the dogs she worked with, Mia became obsessed with making it more accessible.' },
             { year: '2026', title: 'The Canine Gym is Founded', desc: 'With a van, a slatmill, and a vision, The Canine Gym launched in Hamilton County. The response from local dog owners was immediate and overwhelming.' },
             { year: '2026', title: 'Growing Across Hamilton County', desc: 'Now serving 6 cities with a full booking platform, real-time fitness tracking, and a growing community of dogs living healthier lives.' },
@@ -142,7 +142,7 @@ export default function About() {
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Where We Operate</p>
           <h2 style={{ fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: '800', color: '#2c5a9e', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Proudly Serving Hamilton County</h2>
-          <p style={{ color: '#666', fontSize: '16px', lineHeight: 1.7, margin: '0 0 36px 0' }}>We currently serve six cities across Hamilton County, Indiana, with plans to expand. If your city isn't listed yet, get in touch — we'd love to hear from you.</p>
+          <p style={{ color: '#666', fontSize: '16px', lineHeight: 1.7, margin: '0 0 36px 0' }}>We currently serve six cities across Hamilton County, Indiana, with plans to expand. If your city isn't listed yet, get in touch, we'd love to hear from you.</p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {['Carmel', 'Zionsville', 'Fishers', 'Geist', 'Westfield', 'Noblesville'].map(city => (
               <div key={city} style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'white', border: '1px solid #c8d4f0', borderRadius: '30px', padding: '10px 20px' }}>
