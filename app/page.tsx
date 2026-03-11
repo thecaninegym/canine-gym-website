@@ -112,7 +112,7 @@ export default function Home() {
           }
         `}</style>
         <div className="image-strip">
-          {['Your dog. Our van. At your door.', 'Professional slatmill equipment', 'Track every run, every mile'].map((caption, i) => (
+          {['Your dog. Our van. At your home.', 'Professional slatmill equipment', 'Track every run, every mile'].map((caption, i) => (
             <div key={i} style={{
               backgroundColor: '#e9ecef',
               borderRadius: '16px',
