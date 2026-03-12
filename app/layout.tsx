@@ -11,6 +11,9 @@ const montserrat = Montserrat({
 const OG_IMAGE = 'https://www.thecaninegym.com/og-image.png'
 
 export const metadata: Metadata = {
+  verification: {
+    google: 'YOUR_CODE_HERE',
+  },
   title: 'The Canine Gym | Mobile Dog Fitness Hamilton County, IN',
   description: 'Professional mobile dog fitness sessions delivered to your door. Your dog runs on our slatmill right from our van. Serving Carmel, Fishers, Westfield, Noblesville, Zionsville & Geist.',
   openGraph: {
