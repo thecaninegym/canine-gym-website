@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { PawPrint, MapPin, Mail, Clock } from 'lucide-react'
+import { trackEvent } from '@/components/Analytics'
 
 export default function ContactClient() {
   const [submitted, setSubmitted] = useState(false)
@@ -23,6 +24,7 @@ export default function ContactClient() {
       })
       if (res.ok) {
         setSubmitted(true)
+        trackEvent('contact_form_submission', { city: form.city })
       } else {
         setError(true)
       }

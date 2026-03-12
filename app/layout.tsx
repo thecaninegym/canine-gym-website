@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+import Analytics from "@/components/Analytics";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -11,9 +13,6 @@ const montserrat = Montserrat({
 const OG_IMAGE = 'https://www.thecaninegym.com/og-image.png'
 
 export const metadata: Metadata = {
-  verification: {
-  google: 'vpZzQi7gD0gE0GUfcm3T3StiH9CFs0WsMPv_c7P6A0k',
-},
   title: 'The Canine Gym | Mobile Dog Fitness Hamilton County, IN',
   description: 'Professional mobile dog fitness sessions delivered to your door. Your dog runs on our slatmill right from our van. Serving Carmel, Fishers, Westfield, Noblesville, Zionsville & Geist.',
   openGraph: {
@@ -115,9 +114,20 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body
-        className={`${montserrat.variable} antialiased`}
-      >
+      <body className={`${montserrat.variable} antialiased`}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-L261S4ZCCV"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-L261S4ZCCV');
+          `}
+        </Script>
+        <Analytics />
         {children}
       </body>
     </html>
