@@ -82,5 +82,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${base}/blog/why-regular-exercise-extends-your-dogs-life`,
+      lastModified: new Date('2025-03-01'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${base}/blog/what-is-a-slatmill`,
+      lastModified: new Date('2025-02-01'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${base}/blog/signs-your-dog-is-not-getting-enough-exercise`,
+      lastModified: new Date('2025-02-15'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${base}/blog/dog-obesity-statistics`,
+      lastModified: new Date('2025-01-15'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${base}/blog/how-much-exercise-does-my-dog-need`,
+      lastModified: new Date('2025-01-01'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${base}/blog/benefits-of-consistent-dog-exercise-routine`,
+      lastModified: new Date('2024-12-01'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
   ]
 }
