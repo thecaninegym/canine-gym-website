@@ -19,7 +19,7 @@ const posts = [
     excerpt: "Research from the Dog Aging Project shows that physically active dogs have better cognitive health, fewer medical diagnoses, and live significantly longer than sedentary dogs. Here's what the science says.",
     category: 'Dog Health',
     readTime: '5 min read',
-    date: 'March 2025',
+    date: 'March 2026',
   },
   {
     slug: 'what-is-a-slatmill',
@@ -27,7 +27,7 @@ const posts = [
     excerpt: "Slatmills are non-motorized, dog-powered treadmills that move only when your dog does. We break down how they work, why vets love them, and how they compare to motorized alternatives.",
     category: 'Equipment',
     readTime: '4 min read',
-    date: 'February 2025',
+    date: 'February 2026',
   },
   {
     slug: 'signs-your-dog-is-not-getting-enough-exercise',
@@ -35,7 +35,7 @@ const posts = [
     excerpt: "Destructive behavior, weight gain, restlessness, excessive barking - these are all signs that your dog needs more activity. Learn how to spot them and what to do about it.",
     category: 'Dog Health',
     readTime: '4 min read',
-    date: 'February 2025',
+    date: 'February 2026',
   },
   {
     slug: 'dog-obesity-statistics',
@@ -43,7 +43,7 @@ const posts = [
     excerpt: "More than 56% of dogs in the United States are overweight or obese, and most owners don't know it. We look at the data, the health consequences, and what you can do today.",
     category: 'Dog Health',
     readTime: '6 min read',
-    date: 'January 2025',
+    date: 'January 2026',
   },
   {
     slug: 'how-much-exercise-does-my-dog-need',
@@ -51,7 +51,7 @@ const posts = [
     excerpt: "The answer varies by breed, age, and health - but the baseline is higher than most owners think. We break it down by dog type with practical guidelines you can start using today.",
     category: 'Training Tips',
     readTime: '5 min read',
-    date: 'January 2025',
+    date: 'January 2026',
   },
   {
     slug: 'benefits-of-consistent-dog-exercise-routine',
@@ -59,7 +59,7 @@ const posts = [
     excerpt: '"Weekend warrior" dogs who get intense bursts of exercise are actually at higher risk of injury than dogs with a steady routine. Here\'s why consistency is the most important fitness principle.',
     category: 'Training Tips',
     readTime: '4 min read',
-    date: 'December 2024',
+    date: 'December 2025',
   },
 ]
 

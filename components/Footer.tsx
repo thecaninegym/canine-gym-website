@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
           <div>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontWeight: '700', fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', margin: '0 0 14px 0' }}>Pages</p>
-            {[['How It Works', '/how-it-works'], ['Pricing', '/pricing'], ['About', '/about'], ['FAQ', '/faq'], ['Contact', '/contact']].map(([label, href]) => (
+            {[['How It Works', '/how-it-works'], ['Pricing', '/pricing'], ['About', '/about'], ['FAQ', '/faq'], ['Blog', '/blog'], ['Contact', '/contact']].map(([label, href]) => (
               <a key={href} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontSize: '14px', marginBottom: '8px' }}>{label}</a>
             ))}
           </div>
