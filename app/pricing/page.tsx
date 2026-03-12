@@ -6,6 +6,10 @@ import { PawPrint, Check, BarChart2, Trophy, Star, Shield, Clock, Zap } from 'lu
 export const metadata: Metadata = {
   title: 'Pricing & Memberships | The Canine Gym | Hamilton County',
   description: 'Flexible a la carte sessions and monthly memberships for mobile dog fitness in Hamilton County, IN. We come to you in Carmel, Fishers, Westfield, Noblesville, Zionsville & Geist.',
+  openGraph: {
+    url: 'https://www.thecaninegym.com/pricing',
+    title: 'Pricing & Memberships | The Canine Gym',
+  },
 }
 
 export default function Pricing() {

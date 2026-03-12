@@ -6,6 +6,10 @@ import { PawPrint, Calendar, Zap, BarChart2, MapPin, Clock, Heart, Shield, Check
 export const metadata: Metadata = {
   title: 'How It Works | Mobile Dog Gym Sessions | The Canine Gym',
   description: 'Book online, we drive to your home, your dog runs on a professional slatmill, and you track every stat in the app. Mobile dog fitness made simple in Hamilton County, IN.',
+  openGraph: {
+    url: 'https://www.thecaninegym.com/how-it-works',
+    title: 'How It Works | The Canine Gym',
+  },
 }
 
 export default function HowItWorks() {

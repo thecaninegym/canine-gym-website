@@ -6,6 +6,10 @@ import { PawPrint, MapPin, Calendar, Clock, Check, Shield, BarChart2, Zap } from
 export const metadata: Metadata = {
   title: 'Dog Fitness in Carmel, IN | Mobile Slatmill Sessions | The Canine Gym',
   description: 'The Canine Gym brings professional dog slatmill workouts to your Carmel driveway. 30-minute mobile dog gym sessions serving Carmel, Indiana. Book online today.',
+  openGraph: {
+    url: 'https://www.thecaninegym.com/carmel',
+    title: 'Dog Fitness in Carmel, IN | The Canine Gym',
+  },
 }
 
 export default function Carmel() {

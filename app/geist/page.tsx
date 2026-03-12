@@ -6,6 +6,10 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Zap, Heart } from
 export const metadata: Metadata = {
   title: 'Dog Fitness in Geist, IN | Mobile Dog Gym | The Canine Gym',
   description: 'Professional dog slatmill sessions in the Geist area. The Canine Gym\'s mobile van comes to your driveway for 30-minute canine fitness workouts. Book online today.',
+  openGraph: {
+    url: 'https://www.thecaninegym.com/geist',
+    title: 'Dog Fitness in Geist, IN | The Canine Gym',
+  },
 }
 
 export default function Geist() {

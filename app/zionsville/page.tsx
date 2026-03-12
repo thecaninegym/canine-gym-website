@@ -6,6 +6,10 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Heart, Trophy } f
 export const metadata: Metadata = {
   title: 'Dog Fitness in Zionsville, IN | Mobile Slatmill Sessions | The Canine Gym',
   description: 'Mobile dog gym sessions in Zionsville, Indiana. The Canine Gym brings professional slatmill workouts to your driveway. 30-minute canine fitness sessions. Book today.',
+  openGraph: {
+    url: 'https://www.thecaninegym.com/zionsville',
+    title: 'Dog Fitness in Zionsville, IN | The Canine Gym',
+  },
 }
 
 export default function Zionsville() {
