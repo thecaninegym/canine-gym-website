@@ -125,19 +125,6 @@ export default function Blog() {
         </div>
       </section>
 
-      {/* NEWSLETTER */}
-      <section style={{ padding: '80px 24px', backgroundColor: '#f8f9fa', textAlign: 'center' }}>
-        <div style={{ maxWidth: '560px', margin: '0 auto' }}>
-          <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Stay Updated</p>
-          <h2 style={{ fontSize: '28px', fontWeight: '800', color: '#2c5a9e', margin: '0 0 12px 0' }}>Dog Health Tips, Monthly</h2>
-          <p style={{ color: '#666', fontSize: '15px', margin: '0 0 28px 0', lineHeight: 1.6 }}>Get our latest articles and dog fitness tips delivered to your inbox. No spam, ever.</p>
-          <div style={{ display: 'flex', gap: '10px', maxWidth: '440px', margin: '0 auto' }}>
-            <input type="email" placeholder="Your email address" style={{ flex: 1, padding: '13px 16px', borderRadius: '8px', border: '1px solid #ddd', fontSize: '15px', outline: 'none' }} />
-            <button style={{ backgroundColor: '#f88124', color: 'white', padding: '13px 20px', borderRadius: '8px', border: 'none', fontWeight: 'bold', fontSize: '15px', cursor: 'pointer', whiteSpace: 'nowrap' }}>Subscribe</button>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   )

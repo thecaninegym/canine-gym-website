@@ -28,6 +28,7 @@ export default function Nav() {
           <a href="/pricing" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>Pricing</a>
           <a href="/about" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>About</a>
           <a href="/faq" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>FAQ</a>
+          <a href="/blog" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>Blog</a>
           <a href="/contact" className="nav-link" style={{ color: '#555', textDecoration: 'none', fontSize: '15px', fontWeight: '500' }}>Contact</a>
           <a href="https://app.thecaninegym.com/?mode=login" className="login-link" style={{ color: '#2c5a9e', textDecoration: 'none', fontSize: '15px', fontWeight: '600' }}>Log In</a>
           <a href="https://app.thecaninegym.com/?mode=signup" className="btn-primary-nav" style={{ backgroundColor: '#f88124', color: 'white', padding: '10px 22px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px' }}>Get Started</a>
@@ -42,6 +43,7 @@ export default function Nav() {
           <a href="/pricing" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>Pricing</a>
           <a href="/about" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>About</a>
           <a href="/faq" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>FAQ</a>
+          <a href="/blog" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>Blog</a>
           <a href="/contact" onClick={() => setMenuOpen(false)} style={{ color: '#333', textDecoration: 'none', fontWeight: '500', fontSize: '16px' }}>Contact</a>
           <a href="https://app.thecaninegym.com/?mode=login" style={{ color: '#2c5a9e', textDecoration: 'none', fontWeight: '600', fontSize: '16px' }}>Log In</a>
           <a href="https://app.thecaninegym.com/?mode=signup" style={{ backgroundColor: '#f88124', color: 'white', padding: '12px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '16px', textAlign: 'center' }}>Get Started</a>
