@@ -32,7 +32,7 @@ const posts = [
   {
     slug: 'signs-your-dog-is-not-getting-enough-exercise',
     title: "7 Signs Your Dog Isn't Getting Enough Exercise",
-    excerpt: "Destructive behavior, weight gain, restlessness, excessive barking — these are all signs that your dog needs more activity. Learn how to spot them and what to do about it.",
+    excerpt: "Destructive behavior, weight gain, restlessness, excessive barking - these are all signs that your dog needs more activity. Learn how to spot them and what to do about it.",
     category: 'Dog Health',
     readTime: '4 min read',
     date: 'February 2025',
@@ -48,7 +48,7 @@ const posts = [
   {
     slug: 'how-much-exercise-does-my-dog-need',
     title: 'How Much Exercise Does My Dog Actually Need?',
-    excerpt: "The answer varies by breed, age, and health — but the baseline is higher than most owners think. We break it down by dog type with practical guidelines you can start using today.",
+    excerpt: "The answer varies by breed, age, and health - but the baseline is higher than most owners think. We break it down by dog type with practical guidelines you can start using today.",
     category: 'Training Tips',
     readTime: '5 min read',
     date: 'January 2025',
