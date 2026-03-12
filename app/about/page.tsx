@@ -1,4 +1,10 @@
+import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
+
+export const metadata: Metadata = {
+  title: 'About Us | The Canine Gym | Mobile Dog Fitness Hamilton County',
+  description: 'Meet Mia, founder of The Canine Gym. A mobile dog fitness service bringing professional slatmill workouts to your driveway across Hamilton County, Indiana.',
+}
 import Footer from '@/components/Footer'
 import { PawPrint, Heart, MapPin, Trophy, Star, Users, Zap } from 'lucide-react'
 

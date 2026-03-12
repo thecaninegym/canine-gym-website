@@ -9,8 +9,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "The Canine Gym | Mobile Dog Fitness Hamilton County, IN",
-  description: "Professional dog fitness sessions delivered to your door. Your dog runs on our slatmill right from our van, parked in your driveway. Serving Carmel, Zionsville, Fishers, Geist, Westfield, and Noblesville.",
+  title: 'The Canine Gym | Mobile Dog Fitness Hamilton County, IN',
+  description: 'Professional mobile dog fitness sessions delivered to your door. Your dog runs on our slatmill right from our van. Serving Carmel, Fishers, Westfield, Noblesville, Zionsville & Geist.',
 };
 
 export default function RootLayout({

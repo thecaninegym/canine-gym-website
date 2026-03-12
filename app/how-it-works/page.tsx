@@ -1,6 +1,12 @@
+import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { PawPrint, Calendar, Zap, BarChart2, MapPin, Clock, Heart, Shield, CheckCircle } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'How It Works | Mobile Dog Gym Sessions | The Canine Gym',
+  description: 'Book online, we drive to your home, your dog runs on a professional slatmill, and you track every stat in the app. Mobile dog fitness made simple in Hamilton County, IN.',
+}
 
 export default function HowItWorks() {
   return (

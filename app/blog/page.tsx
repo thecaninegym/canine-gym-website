@@ -1,6 +1,12 @@
+import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { PawPrint, Clock, ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Dog Health & Fitness Blog | The Canine Gym',
+  description: 'Science-backed tips and research on canine fitness, exercise, and health. Learn how regular dog workouts can extend your dog\'s life and improve their wellbeing.',
+}
 
 const posts = [
   {
