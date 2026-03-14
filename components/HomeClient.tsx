@@ -333,9 +333,9 @@ export default function HomeClient() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px', marginBottom: '24px' }}>
             {[
-              { name: 'Starter', sessions: 4, price: '$180', perSession: '$45', color: '#2c5a9e', popular: false },
-              { name: 'Active', sessions: 8, price: '$340', perSession: '$42.50', color: '#f88124', popular: true },
-              { name: 'Athlete', sessions: 12, price: '$480', perSession: '$40', color: '#2c5a9e', popular: false },
+              { name: 'Standard', sessions: 4, price: '$180', perSession: '$45', color: '#2c5a9e', popular: false },
+              { name: 'Pro', sessions: 8, price: '$340', perSession: '$42.50', color: '#f88124', popular: true },
+              { name: 'Elite', sessions: 12, price: '$480', perSession: '$40', color: '#2c5a9e', popular: false },
             ].map((plan) => (
               <div key={plan.name} className="pricing-card" style={{ backgroundColor: 'white', borderRadius: '16px', padding: '32px 28px', border: plan.popular ? '2px solid #f88124' : '1px solid #eee', position: 'relative', boxShadow: plan.popular ? '0 8px 30px rgba(255,107,53,0.15)' : '0 2px 8px rgba(0,0,0,0.06)' }}>
                 {plan.popular && (
