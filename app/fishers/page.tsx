@@ -5,7 +5,7 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Zap, Trophy } fro
 
 export const metadata: Metadata = {
   title: 'Dog Fitness in Fishers, IN | Mobile Dog Gym | The Canine Gym',
-  description: 'Mobile dog fitness sessions in Fishers, Indiana. We bring our professional slatmill van to your driveway for 30-minute canine workouts. Book online today.',
+  description: 'Mobile dog fitness sessions in Fishers, Indiana. We bring our professional slatmill van to your home for 30-minute canine workouts. Book online today.',
   openGraph: {
     url: 'https://www.thecaninegym.com/fishers',
     title: 'Dog Fitness in Fishers, IN | The Canine Gym',
@@ -109,9 +109,9 @@ export default function Fishers() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '32px' }}>
             {[
               { name: 'A La Carte', price: '$55', detail: 'per session', note: 'No commitment' },
-              { name: 'Starter', price: '$45', detail: 'per session', note: '4 sessions/mo' },
-              { name: 'Active', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
-              { name: 'Athlete', price: '$40', detail: 'per session', note: '12 sessions/mo' },
+              { name: 'Standard', price: '$45', detail: 'per session', note: '4 sessions/mo' },
+              { name: 'Pro', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
+              { name: 'Elite', price: '$40', detail: 'per session', note: '12 sessions/mo' },
             ].map((plan, i) => (
               <div key={i} style={{ backgroundColor: plan.popular ? '#2c5a9e' : '#f8f9fa', borderRadius: '14px', padding: '24px 16px', textAlign: 'center', border: plan.popular ? '2px solid #f88124' : '1px solid #eee', position: 'relative' }}>
                 {plan.popular && <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#f88124', color: 'white', padding: '3px 14px', borderRadius: '20px', fontSize: '11px', fontWeight: 'bold', whiteSpace: 'nowrap' }}>POPULAR</div>}

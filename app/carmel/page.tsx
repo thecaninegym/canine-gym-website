@@ -5,7 +5,7 @@ import { PawPrint, MapPin, Calendar, Clock, Check, Shield, BarChart2, Zap } from
 
 export const metadata: Metadata = {
   title: 'Dog Fitness in Carmel, IN | Mobile Slatmill Sessions | The Canine Gym',
-  description: 'The Canine Gym brings professional dog slatmill workouts to your Carmel driveway. 30-minute mobile dog gym sessions serving Carmel, Indiana. Book online today.',
+  description: 'The Canine Gym brings professional dog slatmill workouts to your Carmel home. 30-minute mobile dog gym sessions serving Carmel, Indiana. Book online today.',
   openGraph: {
     url: 'https://www.thecaninegym.com/carmel',
     title: 'Dog Fitness in Carmel, IN | The Canine Gym',
@@ -36,7 +36,7 @@ export default function Carmel() {
             Dog Fitness, Delivered to<br /><span style={{ color: '#f88124' }}>Carmel.</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: 'clamp(16px, 2.5vw, 19px)', lineHeight: 1.6, margin: '0 0 40px 0', maxWidth: '560px', marginLeft: 'auto', marginRight: 'auto' }}>
-            We park our professional slatmill van right in your Carmel driveway. Your dog gets a structured 30-minute workout while you stay home and relax.
+            We park our professional slatmill van right at your Carmel home. Your dog gets a structured 30-minute workout while you stay home and relax.
           </p>
           <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', backgroundColor: '#f88124', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px' }}>
             <PawPrint size={20} /> Book a Session in Carmel
@@ -109,9 +109,9 @@ export default function Carmel() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '32px' }}>
             {[
               { name: 'A La Carte', price: '$55', detail: 'per session', note: 'No commitment' },
-              { name: 'Starter', price: '$45', detail: 'per session', note: '4 sessions/mo' },
-              { name: 'Active', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
-              { name: 'Athlete', price: '$40', detail: 'per session', note: '12 sessions/mo' },
+              { name: 'Standard', price: '$45', detail: 'per session', note: '4 sessions/mo' },
+              { name: 'Pro', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
+              { name: 'Elite', price: '$40', detail: 'per session', note: '12 sessions/mo' },
             ].map((plan, i) => (
               <div key={i} style={{ backgroundColor: plan.popular ? '#2c5a9e' : '#f8f9fa', borderRadius: '14px', padding: '24px 16px', textAlign: 'center', border: plan.popular ? '2px solid #f88124' : '1px solid #eee', position: 'relative' }}>
                 {plan.popular && <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#f88124', color: 'white', padding: '3px 14px', borderRadius: '20px', fontSize: '11px', fontWeight: 'bold', whiteSpace: 'nowrap' }}>POPULAR</div>}
@@ -131,7 +131,7 @@ export default function Carmel() {
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <PawPrint size={48} color="rgba(255,255,255,0.3)" style={{ marginBottom: '24px' }} />
           <h2 style={{ color: 'white', fontSize: 'clamp(26px, 4vw, 40px)', fontWeight: '800', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Ready to Get Your Carmel Dog Running?</h2>
-          <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '17px', margin: '0 0 36px 0', lineHeight: 1.6 }}>Sign up and book your first session. We'll be in your driveway before you know it.</p>
+          <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '17px', margin: '0 0 36px 0', lineHeight: 1.6 }}>Sign up and book your first session. We'll be at your home before you know it.</p>
           <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', backgroundColor: '#f88124', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px' }}>
             <PawPrint size={20} /> Book in Carmel
           </a>

@@ -5,7 +5,7 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Zap, Heart } from
 
 export const metadata: Metadata = {
   title: 'Dog Fitness in Westfield, IN | Mobile Dog Gym | The Canine Gym',
-  description: 'Professional mobile dog fitness sessions in Westfield, Indiana. The Canine Gym brings our slatmill van to your driveway for 30-minute canine workouts. Book today.',
+  description: 'Professional mobile dog fitness sessions in Westfield, Indiana. The Canine Gym brings our slatmill van to your home for 30-minute canine workouts. Book today.',
   openGraph: {
     url: 'https://www.thecaninegym.com/westfield',
     title: 'Dog Fitness in Westfield, IN | The Canine Gym',
@@ -36,7 +36,7 @@ export default function Westfield() {
             Mobile Dog Fitness<br /><span style={{ color: '#f88124' }}>In Westfield.</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: 'clamp(16px, 2.5vw, 19px)', lineHeight: 1.6, margin: '0 0 40px 0', maxWidth: '560px', marginLeft: 'auto', marginRight: 'auto' }}>
-            Westfield's growing communities deserve great dog fitness options. We bring a professional slatmill directly to your driveway, twice a week.
+            Westfield's growing communities deserve great dog fitness options. We bring a professional slatmill directly to your house, twice a week.
           </p>
           <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', backgroundColor: '#f88124', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px' }}>
             <PawPrint size={20} /> Book a Session in Westfield
@@ -109,9 +109,9 @@ export default function Westfield() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '32px' }}>
             {[
               { name: 'A La Carte', price: '$55', detail: 'per session', note: 'No commitment' },
-              { name: 'Starter', price: '$45', detail: 'per session', note: '4 sessions/mo' },
-              { name: 'Active', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
-              { name: 'Athlete', price: '$40', detail: 'per session', note: '12 sessions/mo' },
+              { name: 'Standard', price: '$45', detail: 'per session', note: '4 sessions/mo' },
+              { name: 'Pro', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
+              { name: 'Elite', price: '$40', detail: 'per session', note: '12 sessions/mo' },
             ].map((plan, i) => (
               <div key={i} style={{ backgroundColor: plan.popular ? '#2c5a9e' : '#f8f9fa', borderRadius: '14px', padding: '24px 16px', textAlign: 'center', border: plan.popular ? '2px solid #f88124' : '1px solid #eee', position: 'relative' }}>
                 {plan.popular && <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#f88124', color: 'white', padding: '3px 14px', borderRadius: '20px', fontSize: '11px', fontWeight: 'bold', whiteSpace: 'nowrap' }}>POPULAR</div>}

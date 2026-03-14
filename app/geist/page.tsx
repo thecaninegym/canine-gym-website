@@ -5,7 +5,7 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Zap, Heart } from
 
 export const metadata: Metadata = {
   title: 'Dog Fitness in Geist, IN | Mobile Dog Gym | The Canine Gym',
-  description: 'Professional dog slatmill sessions in the Geist area. The Canine Gym\'s mobile van comes to your driveway for 30-minute canine fitness workouts. Book online today.',
+  description: 'Professional dog slatmill sessions in the Geist area. The Canine Gym\'s mobile van comes to your home for 30-minute canine fitness workouts. Book online today.',
   openGraph: {
     url: 'https://www.thecaninegym.com/geist',
     title: 'Dog Fitness in Geist, IN | The Canine Gym',
@@ -36,7 +36,7 @@ export default function Geist() {
             Dog Fitness Comes<br /><span style={{ color: '#f88124' }}>To Geist.</span>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: 'clamp(16px, 2.5vw, 19px)', lineHeight: 1.6, margin: '0 0 40px 0', maxWidth: '560px', marginLeft: 'auto', marginRight: 'auto' }}>
-            The Geist community loves the outdoors, and so do we. When the weather isn't cooperating, or your dog needs structured conditioning beyond trail walks, The Canine Gym pulls right up to your driveway.
+            The Geist community loves the outdoors, and so do we. When the weather isn't cooperating, or your dog needs structured conditioning beyond trail walks, The Canine Gym pulls right up to your house.
           </p>
           <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', backgroundColor: '#f88124', color: 'white', padding: '16px 36px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '17px' }}>
             <PawPrint size={20} /> Book a Session in Geist
@@ -109,9 +109,9 @@ export default function Geist() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '32px' }}>
             {[
               { name: 'A La Carte', price: '$55', detail: 'per session', note: 'No commitment' },
-              { name: 'Starter', price: '$45', detail: 'per session', note: '4 sessions/mo' },
-              { name: 'Active', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
-              { name: 'Athlete', price: '$40', detail: 'per session', note: '12 sessions/mo' },
+              { name: 'Standard', price: '$45', detail: 'per session', note: '4 sessions/mo' },
+              { name: 'Pro', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
+              { name: 'Elite', price: '$40', detail: 'per session', note: '12 sessions/mo' },
             ].map((plan, i) => (
               <div key={i} style={{ backgroundColor: plan.popular ? '#2c5a9e' : '#f8f9fa', borderRadius: '14px', padding: '24px 16px', textAlign: 'center', border: plan.popular ? '2px solid #f88124' : '1px solid #eee', position: 'relative' }}>
                 {plan.popular && <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#f88124', color: 'white', padding: '3px 14px', borderRadius: '20px', fontSize: '11px', fontWeight: 'bold', whiteSpace: 'nowrap' }}>POPULAR</div>}

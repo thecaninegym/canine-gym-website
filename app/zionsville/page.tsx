@@ -5,7 +5,7 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Heart, Trophy } f
 
 export const metadata: Metadata = {
   title: 'Dog Fitness in Zionsville, IN | Mobile Slatmill Sessions | The Canine Gym',
-  description: 'Mobile dog gym sessions in Zionsville, Indiana. The Canine Gym brings professional slatmill workouts to your driveway. 30-minute canine fitness sessions. Book today.',
+  description: 'Mobile dog gym sessions in Zionsville, Indiana. The Canine Gym brings professional slatmill workouts to your home. 30-minute canine fitness sessions. Book today.',
   openGraph: {
     url: 'https://www.thecaninegym.com/zionsville',
     title: 'Dog Fitness in Zionsville, IN | The Canine Gym',
@@ -109,9 +109,9 @@ export default function Zionsville() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '32px' }}>
             {[
               { name: 'A La Carte', price: '$55', detail: 'per session', note: 'No commitment' },
-              { name: 'Starter', price: '$45', detail: 'per session', note: '4 sessions/mo' },
-              { name: 'Active', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
-              { name: 'Athlete', price: '$40', detail: 'per session', note: '12 sessions/mo' },
+              { name: 'Standard', price: '$45', detail: 'per session', note: '4 sessions/mo' },
+              { name: 'Pro', price: '$42.50', detail: 'per session', note: '8 sessions/mo', popular: true },
+              { name: 'Elite', price: '$40', detail: 'per session', note: '12 sessions/mo' },
             ].map((plan, i) => (
               <div key={i} style={{ backgroundColor: plan.popular ? '#2c5a9e' : '#f8f9fa', borderRadius: '14px', padding: '24px 16px', textAlign: 'center', border: plan.popular ? '2px solid #f88124' : '1px solid #eee', position: 'relative' }}>
                 {plan.popular && <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#f88124', color: 'white', padding: '3px 14px', borderRadius: '20px', fontSize: '11px', fontWeight: 'bold', whiteSpace: 'nowrap' }}>POPULAR</div>}
