@@ -31,7 +31,7 @@ export default function HomeClient() {
     { q: 'What areas do you serve?', a: 'We currently serve Carmel, Zionsville, Fishers, Geist, Westfield, and Noblesville in Hamilton County, Indiana.' },
     { q: 'How long is each session?', a: 'Each session is 30 minutes. We come to your home, set up in our van, and your dog gets a full workout while you relax inside.' },
     { q: 'What size dogs can use the slatmill?', a: 'Our slatmills accommodate most breeds and sizes. We will assess your dog on the first session to make sure they are comfortable and safe on the equipment.' },
-    { q: 'Do I need to be home during the session?', a: 'Yes, a responsible adult must be present at the time of the session.' },
+    { q: 'Do I need to be home during the session?', a: 'No you do not. Although we encourage you to be home in case you would like to watch the session or bring your dog to us. If you are not home, you can leave a note in booking with how you would like us to retrieve your dog.' },
     { q: 'How do memberships work?', a: 'Memberships give you a set number of sessions per month at a discounted rate. Sessions reset on the 1st of each month. You can also book individual a la carte sessions without a membership.' },
   ]
 
