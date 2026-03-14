@@ -44,9 +44,9 @@ export default function Pricing() {
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <div className="plans-grid">
             {[
-              { name: 'Starter', sessions: 4, price: '$180', perSession: '$45', color: '#2c5a9e', popular: false, desc: 'Perfect for getting started and building a routine.' },
-              { name: 'Active', sessions: 8, price: '$340', perSession: '$42.50', color: '#f88124', popular: true, desc: 'Our most popular plan for committed dog owners.' },
-              { name: 'Athlete', sessions: 12, price: '$480', perSession: '$40', color: '#2c5a9e', popular: false, desc: 'Maximum results for serious fitness goals.' },
+              { name: 'Standard', sessions: 4, price: '$180', perSession: '$45', color: '#2c5a9e', popular: false, desc: 'Perfect for getting started and building a routine.' },
+              { name: 'Pro', sessions: 8, price: '$340', perSession: '$42.50', color: '#f88124', popular: true, desc: 'Our most popular plan for committed dog owners.' },
+              { name: 'Elite', sessions: 12, price: '$480', perSession: '$40', color: '#2c5a9e', popular: false, desc: 'Maximum results for serious fitness goals.' },
             ].map((plan) => (
               <div key={plan.name} style={{ backgroundColor: 'white', borderRadius: '16px', padding: '36px 28px', border: plan.popular ? '2px solid #f88124' : '1px solid #eee', position: 'relative', boxShadow: plan.popular ? '0 8px 30px rgba(255,107,53,0.15)' : '0 2px 8px rgba(0,0,0,0.06)' }}>
                 {plan.popular && (
