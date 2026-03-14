@@ -11,10 +11,10 @@ export default function FaqClient() {
     {
       label: 'The Service',
       faqs: [
-        { q: 'What is The Canine Gym?', a: 'The Canine Gym is a mobile dog fitness service. We bring a professional slatmill treadmill to your home in our van and give your dog a structured 30-minute workout, right in your driveway.' },
+        { q: 'What is The Canine Gym?', a: 'The Canine Gym is a mobile dog fitness service. We bring a professional slatmill treadmill to your home in our van and give your dog a structured 30-minute workout, right in your house.' },
         { q: 'What is a slatmill?', a: 'A slatmill is a non-motorized treadmill designed specifically for dogs. Unlike electric treadmills, the belt only moves when your dog walks or runs, they control the speed entirely. This makes it safer, more natural, and more effective for building real fitness.' },
         { q: 'How long is each session?', a: 'Each session is 30 minutes. We arrive, set up, run your dog, and pack up, typically in about 45 minutes total from arrival to departure.' },
-        { q: 'Do I need to be home during the session?', a: 'Yes, a responsible adult must be present at your home during the session.' },
+        { q: 'Do I need to be home during the session?', a: 'No you do not. Although we encourage you to be home in case you would like to watch the session or bring your dog to us. If you are not home, you can leave a note in booking with how you would like us to retrieve your dog.' },
         { q: 'What happens during the first session?', a: 'First-time dogs get an introductory session where we ease them onto the slatmill at their own pace. Some dogs jump right on, others take a few minutes to get comfortable. We never rush the process.' },
       ]
     },
