@@ -169,7 +169,7 @@ export default function HomeClient() {
             <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Real-Time Tracking</p>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: 'white', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Technology That Sets Us Apart</h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.6 }}>
-              Our custom-built slatmill sensor tracks your dog's performance in real time. The moment your session ends, all stats are automatically synced to your dashboard — no waiting, no guessing.
+              Our custom-built slatmill sensor tracks your dog's performance in real time. The moment your session ends, all stats are automatically synced to your dashboard. No waiting, no guessing.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'center' }}>
