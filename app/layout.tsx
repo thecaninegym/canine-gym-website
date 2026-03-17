@@ -15,6 +15,9 @@ const OG_IMAGE = 'https://www.thecaninegym.com/og-image.png'
 export const metadata: Metadata = {
   title: 'The Canine Gym | Mobile Dog Fitness Hamilton County, IN',
   description: 'Professional mobile dog fitness sessions delivered to your door. Your dog runs on our slatmill right from our van. Serving Carmel, Fishers, Westfield, Noblesville, Zionsville & Geist.',
+  alternates: {
+    canonical: 'https://www.thecaninegym.com',
+  },
   openGraph: {
     siteName: 'The Canine Gym',
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'The Canine Gym – Mobile Dog Fitness, Hamilton County, Indiana' }],
