@@ -39,7 +39,7 @@ export default function FaqClient() {
     {
       label: 'Stats & Tracking',
       faqs: [
-        { q: 'How does the stat tracking work?', a: 'Your dog wears our fitness tracker during each session. When the session ends, all data, distance, calories, heart rate, speed, duration, and more, is automatically synced to your dashboard in the app.' },
+        { q: 'How does the stat tracking work?', a: 'Our custom-built slatmill sensor tracks your dog\'s performance during every session. When the session ends, stats including distance, avg speed, peak speed, duration, and calories are automatically synced to your dashboard in the app.' },
         { q: 'What stats are tracked?', a: 'We track distance (miles), calories burned, session duration, heart rate, top speed, average pace, body temperature, and exertion level. More metrics are coming soon.' },
         { q: 'What is the leaderboard?', a: 'The leaderboard ranks dogs in your city by total sessions, miles run, or calories burned for the current month. It resets monthly. You can choose to participate publicly, anonymously, or opt out entirely.' },
         { q: 'What are achievements?', a: 'Achievements are badges your dog earns by hitting milestones, like completing their first session, running 10 miles total, or booking 5 sessions in a month. They show up on your dashboard and leaderboard profile.' },

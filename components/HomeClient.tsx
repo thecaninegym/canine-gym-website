@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation, Gauge, Heart, Thermometer, Timer, Activity, Plus } from 'lucide-react'
+import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation, Gauge, Timer, Activity } from 'lucide-react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
@@ -169,7 +169,7 @@ export default function HomeClient() {
             <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>Real-Time Tracking</p>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: 'white', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>Technology That Sets Us Apart</h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '17px', maxWidth: '580px', margin: '0 auto', lineHeight: 1.6 }}>
-              Every dog wears our fitness tracker during their session. The moment your session ends, all metrics are instantly synced to your dashboard, no waiting, no guessing.
+              Our custom-built slatmill sensor tracks your dog's performance in real time. The moment your session ends, all stats are automatically synced to your dashboard — no waiting, no guessing.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'center' }}>
@@ -180,21 +180,15 @@ export default function HomeClient() {
                   { icon: <Navigation size={14} />, label: 'Distance (Miles)' },
                   { icon: <Flame size={14} />, label: 'Calories Burned' },
                   { icon: <Timer size={14} />, label: 'Session Duration' },
-                  { icon: <Heart size={14} />, label: 'Heart Rate' },
-                  { icon: <Zap size={14} />, label: 'Top Speed' },
-                  { icon: <Gauge size={14} />, label: 'Avg. Pace' },
-                  { icon: <Thermometer size={14} />, label: 'Body Temperature' },
-                  { icon: <Activity size={14} />, label: 'Exertion Level' },
+                  { icon: <Zap size={14} />, label: 'Peak Speed (mph)' },
+                  { icon: <Gauge size={14} />, label: 'Avg. Speed (mph)' },
+                  { icon: <Activity size={14} />, label: 'Slatmill Rotations' },
                 ].map((metric, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 16px', color: 'white' }}>
                     {metric.icon}
                     <span style={{ fontSize: '13px', fontWeight: '600' }}>{metric.label}</span>
                   </div>
                 ))}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', backgroundColor: 'rgba(255,107,53,0.2)', border: '1px solid rgba(255,107,53,0.3)', borderRadius: '30px', padding: '8px 16px', color: '#f88124' }}>
-                  <Plus size={14} />
-                  <span style={{ fontSize: '13px', fontWeight: '600' }}>More Coming Soon</span>
-                </div>
               </div>
             </div>
             <div style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '20px', padding: '32px', border: '1px solid rgba(255,255,255,0.12)' }}>
@@ -209,9 +203,9 @@ export default function HomeClient() {
               </div>
               {[
                 { label: 'Total Sessions This Month', value: '8', icon: <Calendar size={16} color="#f88124" /> },
-                { label: 'Total Miles Run', value: '12.4 mi', icon: <Navigation size={16} color="#f88124" /> },
-                { label: 'Calories Burned', value: '3,840 cal', icon: <Flame size={16} color="#f88124" /> },
-                { label: 'Achievements Earned', value: '5 badges', icon: <Trophy size={16} color="#FFD700" /> },
+                { label: 'Total Miles Run', value: '4.2 mi', icon: <Navigation size={16} color="#f88124" /> },
+                { label: 'Avg. Speed This Month', value: '3.8 mph', icon: <Gauge size={16} color="#f88124" /> },
+                { label: 'Calories Burned', value: '1,240 cal', icon: <Flame size={16} color="#f88124" /> },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 0', borderBottom: i < 3 ? '1px solid rgba(255,255,255,0.08)' : 'none' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>

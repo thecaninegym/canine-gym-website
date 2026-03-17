@@ -53,7 +53,7 @@ export default function HowItWorks() {
               icon: <Zap size={28} color="#f88124" />,
               title: 'Your Dog Runs',
               desc: 'Your dog gets a 30-minute session on our slatmill, a non-motorized treadmill powered entirely by your dog. The belt only moves when they do, making it safe, natural, and incredibly effective for building fitness.',
-              details: ['30-minute structured workout', 'Slatmill speed is dog-controlled, always safe', 'First-timers get an intro session to get comfortable', 'Your dog wears our fitness tracker throughout'],
+              details: ['30-minute structured workout', 'Slatmill speed is dog-controlled, always safe', 'First-timers get an intro session to get comfortable', 'Our sensor tracks distance, speed, and calories throughout'],
               color: '#fff4e6',
               accent: '#f88124',
             },

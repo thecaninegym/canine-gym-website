@@ -102,7 +102,7 @@ export default function Pricing() {
           <h2 style={{ fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: '800', color: '#2c5a9e', margin: '0 0 48px 0', letterSpacing: '-0.5px' }}>Everything You Need</h2>
           <div className="includes-grid">
             {[
-              { icon: <BarChart2 size={24} color="#f88124" />, title: 'Real-Time Stats', desc: 'Distance, calories, heart rate, speed, all synced instantly after every session.' },
+              { icon: <BarChart2 size={24} color="#f88124" />, title: 'Real-Time Stats', desc: 'Distance, calories, avg speed, peak speed — all synced instantly after every session.' },
               { icon: <Trophy size={24} color="#f88124" />, title: 'Achievements', desc: 'Your dog earns badges as they hit milestones. A fun way to celebrate progress.' },
               { icon: <Star size={24} color="#f88124" />, title: 'Leaderboard', desc: 'Compete on a city-wide monthly leaderboard and see how your dog stacks up.' },
               { icon: <Shield size={24} color="#f88124" />, title: 'Professional Sessions', desc: 'Every session is supervised by a trained handler using professional equipment.' },
