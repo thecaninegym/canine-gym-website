@@ -32,7 +32,11 @@ export default function Footer() {
         </div>
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
           <p style={{ color: 'rgba(255,255,255,0.3)', fontSize: '13px', margin: 0 }}>© {new Date().getFullYear()} The Canine Gym · Hamilton County, IN</p>
-          <a href="https://app.thecaninegym.com" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', fontSize: '13px' }}>Client Login →</a>
+          <div style={{ display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap' }}>
+            <a href="/privacy-policy" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', fontSize: '13px' }}>Privacy Policy</a>
+            <a href="/terms" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', fontSize: '13px' }}>Terms of Service</a>
+            <a href="https://app.thecaninegym.com" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', fontSize: '13px' }}>Client Login →</a>
+          </div>
         </div>
       </div>
     </footer>
