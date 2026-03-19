@@ -110,11 +110,6 @@ export default function Terms() {
           </div>
         ))}
 
-        <div style={{ background: '#f0f2f7', borderRadius: '12px', padding: '24px', marginTop: '48px' }}>
-          <p style={{ margin: 0, fontSize: '13px', color: '#888', lineHeight: 1.7 }}>
-            <strong style={{ color: '#001840' }}>Disclaimer:</strong> These Terms of Service are provided for informational purposes and may not cover all legal requirements applicable to your jurisdiction. We recommend consulting a qualified attorney to ensure full legal compliance.
-          </p>
-        </div>
       </div>
 
       <Footer />
