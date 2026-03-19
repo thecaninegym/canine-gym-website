@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
           {
             title: '1. Information We Collect',
             content: [
-              'Account Information: When you create an account, we collect your name, email address, phone number, and billing information.',
+              'Account Information: When you create an account, we collect your name, email address, and phone number.',
               'Dog Information: We collect information about your dog including name, breed, age, weight, and health records such as vaccination history.',
               'Session Data: We collect data from each fitness session including duration, distance, speed, and calories burned, measured by our custom slatmill sensor.',
               'Payment Information: Payments are processed by Stripe. We do not store your full credit card number on our servers.',
@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
               'To provide, operate, and improve our services.',
               'To process bookings and payments.',
               'To send session reports, booking confirmations, and reminders via email and SMS.',
-              'To track your dog\'s fitness progress over time.',
+              "To track your dog's fitness progress over time.",
               'To respond to your inquiries and provide customer support.',
               'To comply with legal obligations.',
             ]
@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
             ]
           },
           {
-            title: '7. Children\'s Privacy',
+            title: "7. Children's Privacy",
             content: [
               'Our services are not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us and we will promptly delete it.',
             ]
@@ -97,12 +97,6 @@ export default function PrivacyPolicy() {
             ))}
           </div>
         ))}
-
-        <div style={{ background: '#f0f2f7', borderRadius: '12px', padding: '24px', marginTop: '48px' }}>
-          <p style={{ margin: 0, fontSize: '13px', color: '#888', lineHeight: 1.7 }}>
-            <strong style={{ color: '#001840' }}>Disclaimer:</strong> This Privacy Policy is provided for informational purposes and may not cover all legal requirements applicable to your jurisdiction. We recommend consulting a qualified attorney to ensure full compliance with applicable privacy laws.
-          </p>
-        </div>
       </div>
 
       <Footer />
