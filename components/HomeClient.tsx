@@ -175,7 +175,7 @@ export default function HomeClient() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'center' }}>
             <div>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Metrics Tracked Per Session</p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
                 {[
                   { icon: <Navigation size={14} />, label: 'Distance (Miles)' },
                   { icon: <Flame size={14} />, label: 'Calories Burned' },
