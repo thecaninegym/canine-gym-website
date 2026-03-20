@@ -190,7 +190,7 @@ export default function HomeClient() {
                   { icon: <Trophy size={14} />, label: 'Effort Score' },
                   { icon: <PawPrint size={14} />, label: 'Dog Weight' },
                 ].map((metric, i) => (
-                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 16px', color: 'white' }}>
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 14px', color: 'white', width: 'calc(33.333% - 7px)', boxSizing: 'border-box', whiteSpace: 'nowrap' }}>
                     {metric.icon}
                     <span style={{ fontSize: '13px', fontWeight: '600' }}>{metric.label}</span>
                   </div>
