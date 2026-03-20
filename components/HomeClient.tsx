@@ -175,7 +175,7 @@ export default function HomeClient() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'center' }}>
             <div>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Metrics Tracked Per Session</p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                 {[
                   { icon: <Navigation size={14} />, label: 'Distance (Miles)' },
                   { icon: <Flame size={14} />, label: 'Calories Burned' },
@@ -190,9 +190,9 @@ export default function HomeClient() {
                   { icon: <Trophy size={14} />, label: 'Effort Score' },
                   { icon: <PawPrint size={14} />, label: 'Dog Weight' },
                 ].map((metric, i) => (
-                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 14px', color: 'white', width: 'calc(33.333% - 7px)', boxSizing: 'border-box', whiteSpace: 'nowrap' }}>
-                    {metric.icon}
-                    <span style={{ fontSize: '13px', fontWeight: '600' }}>{metric.label}</span>
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 12px', color: 'white', width: 'calc(33.333% - 7px)', boxSizing: 'border-box' as const }}>
+                    <span style={{ flexShrink: 0 }}>{metric.icon}</span>
+                    <span style={{ fontSize: '12px', fontWeight: '600', lineHeight: 1.2 }}>{metric.label}</span>
                   </div>
                 ))}
               </div>
