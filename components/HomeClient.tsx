@@ -182,7 +182,13 @@ export default function HomeClient() {
                   { icon: <Timer size={14} />, label: 'Session Duration' },
                   { icon: <Zap size={14} />, label: 'Peak Speed (mph)' },
                   { icon: <Gauge size={14} />, label: 'Avg. Speed (mph)' },
-                  { icon: <Activity size={14} />, label: 'Slatmill Rotations' },
+                  { icon: <Clock size={14} />, label: 'Active vs Rest Time' },
+                  { icon: <BarChart2 size={14} />, label: 'Pace Consistency' },
+                  { icon: <BarChart2 size={14} />, label: 'Speed Zones' },
+                  { icon: <Zap size={14} />, label: 'Acceleration' },
+                  { icon: <Timer size={14} />, label: 'Top Speed Duration' },
+                  { icon: <Trophy size={14} />, label: 'Effort Score' },
+                  { icon: <PawPrint size={14} />, label: 'Dog Weight' },
                 ].map((metric, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 16px', color: 'white' }}>
                     {metric.icon}
