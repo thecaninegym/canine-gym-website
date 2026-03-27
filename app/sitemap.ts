@@ -113,6 +113,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${base}/blog/best-dog-breeds-for-slatmill-training`,
+      lastModified: new Date('2026-03-15'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${base}/blog/mobile-dog-fitness-vs-dog-daycare`,
+      lastModified: new Date('2026-03-20'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
       url: `${base}/blog/benefits-of-consistent-dog-exercise-routine`,
       lastModified: new Date('2025-12-01'),
       changeFrequency: 'yearly',
