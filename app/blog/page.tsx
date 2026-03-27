@@ -57,6 +57,22 @@ const posts = [
     date: 'January 2026',
   },
   {
+    slug: 'best-dog-breeds-for-slatmill-training',
+    title: 'Best Dog Breeds for Slatmill Training (And How Any Dog Can Benefit)',
+    excerpt: 'Some breeds are natural slatmill athletes. Others need more encouragement. Here is a practical breed-by-breed guide to slatmill training and why almost every dog can benefit.',
+    category: 'Dog Health',
+    readTime: '5 min read',
+    date: 'March 2026',
+  },
+  {
+    slug: 'mobile-dog-fitness-vs-dog-daycare',
+    title: 'Mobile Dog Fitness vs. Dog Daycare: Which Is Actually Better for Your Dog?',
+    excerpt: "Dog daycare and mobile fitness both promise to tire your dog out — but they work very differently. An honest side-by-side comparison of what each actually delivers for your dog's health.",
+    category: 'Dog Health',
+    readTime: '5 min read',
+    date: 'March 2026',
+  },
+  {
     slug: 'benefits-of-consistent-dog-exercise-routine',
     title: 'Why Consistency Matters More Than Intensity for Dog Fitness',
     excerpt: '"Weekend warrior" dogs who get intense bursts of exercise are actually at higher risk of injury than dogs with a steady routine. Here\'s why consistency is the most important fitness principle.',
