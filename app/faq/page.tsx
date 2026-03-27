@@ -4,6 +4,9 @@ import FaqClient from '@/components/FaqClient'
 export const metadata: Metadata = {
   title: 'FAQ | Dog Slatmill & Mobile Fitness Questions | The Canine Gym',
   description: 'Common questions about dog slatmill sessions, memberships, safety, and how The Canine Gym mobile dog fitness service works in Hamilton County, IN.',
+ alternates: {
+    canonical: 'https://www.thecaninegym.com/faq',
+  },
   openGraph: {
     url: 'https://www.thecaninegym.com/faq',
     title: 'FAQ | The Canine Gym',

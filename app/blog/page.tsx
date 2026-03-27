@@ -6,6 +6,9 @@ import { Clock, ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Dog Health & Fitness Blog | The Canine Gym',
   description: 'Science-backed tips and research on canine fitness, exercise, and health. Learn how regular dog workouts can extend your dog\'s life and improve their wellbeing.',
+  alternates: {
+    canonical: 'https://www.thecaninegym.com/blog',
+  },
   openGraph: {
     url: 'https://www.thecaninegym.com/blog',
     title: 'Dog Health & Fitness Blog | The Canine Gym',

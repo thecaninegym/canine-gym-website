@@ -6,6 +6,9 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Zap, Trophy } fro
 export const metadata: Metadata = {
   title: 'Dog Fitness in Fishers, IN | Mobile Dog Gym | The Canine Gym',
   description: 'Mobile dog fitness sessions in Fishers, Indiana. We bring our professional slatmill van to your home for 30-minute canine workouts. Book online today.',
+  alternates: {
+    canonical: 'https://www.thecaninegym.com/fishers',
+  },
   openGraph: {
     url: 'https://www.thecaninegym.com/fishers',
     title: 'Dog Fitness in Fishers, IN | The Canine Gym',

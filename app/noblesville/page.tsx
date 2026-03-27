@@ -6,6 +6,9 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Zap, Star } from 
 export const metadata: Metadata = {
   title: 'Dog Fitness in Noblesville, IN | Mobile Dog Gym | The Canine Gym',
   description: 'The Canine Gym serves Noblesville, Indiana with mobile dog slatmill sessions. Professional canine fitness delivered to your home. Book online today.',
+  alternates: {
+    canonical: 'https://www.thecaninegym.com/noblesville',
+  },
   openGraph: {
     url: 'https://www.thecaninegym.com/noblesville',
     title: 'Dog Fitness in Noblesville, IN | The Canine Gym',

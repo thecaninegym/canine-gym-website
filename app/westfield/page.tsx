@@ -6,6 +6,9 @@ import { PawPrint, MapPin, Calendar, Clock, Shield, BarChart2, Zap, Heart } from
 export const metadata: Metadata = {
   title: 'Dog Fitness in Westfield, IN | Mobile Dog Gym | The Canine Gym',
   description: 'Professional mobile dog fitness sessions in Westfield, Indiana. The Canine Gym brings our slatmill van to your home for 30-minute canine workouts. Book today.',
+  alternates: {
+    canonical: 'https://www.thecaninegym.com/westfield',
+  },
   openGraph: {
     url: 'https://www.thecaninegym.com/westfield',
     title: 'Dog Fitness in Westfield, IN | The Canine Gym',
