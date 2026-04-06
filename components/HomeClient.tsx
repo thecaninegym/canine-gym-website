@@ -88,6 +88,7 @@ export default function HomeClient() {
       </section>
 
       {/* PLACEHOLDER IMAGE STRIP */}
+      {/* TEMPORARILY HIDDEN - uncomment wehn photos are ready}
       <div style={{ backgroundColor: '#f8f9fa', padding: '48px 0', borderBottom: '1px solid #eee' }}>
         <style>{`
           .image-strip {
@@ -133,6 +134,7 @@ export default function HomeClient() {
         </div>
         <p className="image-strip-hint" style={{ textAlign: 'center', color: '#adb5bd', fontSize: '12px', marginTop: '12px', letterSpacing: '0.5px' }}>← swipe to see more →</p>
       </div>
+      */}
 
       {/* HOW IT WORKS */}
       <section id="how-it-works" style={{ padding: '80px 24px', backgroundColor: 'white' }}>
