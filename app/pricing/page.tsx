@@ -47,7 +47,7 @@ export default function Pricing() {
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
 
           {/* Intro package callout */}
-          <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '28px 32px', border: '2px solid #2c5a9e', marginBottom: '40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
+          <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '28px 24px', border: '2px solid #2c5a9e', marginBottom: '32px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '44px', height: '44px', backgroundColor: '#2c5a9e', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <PawPrint size={22} color="white" />
@@ -62,8 +62,8 @@ export default function Pricing() {
                 </p>
               </div>
             </div>
-            <div style={{ textAlign: 'right', flexShrink: 0 }}>
-              <div style={{ fontSize: '32px', fontWeight: '900', color: '#111', marginBottom: '8px' }}>$85<span style={{ fontSize: '14px', color: '#999', fontWeight: '400' }}> / 2 sessions</span></div>
+            <div style={{ marginTop: '20px', paddingLeft: '60px' }}>
+              <div style={{ fontSize: '32px', fontWeight: '900', color: '#111', marginBottom: '10px' }}>$85<span style={{ fontSize: '14px', color: '#999', fontWeight: '400' }}> / 2 sessions</span></div>
               <a href="https://app.thecaninegym.com" style={{ display: 'inline-block', backgroundColor: '#2c5a9e', color: 'white', padding: '11px 24px', borderRadius: '8px', textDecoration: 'none', fontWeight: '700', fontSize: '14px' }}>Get Started</a>
             </div>
           </div>
