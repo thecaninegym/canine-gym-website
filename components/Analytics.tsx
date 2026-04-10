@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 declare global {
   interface Window {
     gtag: (...args: unknown[]) => void
+    fbq: (...args: unknown[]) => void
   }
 }
 
@@ -21,10 +22,19 @@ export default function Analytics() {
       const href = target.getAttribute('href') || ''
       if (href.includes('app.thecaninegym.com')) {
         const label = target.textContent?.trim() || 'unknown'
+
+        // GA4
         trackEvent('app_link_click', {
           link_text: label,
           link_url: href,
         })
+
+        // Meta Pixel
+        if (typeof window !== 'undefined' && window.fbq) {
+          if (href.includes('mode=signup') || !href.includes('mode=login')) {
+            window.fbq('track', 'Lead')
+          }
+        }
       }
     }
     document.addEventListener('click', handleClick)
