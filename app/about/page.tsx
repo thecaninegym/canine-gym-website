@@ -50,10 +50,7 @@ export default function About() {
         <div className="founder-grid">
           <div className="founder-photo">
             <div style={{ position: 'relative' }}>
-              <div style={{ backgroundColor: '#eef2fb', borderRadius: '24px', height: '480px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '12px' }}>
-                <PawPrint size={56} color="#2c5a9e" style={{ opacity: 0.2 }} />
-                <p style={{ color: '#aaa', fontSize: '13px', margin: 0 }}>Photo of Mia coming soon</p>
-              </div>
+              <img src="/mia.jpeg" alt="Mia, founder of The Canine Gym, with her two pugs" style={{ borderRadius: '24px', width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'top', display: 'block' }} />
               <div style={{ position: 'absolute', bottom: '24px', right: '-20px', backgroundColor: '#f88124', borderRadius: '16px', padding: '16px 20px', boxShadow: '0 8px 32px rgba(255,107,53,0.35)' }}>
                 <p style={{ color: 'white', fontWeight: '800', fontSize: '22px', margin: 0, lineHeight: 1 }}>6+</p>
                 <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '12px', margin: '4px 0 0 0' }}>Years with Dogs</p>
