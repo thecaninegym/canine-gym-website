@@ -149,6 +149,7 @@ export default function SessionPreview() {
           overflow-x: hidden;
           -webkit-overflow-scrolling: touch;
           scrollbar-width: none;
+          text-align: left;
         }
         .sp-scroll::-webkit-scrollbar { display: none; }
         .sp-stat-grid {
