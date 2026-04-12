@@ -200,7 +200,7 @@ export default function SessionPreview() {
             <img src="/logo.png" alt="The Canine Gym" style={{ height: '28px', width: 'auto' }} />
           </div>
 
-          <div style={{ padding: '14px 12px', fontFamily: "'Montserrat', system-ui, sans-serif" }}>
+          <div style={{ padding: '14px 12px', fontFamily: "'Montserrat', system-ui, sans-serif", maxWidth: '400px', margin: '0 auto' }}>
 
             {/* Hero */}
             <div style={{ background: 'linear-gradient(135deg, #001840 0%, #2c5a9e 100%)', borderRadius: '14px', padding: '16px 14px', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '12px' }}>
