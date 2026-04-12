@@ -193,7 +193,7 @@ export default function HomeClient() {
                   { icon: <Trophy size={14} />, label: 'Effort Score' },
                   { icon: <PawPrint size={14} />, label: 'Dog Weight' },
                 ].map((metric, i) => (
-                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 12px', color: 'white', width: 'calc(33.333% - 7px)', boxSizing: 'border-box' as const }}>
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '30px', padding: '8px 12px', color: 'white', flex: '1 1 calc(50% - 5px)', minWidth: '140px', boxSizing: 'border-box' as const }}>
                     <span style={{ flexShrink: 0 }}>{metric.icon}</span>
                     <span style={{ fontSize: '12px', fontWeight: '600', lineHeight: 1.2 }}>{metric.label}</span>
                   </div>

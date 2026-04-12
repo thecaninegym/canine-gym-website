@@ -142,17 +142,7 @@ export default function SessionPreview() {
           margin-bottom: 36px;
         }
         .sp-notch { display: none; }
-        .sp-camera {
-          position: absolute;
-          top: 8px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background: #555;
-          z-index: 10;
-        }
+        .sp-camera { display: none; }
         .sp-scroll {
           height: 100%;
           overflow-y: auto;
