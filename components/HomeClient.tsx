@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { PawPrint, MapPin, Calendar, BarChart2, Trophy, ChevronDown, Menu, X, Check, Star, Zap, Shield, Clock, Flame, Navigation, Gauge, Timer, Activity } from 'lucide-react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import SessionPreview from '@/components/SessionPreview'
 
 export default function HomeClient() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -199,33 +200,11 @@ export default function HomeClient() {
                 ))}
               </div>
             </div>
-            <div style={{ backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '20px', padding: '32px', border: '1px solid rgba(255,255,255,0.12)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
-                <div style={{ width: '40px', height: '40px', backgroundColor: '#f88124', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <BarChart2 size={20} color="white" />
-                </div>
-                <div>
-                  <p style={{ color: 'white', fontWeight: '700', margin: 0, fontSize: '15px' }}>Live Dashboard</p>
-                  <p style={{ color: 'rgba(255,255,255,0.5)', margin: 0, fontSize: '12px' }}>Updated after every session</p>
-                </div>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
+              <div style={{ textAlign: 'center' }}>
+                <SessionPreview />
+                <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', marginTop: '14px', fontWeight: '600' }}>↕ Scroll to explore · Tap stats to switch chart</p>
               </div>
-              {[
-                { label: 'Total Sessions This Month', value: '8', icon: <Calendar size={16} color="#f88124" /> },
-                { label: 'Total Miles Run', value: '4.2 mi', icon: <Navigation size={16} color="#f88124" /> },
-                { label: 'Avg. Speed This Month', value: '3.8 mph', icon: <Gauge size={16} color="#f88124" /> },
-                { label: 'Calories Burned', value: '1,240 cal', icon: <Flame size={16} color="#f88124" /> },
-              ].map((item, i) => (
-                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 0', borderBottom: i < 3 ? '1px solid rgba(255,255,255,0.08)' : 'none' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    {item.icon}
-                    <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '13px' }}>{item.label}</span>
-                  </div>
-                  <span style={{ color: 'white', fontWeight: '700', fontSize: '15px' }}>{item.value}</span>
-                </div>
-              ))}
-              <a href="https://app.thecaninegym.com" className="btn-primary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '20px', backgroundColor: '#f88124', color: 'white', padding: '13px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px' }}>
-                <PawPrint size={16} /> See Your Dog's Dashboard
-              </a>
             </div>
           </div>
         </div>

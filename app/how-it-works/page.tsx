@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { PawPrint, Calendar, Zap, BarChart2, MapPin, Clock, Heart, Shield, CheckCircle } from 'lucide-react'
+import SessionPreview from '@/components/SessionPreview'
 
 export const metadata: Metadata = {
   title: 'How It Works | Mobile Dog Gym Sessions | The Canine Gym',
@@ -99,6 +100,48 @@ export default function HowItWorks() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* INTERACTIVE PREVIEW */}
+      <section style={{ padding: '80px 24px', backgroundColor: '#f8f9fa' }}>
+        <style>{`
+          .preview-layout {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 56px;
+            align-items: center;
+          }
+          @media (max-width: 768px) {
+            .preview-layout {
+              grid-template-columns: 1fr;
+              gap: 32px;
+            }
+          }
+        `}</style>
+        <div className="preview-layout">
+          <div>
+            <p style={{ color: '#f88124', fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>See It In Action</p>
+            <h2 style={{ fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: '800', color: '#2c5a9e', margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>Your Dog&apos;s Session Report</h2>
+            <p style={{ color: '#555', fontSize: '16px', lineHeight: 1.7, margin: '0 0 24px 0' }}>
+              After every session, you get a full performance breakdown in your dashboard. Scroll through the preview to see exactly what a real session report looks like — effort score, speed zones, pace analysis, and more.
+            </p>
+            {['Tap any stat card to switch the chart view', 'Tap the ⓘ icons for metric explanations', 'Scroll to see the full session breakdown', 'Every metric is automatically captured by our sensor'].map((point, i) => (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                <CheckCircle size={16} color="#f88124" style={{ flexShrink: 0 }} />
+                <span style={{ color: '#444', fontSize: '14px' }}>{point}</span>
+              </div>
+            ))}
+            <a href="https://app.thecaninegym.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginTop: '20px', backgroundColor: '#f88124', color: 'white', padding: '14px 28px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '15px' }}>
+              <PawPrint size={18} /> Start Tracking Your Dog
+            </a>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <SessionPreview />
+            <p style={{ color: '#aaa', fontSize: '12px', marginTop: '14px', fontWeight: '600' }}>↕ Scroll to explore · Tap stats to switch chart</p>
+          </div>
         </div>
       </section>
 
