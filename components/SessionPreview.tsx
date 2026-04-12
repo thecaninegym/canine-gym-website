@@ -157,6 +157,16 @@ export default function SessionPreview() {
           gap: 8px;
           margin-bottom: 14px;
         }
+        .sp-content { padding: 20px 24px; font-family: 'Montserrat', system-ui, sans-serif; }
+        .sp-hero-name { font-size: 20px; }
+        .sp-hero-date { font-size: 12px; }
+        .sp-hero-motiv { font-size: 12px; }
+        .sp-hero-badge { font-size: 10px; }
+        .sp-hero-icon { width: 56px; height: 56px; }
+        .sp-effort-label { font-size: 13px; }
+        .sp-effort-sublabel { font-size: 11px; }
+        .sp-effort-circle { width: 40px; height: 40px; }
+        .sp-effort-num { font-size: 15px; }
         .sp-hint-text::after { content: '↕ Scroll to explore · Tap stats to switch chart'; }
         @media (max-width: 768px) {
           .sp-device {
@@ -183,6 +193,16 @@ export default function SessionPreview() {
             z-index: 10;
           }
           .sp-camera { display: none; }
+          .sp-content { padding: 14px 12px; }
+          .sp-hero-name { font-size: 17px; }
+          .sp-hero-date { font-size: 10px; }
+          .sp-hero-motiv { font-size: 10px; }
+          .sp-hero-badge { font-size: 9px; }
+          .sp-hero-icon { width: 52px; height: 52px; }
+          .sp-effort-label { font-size: 11px; }
+          .sp-effort-sublabel { font-size: 10px; }
+          .sp-effort-circle { width: 36px; height: 36px; }
+          .sp-effort-num { font-size: 13px; }
           .sp-hint-text::after { content: '↕ Scroll to explore · Tap stats to switch chart'; }
         }
       `}</style>
@@ -200,22 +220,22 @@ export default function SessionPreview() {
             <img src="/logo.png" alt="The Canine Gym" style={{ height: '28px', width: 'auto' }} />
           </div>
 
-          <div style={{ padding: '14px 12px', fontFamily: "'Montserrat', system-ui, sans-serif", maxWidth: '400px', margin: '0 auto' }}>
+          <div className="sp-content">
 
             {/* Hero */}
             <div style={{ background: 'linear-gradient(135deg, #001840 0%, #2c5a9e 100%)', borderRadius: '14px', padding: '16px 14px', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <div style={{ width: '52px', height: '52px', borderRadius: '12px', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+              <div className="sp-hero-icon" style={{ borderRadius: '12px', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <PawPrint size={24} color="rgba(255,255,255,0.5)" />
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '2px' }}>
-                  <span style={{ fontSize: '17px', fontWeight: '800', color: 'white' }}>{DOG.name}</span>
-                  <span style={{ fontSize: '9px', fontWeight: '700', color: 'rgba(255,255,255,0.6)', background: 'rgba(255,255,255,0.12)', padding: '1px 6px', borderRadius: '8px' }}>
+                  <span className="sp-hero-name" style={{ fontWeight: '800', color: 'white' }}>{DOG.name}</span>
+                  <span className="sp-hero-badge" style={{ fontWeight: '700', color: 'rgba(255,255,255,0.6)', background: 'rgba(255,255,255,0.12)', padding: '1px 6px', borderRadius: '8px' }}>
                     Session #{SESSION_NUMBER}
                   </span>
                 </div>
-                <p style={{ margin: '0 0 2px', color: 'rgba(255,255,255,0.7)', fontSize: '10px' }}>{SESSION_DATE}</p>
-                <p style={{ margin: 0, color: 'rgba(255,255,255,0.5)', fontSize: '10px', fontStyle: 'italic' }}>
+                <p className="sp-hero-date" style={{ margin: '0 0 2px', color: 'rgba(255,255,255,0.7)' }}>{SESSION_DATE}</p>
+                <p className="sp-hero-motiv" style={{ margin: 0, color: 'rgba(255,255,255,0.5)', fontStyle: 'italic' }}>
                   {DOG.name} had a strong session today!
                 </p>
               </div>
@@ -224,15 +244,15 @@ export default function SessionPreview() {
             {/* Effort Score */}
             <div style={{ background: 'white', borderRadius: '10px', padding: '10px 12px', marginBottom: '10px', boxShadow: '0 1px 6px rgba(0,0,0,0.06)', border: '1px solid #eef0f5', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: '#eef2fb', border: '2px solid #2c5a9e', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <span style={{ fontSize: '13px', fontWeight: '800', color: '#001840', lineHeight: 1 }}>{EFFORT_SCORE}</span>
+                <div className="sp-effort-circle" style={{ borderRadius: '50%', background: '#eef2fb', border: '2px solid #2c5a9e', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <span className="sp-effort-num" style={{ fontWeight: '800', color: '#001840', lineHeight: 1 }}>{EFFORT_SCORE}</span>
                 </div>
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <span style={{ fontSize: '11px', fontWeight: '800', color: '#1a1a2e' }}>Effort Score</span>
+                    <span className="sp-effort-label" style={{ fontWeight: '800', color: '#1a1a2e' }}>Effort Score</span>
                     <TipIcon id="effort" text="A 0–100 score combining activity, pace consistency, and speed ratio." />
                   </div>
-                  <span style={{ fontSize: '10px', fontWeight: '700', color: '#2c5a9e' }}>Strong</span>
+                  <span className="sp-effort-sublabel" style={{ fontWeight: '700', color: '#2c5a9e' }}>Strong</span>
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '3px' }}>
