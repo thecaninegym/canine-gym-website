@@ -116,16 +116,42 @@ export default function SessionPreview() {
   return (
     <div onClick={() => setOpenTip(null)}>
       <style>{`
-        .sp-phone {
-          width: 340px;
-          height: 640px;
-          border-radius: 32px;
-          border: 6px solid #1a1a2e;
+        .sp-device {
+          width: 580px;
+          height: 520px;
+          border-radius: 12px;
+          border: 2px solid #333;
           background: #f0f2f7;
           overflow: hidden;
           position: relative;
           box-shadow: 0 20px 60px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.1);
           flex-shrink: 0;
+        }
+        .sp-device::after {
+          content: '';
+          position: absolute;
+          bottom: -28px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 650px;
+          height: 28px;
+          background: linear-gradient(180deg, #333 0%, #555 100%);
+          border-radius: 0 0 10px 10px;
+        }
+        .sp-device-wrapper {
+          margin-bottom: 36px;
+        }
+        .sp-notch { display: none; }
+        .sp-camera {
+          position: absolute;
+          top: 8px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #555;
+          z-index: 10;
         }
         .sp-scroll {
           height: 100%;
@@ -141,21 +167,42 @@ export default function SessionPreview() {
           gap: 8px;
           margin-bottom: 14px;
         }
+        .sp-hint-text::after { content: '↕ Scroll to explore · Tap stats to switch chart'; }
         @media (max-width: 768px) {
-          .sp-phone {
+          .sp-device {
             width: 100%;
             max-width: 380px;
             height: 580px;
             border-radius: 24px;
             border-width: 4px;
             margin: 0 auto;
+            border-color: #1a1a2e;
           }
+          .sp-device::after { display: none; }
+          .sp-device-wrapper { margin-bottom: 0; }
+          .sp-notch {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 22px;
+            background: #1a1a2e;
+            border-radius: 0 0 14px 14px;
+            z-index: 10;
+          }
+          .sp-camera { display: none; }
+          .sp-hint-text::after { content: '↕ Scroll to explore · Tap stats to switch chart'; }
         }
       `}</style>
 
-      <div className="sp-phone">
-        {/* Notch */}
-        <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '120px', height: '22px', background: '#1a1a2e', borderRadius: '0 0 14px 14px', zIndex: 10 }} />
+      <div className="sp-device-wrapper">
+      <div className="sp-device">
+        {/* Phone notch - mobile only */}
+        <div className="sp-notch" />
+        {/* Laptop camera - desktop only */}
+        <div className="sp-camera" />
 
         <div className="sp-scroll">
           {/* Mini Nav */}
@@ -439,6 +486,7 @@ export default function SessionPreview() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )
