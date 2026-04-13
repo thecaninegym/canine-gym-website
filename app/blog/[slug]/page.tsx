@@ -22,6 +22,186 @@ const BASE = 'https://www.thecaninegym.com'
 
 const posts: Post[] = [
   {
+    slug: 'how-to-help-your-dog-lose-weight',
+    title: 'How to Help Your Dog Lose Weight: A Vet-Backed Guide',
+    metaTitle: 'How to Help Your Dog Lose Weight: A Vet-Backed Guide | The Canine Gym',
+    metaDescription: 'A practical, vet-backed guide to helping your dog lose weight safely. Covers diet, exercise, body condition scoring, breed considerations, and how to track real progress.',
+    category: 'Dog Health',
+    readTime: '7 min read',
+    date: 'April 2026',
+    dateIso: '2026-04-12',
+    intro: 'If your vet has told you your dog needs to lose weight, you are not alone. More than 56% of dogs in the United States are overweight or obese according to the Association for Pet Obesity Prevention. The good news is that canine weight loss is straightforward when you approach it correctly: adjust the diet, increase structured exercise, and track progress consistently. This guide covers exactly how to do each of those things safely and effectively.',
+    faq: [
+      { q: 'How do I know if my dog is overweight?', a: 'Use the Body Condition Score (BCS) test. You should be able to feel your dog\'s ribs easily without pressing hard. Viewed from above, your dog should have a visible waist behind the ribcage. From the side, there should be an abdominal tuck - the belly should slope upward from the chest to the hind legs. If you cannot feel the ribs, see no waist, or the belly hangs level or below the chest, your dog is likely overweight. Your vet can confirm with a formal BCS assessment.' },
+      { q: 'How fast should a dog lose weight?', a: 'A safe rate of weight loss for dogs is 1–2% of body weight per week. For a 70-pound dog, that is roughly 0.7 to 1.4 pounds per week. Faster weight loss can cause muscle loss, nutritional deficiencies, and metabolic problems. Weight loss should always be gradual and monitored by your vet.' },
+      { q: 'Is walking enough exercise for a dog to lose weight?', a: 'For most overweight dogs, casual walks alone are not sufficient for meaningful weight loss. Walking is low-intensity and burns relatively few calories. Dogs need sustained aerobic exercise that elevates their heart rate to burn fat effectively. Structured activities like running, swimming, or slatmill sessions are significantly more effective for weight loss than walking at a human pace.' },
+      { q: 'What is the best exercise for an overweight dog?', a: 'Low-impact aerobic exercise is ideal for overweight dogs. Slatmill sessions, swimming, and controlled leash jogging are excellent options because they elevate the heart rate and burn calories without putting excessive stress on joints that are already carrying extra weight. Start slowly and build duration and intensity gradually over several weeks.' },
+      { q: 'How many calories should my dog eat to lose weight?', a: 'Your vet should calculate your dog\'s target caloric intake based on their ideal weight, not their current weight. As a general guideline, most weight loss plans target the Resting Energy Requirement (RER) for the dog\'s ideal body weight, which is roughly 70 × (ideal weight in kg)^0.75 calories per day. Do not guess - work with your vet to set the right number for your dog.' },
+      { q: 'Can certain dog breeds lose weight more easily than others?', a: 'Some breeds are genetically predisposed to weight gain and may lose weight more slowly. Labrador Retrievers carry a gene variant (POMC mutation) that increases hunger and reduces satiety. Beagles, Dachshunds, Cocker Spaniels, and Pugs are also prone to obesity. These breeds may require stricter dietary management and more structured exercise to achieve and maintain a healthy weight.' },
+    ],
+    content: (
+      <>
+        <h2>Step 1: Confirm Your Dog Is Actually Overweight</h2>
+        <p>Before changing anything, you need to know where your dog stands. Many owners cannot accurately assess their dog's weight by appearance alone, especially with thick-coated or barrel-chested breeds. The most reliable method is the <strong>Body Condition Score (BCS)</strong>, a standardized 1–9 scale used by veterinarians worldwide.</p>
+        <p>A dog at an ideal BCS of 4–5 has ribs that are easily felt without pressing, a visible waist when viewed from above, and a clear abdominal tuck when viewed from the side. A BCS of 6–7 indicates overweight. A BCS of 8–9 indicates obesity.</p>
+        <p>You can do a quick check at home right now. Place your hands flat on your dog's ribcage with light pressure. If you can feel each rib individually, your dog is likely at a healthy weight. If you have to press through a layer of padding to feel the ribs, or cannot feel them at all, your dog is carrying excess fat. Schedule a vet visit to get a formal BCS assessment and a target weight to work toward.</p>
+
+        <h2>Step 2: Calculate the Right Caloric Intake</h2>
+        <p>Weight loss in dogs follows the same basic principle as in humans: calories consumed must be less than calories burned. But you should never guess at the numbers. Work with your veterinarian to calculate a daily caloric target based on your dog's <strong>ideal weight</strong>, not their current weight.</p>
+        <p>A commonly used formula is the Resting Energy Requirement (RER): roughly 70 × (ideal body weight in kg) raised to the power of 0.75. Your vet may adjust this based on your dog's age, breed, activity level, and any medical conditions. For most weight loss plans, vets recommend feeding at or slightly below the RER for the target weight.</p>
+        <p>This number is almost always lower than what the bag of dog food recommends. Feeding guidelines on commercial dog food packaging are designed for active adult dogs at a healthy weight and are often generous. If your dog is overweight, following the bag's recommendations is likely part of the problem.</p>
+
+        <h2>Step 3: Fix the Diet</h2>
+        <p>Once you have a caloric target, you need to restructure what and how your dog eats. Diet alone accounts for roughly 60–70% of weight loss success. Exercise matters, but you cannot out-exercise a bad diet.</p>
+        <p><strong>Measure every meal.</strong> Use a kitchen scale or standard measuring cup, not an estimate. Eyeballing portions is how most dogs end up overfed. A few extra kibbles per meal adds up to significant excess calories over weeks and months.</p>
+        <p><strong>Cut the treats.</strong> Treats should make up no more than 10% of your dog's daily calories. A single dental chew or bully stick can contain 80–100+ calories, which is a significant portion of a small dog's entire daily budget. Replace high-calorie treats with low-calorie alternatives like baby carrots, green beans, blueberries, or small pieces of plain cooked chicken.</p>
+        <p><strong>Stop feeding table scraps.</strong> Human food is calorically dense and often contains fats and sugars that dogs do not need. Even small amounts of table scraps can significantly offset a carefully calculated diet plan.</p>
+        <p><strong>Consider a weight management formula.</strong> Veterinary weight management diets are formulated to be lower in calories but higher in protein and fiber, which helps dogs feel full while eating less. Ask your vet whether switching to a weight management food makes sense for your dog.</p>
+        <p><strong>Feed smaller meals more frequently.</strong> Splitting the daily food allowance into two or three meals instead of one large meal helps regulate blood sugar, reduces hunger between meals, and may improve metabolic efficiency.</p>
+
+        <h2>Step 4: Increase Structured Exercise</h2>
+        <p>Diet creates the caloric deficit. Exercise accelerates fat loss, preserves lean muscle mass, and builds the cardiovascular fitness your dog needs to stay healthy long-term. But not all exercise is equal when it comes to weight loss.</p>
+        <p><strong>Walking is not enough.</strong> A casual walk at your pace burns very few calories for most dogs. Walking is great for mental stimulation and bonding, but it does not elevate your dog's heart rate enough to drive meaningful fat burning. Think of walking as the baseline, not the workout.</p>
+        <p><strong>Aerobic exercise is the goal.</strong> Your dog needs sustained activity that gets their heart rate elevated for 20–30 minutes. Running, swimming, vigorous fetch sessions, and structured <a href="/blog/what-is-a-slatmill">slatmill training</a> all qualify. The key word is <em>sustained</em> - a few minutes of sprinting followed by 20 minutes of sniffing is not aerobic exercise.</p>
+        <p><strong>Start slow and build gradually.</strong> An overweight dog is at higher risk of overheating, joint injury, and cardiovascular stress during exercise. If your dog has been sedentary, do not start with 30-minute runs. Start with 10–15 minutes of moderate activity and increase duration by no more than 10% per week. Watch for signs of fatigue: excessive panting, slowing down, lying down, or limping.</p>
+        <p><strong>Low-impact options are ideal for heavy dogs.</strong> Slatmill sessions and swimming are excellent choices for overweight dogs because they provide aerobic benefits without the joint impact of running on hard surfaces. A non-motorized slatmill is particularly effective because the dog controls the pace entirely, which means they naturally self-regulate intensity as their fitness improves over time.</p>
+        <p><strong>Consistency matters more than intensity.</strong> Four 20-minute sessions per week will produce better results than one 60-minute session on the weekend. <a href="/blog/benefits-of-consistent-dog-exercise-routine">Consistent, moderate exercise</a> builds cardiovascular capacity and metabolic efficiency in ways that sporadic intense activity does not.</p>
+
+        <h2>Step 5: Track Progress the Right Way</h2>
+        <p>Weigh your dog every one to two weeks, ideally at the same time of day. Write the number down. Do not rely on how your dog looks - visual changes are gradual and easy to miss, especially with thick-coated breeds.</p>
+        <p><strong>A safe rate of weight loss is 1–2% of body weight per week.</strong> For a 60-pound dog, that is roughly 0.6 to 1.2 pounds per week. If your dog is losing faster than that, they may be losing muscle mass along with fat, which is counterproductive. If they are not losing at all after two to three weeks of consistent diet and exercise changes, the caloric target needs to be adjusted - talk to your vet.</p>
+        <p><strong>Reassess the Body Condition Score monthly.</strong> As your dog loses weight, run the rib test and visual checks regularly. You should start to see a waist emerging from above and a tuck developing from the side. These physical changes are often more meaningful indicators of progress than the number on the scale, since dogs who are exercising will build some muscle while losing fat.</p>
+        <p><strong>Adjust as you go.</strong> As your dog loses weight, their caloric needs decrease. A dog who needed 800 calories per day at 70 pounds may only need 700 calories at 60 pounds. Recalculate with your vet every 5–10 pounds of weight loss to avoid plateaus.</p>
+
+        <h2>Breed-Specific Considerations</h2>
+        <p>Not all dogs gain and lose weight the same way. Breed genetics play a real role in how easy or difficult weight management will be.</p>
+        <p><strong>Labrador Retrievers</strong> are among the most obesity-prone breeds in the world. Research has identified a specific gene variant (the POMC mutation) carried by a majority of Labs that increases hunger drive and reduces the feeling of fullness after eating. If you have a Lab, expect that dietary discipline will need to be stricter and more consistent than with other breeds.</p>
+        <p><strong>Brachycephalic breeds</strong> like Pugs, French Bulldogs, and English Bulldogs are prone to weight gain and face additional risks during exercise due to their compromised airways. Exercise sessions for these breeds should be shorter, lower intensity, and monitored carefully for signs of respiratory distress. Heat management is critical since these dogs overheat easily.</p>
+        <p><strong>Small breeds</strong> like Dachshunds, Beagles, and Cocker Spaniels are frequently overweight and face outsized health consequences from even modest weight gain. An extra two pounds on a 15-pound Dachshund is equivalent to roughly 25 extra pounds on a human. Small dogs need carefully measured portions and cannot tolerate the caloric margin of error that larger breeds can.</p>
+        <p><strong>Senior dogs</strong> of any breed lose muscle mass naturally as they age, which slows their metabolism. Weight loss in senior dogs should be even more gradual, with a strong emphasis on preserving lean muscle through low-impact exercise. Your vet may recommend a senior-specific diet with higher protein content to support muscle maintenance during weight loss.</p>
+
+        <h2>Common Mistakes That Stall Weight Loss</h2>
+        <p><strong>Not counting treat calories.</strong> This is the number one reason dog weight loss plans fail. Every treat, dental chew, and training reward counts toward the daily total. If the family is sneaking treats throughout the day, the caloric deficit from measured meals disappears.</p>
+        <p><strong>Relying only on walks.</strong> Owners who walk their dog 20 minutes a day and expect weight loss are usually disappointed. Walking at a human pace is not aerobic exercise for most dogs. You need to add <a href="/blog/how-much-exercise-does-my-dog-need">real exercise</a> on top of regular walks.</p>
+        <p><strong>Feeding multiple dogs from a shared bowl.</strong> If you have multiple dogs, the overweight dog may be eating more than their share. Feed dogs separately with measured portions and pick up bowls after 15 minutes.</p>
+        <p><strong>Giving up too early.</strong> Healthy weight loss is slow. A dog who needs to lose 15 pounds will take three to four months at a safe rate. Many owners expect faster results and give up after a few weeks when they do not see dramatic changes. Stay the course.</p>
+        <p><strong>Not involving the vet.</strong> Weight loss should always be supervised by a veterinarian. Sudden weight loss, refusal to eat, lethargy, or any other unusual symptoms during a weight loss program warrant an immediate vet visit. Some medical conditions like hypothyroidism and Cushing's disease cause weight gain and need to be ruled out before starting a diet and exercise plan.</p>
+
+        <h2>When to See Your Vet</h2>
+        <p>Before starting any weight loss program, schedule a vet visit. Your vet will confirm your dog's current weight and BCS, set a realistic target weight, calculate appropriate caloric intake, rule out medical causes of weight gain like hypothyroidism, and identify any exercise restrictions due to joint disease or other conditions.</p>
+        <p>Follow up every four to six weeks during active weight loss. Once your dog reaches their target weight, continue monitoring with quarterly weigh-ins to catch any regain early.</p>
+
+        <h2>Putting It All Together</h2>
+        <p>Dog weight loss is simple in theory but requires discipline in practice. The formula is straightforward: get a vet-approved caloric target, measure every meal, cut unnecessary treats, and add consistent structured exercise that actually elevates your dog's heart rate.</p>
+        <p>The dogs who lose weight successfully are the ones whose owners commit to the process for months, not days. Track the numbers, adjust as you go, and remember that a healthy weight is one of the most impactful things you can give your dog. <a href="/blog/why-regular-exercise-extends-your-dogs-life">Research consistently shows</a> that lean, active dogs live significantly longer and healthier lives than their overweight counterparts.</p>
+        <p>If you are in Hamilton County and looking for structured, low-impact aerobic exercise for your dog, The Canine Gym brings professional slatmill sessions directly to your driveway. Every session tracks distance, speed, calories burned, and more, so you can see your dog's fitness improving over time. We serve <a href="/carmel">Carmel</a>, <a href="/fishers">Fishers</a>, <a href="/westfield">Westfield</a>, <a href="/noblesville">Noblesville</a>, <a href="/zionsville">Zionsville</a>, and <a href="/geist">Geist</a>. <a href="https://app.thecaninegym.com">Book a session</a> and start your dog's weight loss journey the right way.</p>
+      </>
+    ),
+  },
+  {
+    slug: 'best-dog-breeds-for-slatmill-training',
+    title: 'Best Dog Breeds for Slatmill Training (And How Any Dog Can Benefit)',
+    metaTitle: 'Best Dog Breeds for Slatmill Training | The Canine Gym',
+    metaDescription: 'Some breeds are natural slatmill athletes. Others need more encouragement. Here is a breed-by-breed guide to slatmill training and why almost every dog can benefit.',
+    category: 'Dog Health',
+    readTime: '5 min read',
+    date: 'March 2026',
+    dateIso: '2026-03-15',
+    intro: 'While every dog can benefit from structured slatmill exercise, some breeds take to it immediately and thrive in ways that go beyond casual walks or backyard play. Understanding your dog\'s breed tendencies helps you set realistic expectations, train more effectively, and get better results. Here is a practical guide to which breeds excel on the slatmill, and why any dog, with the right introduction, can become a slatmill runner.',
+    faq: [
+      { q: 'What breeds are best suited for slatmill training?', a: 'High-drive working breeds and sporting dogs tend to take to slatmill training most naturally, retrievers, shepherds, Belgian Malinois, huskies, and terriers. These breeds have the instinct and energy to power the belt without much hesitation. That said, most medium to large dogs can learn to use a slatmill with patient, positive introduction.' },
+      { q: 'Can small dogs use a slatmill?', a: 'Many small dogs can use appropriately sized slatmills. However, most professional slatmills are designed for medium to large breeds. At The Canine Gym, our equipment is best suited for medium to large dogs.' },
+      { q: 'Can brachycephalic dogs like Bulldogs and Pugs use a slatmill?', a: 'Flat-faced breeds can use a slatmill but require extra caution. Their restricted airways make intense aerobic exercise risky, especially in warm conditions. Slatmill sessions for these breeds should be shorter, lower intensity, and carefully monitored. Always consult your vet before starting any exercise program for a brachycephalic dog.' },
+      { q: 'How long does it take to train a dog to use a slatmill?', a: 'Most dogs understand the slatmill within their first session, especially with a patient, experienced handler guiding them. Some dogs take two or three sessions to move confidently on their own. High-drive breeds often figure it out within minutes.' },
+      { q: 'Is slatmill training safe for senior dogs?', a: 'Yes, with appropriate intensity adjustments. Senior dogs benefit greatly from low-impact, consistent movement, it preserves muscle mass, keeps joints mobile, and supports cognitive health. Sessions for older dogs should be shorter and at a comfortable, self-selected pace.' },
+    ],
+    content: (
+      <>
+        <h2>Why Breed Matters for Slatmill Training</h2>
+        <p>Dogs were selectively bred for thousands of years for specific physical and behavioral traits. A Border Collie was bred to run all day. A Basset Hound was bred to move slowly and deliberately, nose to the ground. These differences in drive, structure, and temperament are real, and they affect how a dog responds to structured exercise like slatmill training.</p>
+        <p>Understanding your dog's breed tendencies does not determine whether they can use a slatmill. It helps you understand what to expect, how to introduce it, and what a healthy, sustainable workout looks like for your specific dog.</p>
+
+        <h2>Breeds That Excel on the Slatmill</h2>
+        <p><strong>Retrievers (Labrador, Golden, Chesapeake Bay).</strong> Retrievers are among the most naturally suited breeds for slatmill work. They have the drive, the athleticism, and the eagerness to please that makes training easy. Labs in particular tend to step onto a slatmill and start moving with minimal hesitation. Their tendency toward weight gain also makes consistent aerobic exercise especially important for their long-term health.</p>
+        <p><strong>German Shepherds and Belgian Malinois.</strong> Working line shepherds and Malinois are built for sustained effort. They have exceptional cardiovascular capacity, powerful rear drives, and high motivation. These breeds often become genuinely enthusiastic about slatmill sessions quickly, they recognize it as the structured work their genetics were built for.</p>
+        <p><strong>Siberian Huskies and Alaskan Malamutes.</strong> Bred to run long distances in extreme conditions, sled breeds are natural endurance athletes. They have the cardiovascular capacity for longer sessions and tend to find a rhythmic pace on the slatmill that they can maintain for extended periods. Their thick coats require attention to ambient temperature during sessions.</p>
+        <p><strong>Sporting Dogs (Vizsla, Weimaraner, Pointer, Setter).</strong> Sporting breeds were developed to work all day in the field. They have exceptional stamina, natural athleticism, and high exercise needs. These breeds often underexercised in pet environments, a slatmill gives them the sustained aerobic outlet their breeding demands.</p>
+        <p><strong>Terriers.</strong> Do not underestimate terriers. Jack Russells, Airedales, and Bull Terriers have a tenacity and drive that translates well to slatmill work. They are quick, powerful, and highly motivated. Terriers often surprise owners with how readily they take to structured exercise.</p>
+        <p><strong>Pit Bull Terriers and American Bulldogs.</strong> These athletic, muscular breeds thrive on slatmill training. They are powerful, high-drive, and respond well to structured exercise. Regular slatmill sessions help manage their energy levels and build the lean muscle mass these breeds are naturally inclined toward.</p>
+
+        <h2>Breeds That Benefit But Need More Patience</h2>
+        <p><strong>Hounds (Beagle, Bloodhound, Coonhound).</strong> Scent hounds are nose-first dogs, they are easily distracted and less naturally inclined toward sustained forward movement without a scent trail to follow. With patient, positive introduction and an experienced handler, most hounds learn the slatmill. Their exercise needs are real, even if their motivation looks different from a retriever's.</p>
+        <p><strong>Herding breeds (Border Collie, Australian Shepherd, Heeler).</strong> These breeds have exceptional intelligence and high drive but can be sensitive to new environments and equipment. A nervous Border Collie may hesitate initially, not from lack of ability, but from caution. Once they understand the slatmill, they often become enthusiastic athletes.</p>
+        <p><strong>Giant breeds (Great Dane, Saint Bernard, Newfoundland).</strong> Giant breeds benefit from regular, low-impact exercise, but their sessions need to be managed carefully. Their joint health is a priority, shorter sessions at moderate intensity, with careful attention to surface and recovery. The slatmill's self-paced nature is actually ideal for giant breeds who should not be pushed beyond their natural speed.</p>
+
+        <h2>Breeds That Require Extra Caution</h2>
+        <p><strong>Brachycephalic breeds (Bulldog, Pug, French Bulldog, Boston Terrier).</strong> Flat-faced breeds have anatomically restricted airways that limit their ability to breathe efficiently during aerobic exercise. This does not mean they should not exercise, it means sessions must be shorter, at lower intensity, in cooler conditions, with constant monitoring for signs of respiratory distress. Always get veterinary clearance before starting slatmill training with a brachycephalic dog.</p>
+        <p><strong>Dogs with known orthopedic conditions.</strong> Dogs with hip dysplasia, elbow dysplasia, or a history of ligament injuries can often still benefit from controlled slatmill exercise, but only with veterinary guidance on appropriate intensity and duration. In many cases, controlled, low-impact movement is actually therapeutic rather than harmful.</p>
+
+        <h2>The Bottom Line: Any Dog Can Benefit</h2>
+        <p>Breed tendencies are a starting point, not a ceiling. The single most important factor in successful slatmill training is not breed, it is the handler. A patient, experienced handler who introduces the equipment positively, reads the dog's signals accurately, and adjusts intensity appropriately can get almost any healthy adult dog moving confidently on a slatmill.</p>
+        <p>At The Canine Gym, we work with dogs of all breeds, ages, and fitness levels across Hamilton County. We know how to introduce the slatmill in a way that builds confidence, not anxiety. Whether you have a Lab who will be running in thirty seconds or a nervous rescue who needs a more gradual approach, we meet your dog where they are.</p>
+        <p>We serve <a href="/carmel">Carmel</a>, <a href="/fishers">Fishers</a>, <a href="/westfield">Westfield</a>, <a href="/noblesville">Noblesville</a>, <a href="/zionsville">Zionsville</a>, and <a href="/geist">Geist</a>. <a href="https://app.thecaninegym.com">Book a session</a> and find out what your dog is capable of.</p>
+      </>
+    ),
+  },
+  {
+    slug: 'mobile-dog-fitness-vs-dog-daycare',
+    title: 'Mobile Dog Fitness vs. Dog Daycare: Which Is Actually Better for Your Dog?',
+    metaTitle: 'Mobile Dog Fitness vs. Dog Daycare: Which Is Better? | The Canine Gym',
+    metaDescription: 'Dog daycare and mobile fitness both promise to tire your dog out. But they work very differently. Here is an honest comparison of what each actually delivers for your dog\'s health.',
+    category: 'Dog Health',
+    readTime: '5 min read',
+    date: 'March 2026',
+    dateIso: '2026-03-20',
+    intro: 'Dog daycare and mobile dog fitness are both marketed as solutions to the same problem: a high-energy dog who needs more stimulation than a busy owner can consistently provide. But they are fundamentally different in how they work, what they deliver, and what they cost, financially and in terms of your dog\'s actual health. Here is an honest, side-by-side comparison so you can make an informed decision for your dog.',
+    faq: [
+      { q: 'Is dog daycare actually good exercise for dogs?', a: 'It depends heavily on the specific facility and your dog. Some dogs run and play actively at daycare. Many spend significant portions of the day resting, anxious, or overstimulated rather than physically exercising. Daycare provides social interaction and stimulation, but it rarely delivers consistent, measurable aerobic exercise.' },
+      { q: 'Is mobile dog fitness better than daycare?', a: 'For physical fitness specifically, yes, structured slatmill sessions deliver consistent, measurable aerobic exercise that daycare rarely matches. For dogs who need socialization or cannot be left alone, daycare serves a different purpose. The two are not always direct competitors.' },
+      { q: 'How much does dog daycare cost compared to mobile fitness?', a: 'Dog daycare in Hamilton County typically runs $30–$45 per day. At 5 days per week, that is $600–$900 per month. The Canine Gym\'s Standard Membership (4 sessions per month) starts at $180/month, and a La Carte sessions are $55 each. For dogs who attend daycare primarily for exercise, mobile fitness is significantly more cost-effective per unit of actual exercise delivered.' },
+      { q: 'Can my dog get sick at daycare?', a: 'Yes. Group dog environments carry real disease transmission risk, kennel cough, canine influenza, giardia, and parasites are all documented risks in daycare settings. This does not mean daycare is unsafe, but it is a real consideration, especially for immunocompromised dogs, puppies, or senior dogs.' },
+      { q: 'What if my dog does not do well at daycare?', a: 'Many dogs do not thrive in daycare environments. Dogs who are anxious, reactive, selective about other dogs, or who find large group settings overwhelming often do worse after a daycare day, not better. Mobile fitness sessions involve just your dog and a handler, no group dynamics, no stress triggers.' },
+    ],
+    content: (
+      <>
+        <h2>What Dog Daycare Actually Is</h2>
+        <p>Dog daycare is a supervised group environment where dogs spend the day together while their owners are at work or away. At its best, a well-run daycare facility provides socialization, mental stimulation, and some amount of physical activity in a safe, supervised setting. At its worst, it is a high-stress, high-noise environment where your dog spends the day anxious, overstimulated, or simply lying down in a corner waiting to go home.</p>
+        <p>The reality of what happens at most daycares falls somewhere in between, and it varies enormously by facility, by the specific group of dogs present on any given day, and by your individual dog's temperament and preferences.</p>
+
+        <h2>What Mobile Dog Fitness Actually Is</h2>
+        <p>Mobile dog fitness, specifically professional slatmill training delivered to your home, is structured, measurable aerobic exercise. A trained handler brings a professional non-motorized treadmill to your driveway. Your dog runs at their own pace for a defined session. Every metric is tracked: distance covered, speed, calories burned, and session duration. The workout is consistent, repeatable, and calibrated to your dog's fitness level.</p>
+        <p>There are no other dogs involved. No group dynamics. No stress from unfamiliar environments. Just your dog, doing the thing their body is built for, running, in a controlled, professional setting right outside your front door.</p>
+
+        <h2>The Exercise Question: What Actually Tires Your Dog Out?</h2>
+        <p>The central promise of both daycare and mobile fitness is the same: a tired dog. But the mechanism matters enormously.</p>
+        <p>Daycare fatigue is largely neurological. A dog who comes home exhausted from daycare has typically been overstimulated, processing a constant stream of social signals, managing group dynamics, staying alert in a novel environment. That kind of mental exhaustion is real, but it is not the same as physical fitness. A dog who is neurologically depleted from daycare stress has not built cardiovascular capacity, burned meaningful calories, or strengthened their musculoskeletal system.</p>
+        <p>Slatmill fatigue is physical. A dog who completes a 30-minute slatmill session has done genuine aerobic work. Their heart rate has been elevated, their muscles have been engaged, and their cardiovascular system has been stimulated in the way that builds real fitness over time. The tiredness that follows is the kind that accumulates into better health outcomes, lower weight, stronger heart, more stable energy levels.</p>
+
+        <h2>The Stress Factor</h2>
+        <p>This is where the honest comparison gets uncomfortable for daycare advocates. Research on canine stress physiology has found that many dogs who appear to be enjoying daycare are actually operating at elevated cortisol levels throughout the day. A 2018 study published in <em>Physiology and Behavior</em> found that dogs in group care settings showed significantly elevated stress hormones compared to dogs in home environments, even when they appeared to be playing and engaging socially.</p>
+        <p>For social, confident dogs who genuinely enjoy group play, this stress response may be manageable. For dogs who are anxious, reactive, or simply more introverted, daycare stress can accumulate into behavioral problems, disrupted sleep, and a weakened immune response over time.</p>
+        <p>Mobile fitness sessions involve none of these stressors. Your dog stays in their own environment, works with a single familiar handler, and goes back inside when the session is done.</p>
+
+        <h2>The Disease and Injury Risk</h2>
+        <p>Group dog environments carry inherent health risks. Kennel cough (Bordetella) spreads readily in group settings even in vaccinated dogs. Canine influenza, giardia, and intestinal parasites are all documented risks in daycare environments. Play injuries, sprains, strains, bite wounds, are common in unsupervised or poorly supervised group play.</p>
+        <p>Slatmill sessions eliminate group disease transmission risk entirely. Your dog interacts with one handler and one piece of equipment. The infection vector simply does not exist.</p>
+
+        <h2>The Cost Comparison</h2>
+        <p>Dog daycare in Hamilton County typically runs between $30 and $45 per day. For owners who use daycare three to five days per week, that represents $400 to $900 per month, year round.</p>
+        <p>The Canine Gym's Standard Membership provides four 30-minute professional slatmill sessions per month for $180. Our Pro Membership delivers eight sessions for $340. For dog owners who are using daycare primarily as an exercise solution rather than a childcare necessity, the cost-per-unit-of-actual-exercise comparison is not close.</p>
+
+        <h2>When Daycare Makes Sense</h2>
+        <p>This is not an argument that daycare is always the wrong choice. Daycare serves a genuine purpose for dogs who need company during long days, who are genuinely social and thrive in group settings, or whose owners have schedules that require supervised daytime care. A well-run facility with experienced staff, appropriate group sizes, and genuine supervision is a real service.</p>
+        <p>The question is whether daycare is solving your dog's actual problem. If your dog is overweight, under-conditioned, or behaviorally difficult because of unmet exercise needs, daycare is unlikely to fully address those issues. Structured, measurable aerobic exercise will.</p>
+
+        <h2>The Bottom Line</h2>
+        <p>For physical fitness, weight management, cardiovascular health, and measurable exercise, mobile slatmill training delivers results that group daycare cannot reliably match. For dogs who need daytime supervision or genuine socialization with other dogs, daycare fills a different need.</p>
+        <p>Many of our clients in Hamilton County use The Canine Gym as a complement to daycare, or as a replacement for it when exercise, not supervision, was the primary goal all along. If you want to know what consistent, professional exercise actually does for your dog, the answer is in the data we track after every session.</p>
+        <p>We serve <a href="/carmel">Carmel</a>, <a href="/fishers">Fishers</a>, <a href="/westfield">Westfield</a>, <a href="/noblesville">Noblesville</a>, <a href="/zionsville">Zionsville</a>, and <a href="/geist">Geist</a>. <a href="https://app.thecaninegym.com">Book a session</a> and see the difference structured exercise makes.</p>
+      </>
+    ),
+  },
+  {
     slug: 'why-regular-exercise-extends-your-dogs-life',
     title: 'Why Regular Exercise Can Add Years to Your Dog\'s Life',
     metaTitle: 'Why Regular Exercise Can Add Years to Your Dog\'s Life | The Canine Gym',
@@ -263,109 +443,6 @@ const posts: Post[] = [
         <h2>The Canine Gym Approach</h2>
         <p>The Canine Gym was built around this insight. We come to you, on a scheduled basis, so your dog gets a real 30-minute aerobic workout without any logistical effort on your part. You book recurring sessions, we show up, your dog runs, and you see the results - tracked in the app after every session.</p>
         <p>For dog owners in Hamilton County who want their dog to get the consistent exercise they deserve without rearranging their day, this is exactly the solution. We serve <a href="/carmel">Carmel</a>, <a href="/fishers">Fishers</a>, <a href="/westfield">Westfield</a>, <a href="/noblesville">Noblesville</a>, <a href="/zionsville">Zionsville</a>, and <a href="/geist">Geist</a>. <a href="https://app.thecaninegym.com">Book your first session</a> and build the routine your dog needs.</p>
-      </>
-    ),
-  },
-  {
-    slug: 'best-dog-breeds-for-slatmill-training',
-    title: 'Best Dog Breeds for Slatmill Training (And How Any Dog Can Benefit)',
-    metaTitle: 'Best Dog Breeds for Slatmill Training | The Canine Gym',
-    metaDescription: 'Some breeds are natural slatmill athletes. Others need more encouragement. Here is a breed-by-breed guide to slatmill training and why almost every dog can benefit.',
-    category: 'Dog Health',
-    readTime: '5 min read',
-    date: 'March 2026',
-    dateIso: '2026-03-15',
-    intro: 'While every dog can benefit from structured slatmill exercise, some breeds take to it immediately and thrive in ways that go beyond casual walks or backyard play. Understanding your dog\'s breed tendencies helps you set realistic expectations, train more effectively, and get better results. Here is a practical guide to which breeds excel on the slatmill, and why any dog, with the right introduction, can become a slatmill runner.',
-    faq: [
-      { q: 'What breeds are best suited for slatmill training?', a: 'High-drive working breeds and sporting dogs tend to take to slatmill training most naturally, retrievers, shepherds, Belgian Malinois, huskies, and terriers. These breeds have the instinct and energy to power the belt without much hesitation. That said, most medium to large dogs can learn to use a slatmill with patient, positive introduction.' },
-      { q: 'Can small dogs use a slatmill?', a: 'Many small dogs can use appropriately sized slatmills. However, most professional slatmills are designed for medium to large breeds. At The Canine Gym, our equipment is best suited for medium to large dogs.' },
-      { q: 'Can brachycephalic dogs like Bulldogs and Pugs use a slatmill?', a: 'Flat-faced breeds can use a slatmill but require extra caution. Their restricted airways make intense aerobic exercise risky, especially in warm conditions. Slatmill sessions for these breeds should be shorter, lower intensity, and carefully monitored. Always consult your vet before starting any exercise program for a brachycephalic dog.' },
-      { q: 'How long does it take to train a dog to use a slatmill?', a: 'Most dogs understand the slatmill within their first session, especially with a patient, experienced handler guiding them. Some dogs take two or three sessions to move confidently on their own. High-drive breeds often figure it out within minutes.' },
-      { q: 'Is slatmill training safe for senior dogs?', a: 'Yes, with appropriate intensity adjustments. Senior dogs benefit greatly from low-impact, consistent movement, it preserves muscle mass, keeps joints mobile, and supports cognitive health. Sessions for older dogs should be shorter and at a comfortable, self-selected pace.' },
-    ],
-    content: (
-      <>
-        <h2>Why Breed Matters for Slatmill Training</h2>
-        <p>Dogs were selectively bred for thousands of years for specific physical and behavioral traits. A Border Collie was bred to run all day. A Basset Hound was bred to move slowly and deliberately, nose to the ground. These differences in drive, structure, and temperament are real, and they affect how a dog responds to structured exercise like slatmill training.</p>
-        <p>Understanding your dog's breed tendencies does not determine whether they can use a slatmill. It helps you understand what to expect, how to introduce it, and what a healthy, sustainable workout looks like for your specific dog.</p>
-
-        <h2>Breeds That Excel on the Slatmill</h2>
-        <p><strong>Retrievers (Labrador, Golden, Chesapeake Bay).</strong> Retrievers are among the most naturally suited breeds for slatmill work. They have the drive, the athleticism, and the eagerness to please that makes training easy. Labs in particular tend to step onto a slatmill and start moving with minimal hesitation. Their tendency toward weight gain also makes consistent aerobic exercise especially important for their long-term health.</p>
-        <p><strong>German Shepherds and Belgian Malinois.</strong> Working line shepherds and Malinois are built for sustained effort. They have exceptional cardiovascular capacity, powerful rear drives, and high motivation. These breeds often become genuinely enthusiastic about slatmill sessions quickly, they recognize it as the structured work their genetics were built for.</p>
-        <p><strong>Siberian Huskies and Alaskan Malamutes.</strong> Bred to run long distances in extreme conditions, sled breeds are natural endurance athletes. They have the cardiovascular capacity for longer sessions and tend to find a rhythmic pace on the slatmill that they can maintain for extended periods. Their thick coats require attention to ambient temperature during sessions.</p>
-        <p><strong>Sporting Dogs (Vizsla, Weimaraner, Pointer, Setter).</strong> Sporting breeds were developed to work all day in the field. They have exceptional stamina, natural athleticism, and high exercise needs. These breeds often underexercised in pet environments, a slatmill gives them the sustained aerobic outlet their breeding demands.</p>
-        <p><strong>Terriers.</strong> Do not underestimate terriers. Jack Russells, Airedales, and Bull Terriers have a tenacity and drive that translates well to slatmill work. They are quick, powerful, and highly motivated. Terriers often surprise owners with how readily they take to structured exercise.</p>
-        <p><strong>Pit Bull Terriers and American Bulldogs.</strong> These athletic, muscular breeds thrive on slatmill training. They are powerful, high-drive, and respond well to structured exercise. Regular slatmill sessions help manage their energy levels and build the lean muscle mass these breeds are naturally inclined toward.</p>
-
-        <h2>Breeds That Benefit But Need More Patience</h2>
-        <p><strong>Hounds (Beagle, Bloodhound, Coonhound).</strong> Scent hounds are nose-first dogs, they are easily distracted and less naturally inclined toward sustained forward movement without a scent trail to follow. With patient, positive introduction and an experienced handler, most hounds learn the slatmill. Their exercise needs are real, even if their motivation looks different from a retriever's.</p>
-        <p><strong>Herding breeds (Border Collie, Australian Shepherd, Heeler).</strong> These breeds have exceptional intelligence and high drive but can be sensitive to new environments and equipment. A nervous Border Collie may hesitate initially, not from lack of ability, but from caution. Once they understand the slatmill, they often become enthusiastic athletes.</p>
-        <p><strong>Giant breeds (Great Dane, Saint Bernard, Newfoundland).</strong> Giant breeds benefit from regular, low-impact exercise, but their sessions need to be managed carefully. Their joint health is a priority, shorter sessions at moderate intensity, with careful attention to surface and recovery. The slatmill's self-paced nature is actually ideal for giant breeds who should not be pushed beyond their natural speed.</p>
-
-        <h2>Breeds That Require Extra Caution</h2>
-        <p><strong>Brachycephalic breeds (Bulldog, Pug, French Bulldog, Boston Terrier).</strong> Flat-faced breeds have anatomically restricted airways that limit their ability to breathe efficiently during aerobic exercise. This does not mean they should not exercise, it means sessions must be shorter, at lower intensity, in cooler conditions, with constant monitoring for signs of respiratory distress. Always get veterinary clearance before starting slatmill training with a brachycephalic dog.</p>
-        <p><strong>Dogs with known orthopedic conditions.</strong> Dogs with hip dysplasia, elbow dysplasia, or a history of ligament injuries can often still benefit from controlled slatmill exercise, but only with veterinary guidance on appropriate intensity and duration. In many cases, controlled, low-impact movement is actually therapeutic rather than harmful.</p>
-
-        <h2>The Bottom Line: Any Dog Can Benefit</h2>
-        <p>Breed tendencies are a starting point, not a ceiling. The single most important factor in successful slatmill training is not breed, it is the handler. A patient, experienced handler who introduces the equipment positively, reads the dog's signals accurately, and adjusts intensity appropriately can get almost any healthy adult dog moving confidently on a slatmill.</p>
-        <p>At The Canine Gym, we work with dogs of all breeds, ages, and fitness levels across Hamilton County. We know how to introduce the slatmill in a way that builds confidence, not anxiety. Whether you have a Lab who will be running in thirty seconds or a nervous rescue who needs a more gradual approach, we meet your dog where they are.</p>
-        <p>We serve <a href="/carmel">Carmel</a>, <a href="/fishers">Fishers</a>, <a href="/westfield">Westfield</a>, <a href="/noblesville">Noblesville</a>, <a href="/zionsville">Zionsville</a>, and <a href="/geist">Geist</a>. <a href="https://app.thecaninegym.com">Book a session</a> and find out what your dog is capable of.</p>
-      </>
-    ),
-  },
-  {
-    slug: 'mobile-dog-fitness-vs-dog-daycare',
-    title: 'Mobile Dog Fitness vs. Dog Daycare: Which Is Actually Better for Your Dog?',
-    metaTitle: 'Mobile Dog Fitness vs. Dog Daycare: Which Is Better? | The Canine Gym',
-    metaDescription: 'Dog daycare and mobile fitness both promise to tire your dog out. But they work very differently. Here is an honest comparison of what each actually delivers for your dog\'s health.',
-    category: 'Dog Health',
-    readTime: '5 min read',
-    date: 'March 2026',
-    dateIso: '2026-03-20',
-    intro: 'Dog daycare and mobile dog fitness are both marketed as solutions to the same problem: a high-energy dog who needs more stimulation than a busy owner can consistently provide. But they are fundamentally different in how they work, what they deliver, and what they cost, financially and in terms of your dog\'s actual health. Here is an honest, side-by-side comparison so you can make an informed decision for your dog.',
-    faq: [
-      { q: 'Is dog daycare actually good exercise for dogs?', a: 'It depends heavily on the specific facility and your dog. Some dogs run and play actively at daycare. Many spend significant portions of the day resting, anxious, or overstimulated rather than physically exercising. Daycare provides social interaction and stimulation, but it rarely delivers consistent, measurable aerobic exercise.' },
-      { q: 'Is mobile dog fitness better than daycare?', a: 'For physical fitness specifically, yes, structured slatmill sessions deliver consistent, measurable aerobic exercise that daycare rarely matches. For dogs who need socialization or cannot be left alone, daycare serves a different purpose. The two are not always direct competitors.' },
-      { q: 'How much does dog daycare cost compared to mobile fitness?', a: 'Dog daycare in Hamilton County typically runs $30–$45 per day. At 5 days per week, that is $600–$900 per month. The Canine Gym\'s Standard Membership (4 sessions per month) starts at $180/month, and a La Carte sessions are $55 each. For dogs who attend daycare primarily for exercise, mobile fitness is significantly more cost-effective per unit of actual exercise delivered.' },
-      { q: 'Can my dog get sick at daycare?', a: 'Yes. Group dog environments carry real disease transmission risk, kennel cough, canine influenza, giardia, and parasites are all documented risks in daycare settings. This does not mean daycare is unsafe, but it is a real consideration, especially for immunocompromised dogs, puppies, or senior dogs.' },
-      { q: 'What if my dog does not do well at daycare?', a: 'Many dogs do not thrive in daycare environments. Dogs who are anxious, reactive, selective about other dogs, or who find large group settings overwhelming often do worse after a daycare day, not better. Mobile fitness sessions involve just your dog and a handler, no group dynamics, no stress triggers.' },
-    ],
-    content: (
-      <>
-        <h2>What Dog Daycare Actually Is</h2>
-        <p>Dog daycare is a supervised group environment where dogs spend the day together while their owners are at work or away. At its best, a well-run daycare facility provides socialization, mental stimulation, and some amount of physical activity in a safe, supervised setting. At its worst, it is a high-stress, high-noise environment where your dog spends the day anxious, overstimulated, or simply lying down in a corner waiting to go home.</p>
-        <p>The reality of what happens at most daycares falls somewhere in between, and it varies enormously by facility, by the specific group of dogs present on any given day, and by your individual dog's temperament and preferences.</p>
-
-        <h2>What Mobile Dog Fitness Actually Is</h2>
-        <p>Mobile dog fitness, specifically professional slatmill training delivered to your home, is structured, measurable aerobic exercise. A trained handler brings a professional non-motorized treadmill to your driveway. Your dog runs at their own pace for a defined session. Every metric is tracked: distance covered, speed, calories burned, and session duration. The workout is consistent, repeatable, and calibrated to your dog's fitness level.</p>
-        <p>There are no other dogs involved. No group dynamics. No stress from unfamiliar environments. Just your dog, doing the thing their body is built for, running, in a controlled, professional setting right outside your front door.</p>
-
-        <h2>The Exercise Question: What Actually Tires Your Dog Out?</h2>
-        <p>The central promise of both daycare and mobile fitness is the same: a tired dog. But the mechanism matters enormously.</p>
-        <p>Daycare fatigue is largely neurological. A dog who comes home exhausted from daycare has typically been overstimulated, processing a constant stream of social signals, managing group dynamics, staying alert in a novel environment. That kind of mental exhaustion is real, but it is not the same as physical fitness. A dog who is neurologically depleted from daycare stress has not built cardiovascular capacity, burned meaningful calories, or strengthened their musculoskeletal system.</p>
-        <p>Slatmill fatigue is physical. A dog who completes a 30-minute slatmill session has done genuine aerobic work. Their heart rate has been elevated, their muscles have been engaged, and their cardiovascular system has been stimulated in the way that builds real fitness over time. The tiredness that follows is the kind that accumulates into better health outcomes, lower weight, stronger heart, more stable energy levels.</p>
-
-        <h2>The Stress Factor</h2>
-        <p>This is where the honest comparison gets uncomfortable for daycare advocates. Research on canine stress physiology has found that many dogs who appear to be enjoying daycare are actually operating at elevated cortisol levels throughout the day. A 2018 study published in <em>Physiology and Behavior</em> found that dogs in group care settings showed significantly elevated stress hormones compared to dogs in home environments, even when they appeared to be playing and engaging socially.</p>
-        <p>For social, confident dogs who genuinely enjoy group play, this stress response may be manageable. For dogs who are anxious, reactive, or simply more introverted, daycare stress can accumulate into behavioral problems, disrupted sleep, and a weakened immune response over time.</p>
-        <p>Mobile fitness sessions involve none of these stressors. Your dog stays in their own environment, works with a single familiar handler, and goes back inside when the session is done.</p>
-
-        <h2>The Disease and Injury Risk</h2>
-        <p>Group dog environments carry inherent health risks. Kennel cough (Bordetella) spreads readily in group settings even in vaccinated dogs. Canine influenza, giardia, and intestinal parasites are all documented risks in daycare environments. Play injuries, sprains, strains, bite wounds, are common in unsupervised or poorly supervised group play.</p>
-        <p>Slatmill sessions eliminate group disease transmission risk entirely. Your dog interacts with one handler and one piece of equipment. The infection vector simply does not exist.</p>
-
-        <h2>The Cost Comparison</h2>
-        <p>Dog daycare in Hamilton County typically runs between $30 and $45 per day. For owners who use daycare three to five days per week, that represents $400 to $900 per month, year round.</p>
-        <p>The Canine Gym's Standard Membership provides four 30-minute professional slatmill sessions per month for $180. Our Pro Membership delivers eight sessions for $340. For dog owners who are using daycare primarily as an exercise solution rather than a childcare necessity, the cost-per-unit-of-actual-exercise comparison is not close.</p>
-
-        <h2>When Daycare Makes Sense</h2>
-        <p>This is not an argument that daycare is always the wrong choice. Daycare serves a genuine purpose for dogs who need company during long days, who are genuinely social and thrive in group settings, or whose owners have schedules that require supervised daytime care. A well-run facility with experienced staff, appropriate group sizes, and genuine supervision is a real service.</p>
-        <p>The question is whether daycare is solving your dog's actual problem. If your dog is overweight, under-conditioned, or behaviorally difficult because of unmet exercise needs, daycare is unlikely to fully address those issues. Structured, measurable aerobic exercise will.</p>
-
-        <h2>The Bottom Line</h2>
-        <p>For physical fitness, weight management, cardiovascular health, and measurable exercise, mobile slatmill training delivers results that group daycare cannot reliably match. For dogs who need daytime supervision or genuine socialization with other dogs, daycare fills a different need.</p>
-        <p>Many of our clients in Hamilton County use The Canine Gym as a complement to daycare, or as a replacement for it when exercise, not supervision, was the primary goal all along. If you want to know what consistent, professional exercise actually does for your dog, the answer is in the data we track after every session.</p>
-        <p>We serve <a href="/carmel">Carmel</a>, <a href="/fishers">Fishers</a>, <a href="/westfield">Westfield</a>, <a href="/noblesville">Noblesville</a>, <a href="/zionsville">Zionsville</a>, and <a href="/geist">Geist</a>. <a href="https://app.thecaninegym.com">Book a session</a> and see the difference structured exercise makes.</p>
       </>
     ),
   },

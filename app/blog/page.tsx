@@ -17,6 +17,30 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'how-to-help-your-dog-lose-weight',
+    title: 'How to Help Your Dog Lose Weight: A Vet-Backed Guide',
+    excerpt: "More than 56% of US dogs are overweight. If your vet says your dog needs to slim down, here's a practical, step-by-step guide covering diet, exercise, body condition scoring, and how to track real progress.",
+    category: 'Dog Health',
+    readTime: '7 min read',
+    date: 'April 2026',
+  },
+  {
+    slug: 'best-dog-breeds-for-slatmill-training',
+    title: 'Best Dog Breeds for Slatmill Training (And How Any Dog Can Benefit)',
+    excerpt: 'Some breeds are natural slatmill athletes. Others need more encouragement. Here is a practical breed-by-breed guide to slatmill training and why almost every dog can benefit.',
+    category: 'Dog Health',
+    readTime: '5 min read',
+    date: 'March 2026',
+  },
+  {
+    slug: 'mobile-dog-fitness-vs-dog-daycare',
+    title: 'Mobile Dog Fitness vs. Dog Daycare: Which Is Actually Better for Your Dog?',
+    excerpt: "Dog daycare and mobile fitness both promise to tire your dog out — but they work very differently. An honest side-by-side comparison of what each actually delivers for your dog's health.",
+    category: 'Dog Health',
+    readTime: '5 min read',
+    date: 'March 2026',
+  },
+  {
     slug: 'why-regular-exercise-extends-your-dogs-life',
     title: "Why Regular Exercise Can Add Years to Your Dog's Life",
     excerpt: "Research from the Dog Aging Project shows that physically active dogs have better cognitive health, fewer medical diagnoses, and live significantly longer than sedentary dogs. Here's what the science says.",
@@ -55,22 +79,6 @@ const posts = [
     category: 'Training Tips',
     readTime: '5 min read',
     date: 'January 2026',
-  },
-  {
-    slug: 'best-dog-breeds-for-slatmill-training',
-    title: 'Best Dog Breeds for Slatmill Training (And How Any Dog Can Benefit)',
-    excerpt: 'Some breeds are natural slatmill athletes. Others need more encouragement. Here is a practical breed-by-breed guide to slatmill training and why almost every dog can benefit.',
-    category: 'Dog Health',
-    readTime: '5 min read',
-    date: 'March 2026',
-  },
-  {
-    slug: 'mobile-dog-fitness-vs-dog-daycare',
-    title: 'Mobile Dog Fitness vs. Dog Daycare: Which Is Actually Better for Your Dog?',
-    excerpt: "Dog daycare and mobile fitness both promise to tire your dog out — but they work very differently. An honest side-by-side comparison of what each actually delivers for your dog's health.",
-    category: 'Dog Health',
-    readTime: '5 min read',
-    date: 'March 2026',
   },
   {
     slug: 'benefits-of-consistent-dog-exercise-routine',
