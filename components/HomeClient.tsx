@@ -12,14 +12,19 @@ export default function HomeClient() {
 
   const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-  const SCHEDULE: Record<string, { day: number, start: number, end: number }[]> = {
-    Carmel:     [{ day: 1, start: 6, end: 12 }, { day: 4, start: 13, end: 19 }],
-    Zionsville: [{ day: 1, start: 13, end: 19 }, { day: 4, start: 6, end: 12 }],
-    Fishers:    [{ day: 2, start: 6, end: 12 }, { day: 5, start: 13, end: 19 }],
-    Geist:      [{ day: 2, start: 13, end: 19 }, { day: 5, start: 6, end: 12 }],
-    Westfield:  [{ day: 3, start: 6, end: 12 }, { day: 6, start: 13, end: 19 }],
-    Noblesville:[{ day: 3, start: 13, end: 19 }, { day: 6, start: 6, end: 12 }],
-  }
+const SCHEDULE: Record<string, { day: number, start: number, end: number }[]> = {
+  Carmel:        [{ day: 1, start: 6, end: 12 }, { day: 4, start: 13, end: 19 }],
+  Zionsville:    [{ day: 1, start: 13, end: 19 }, { day: 4, start: 6, end: 12 }],
+  Fishers:       [{ day: 2, start: 6, end: 12 }, { day: 5, start: 13, end: 19 }],
+  Geist:         [{ day: 2, start: 13, end: 19 }, { day: 5, start: 6, end: 12 }],
+  Westfield:     [{ day: 3, start: 6, end: 12 }, { day: 6, start: 13, end: 19 }],
+  Noblesville:   [{ day: 3, start: 13, end: 19 }, { day: 6, start: 6, end: 12 }],
+  Whitestown:    [{ day: 1, start: 13, end: 19 }, { day: 4, start: 6, end: 12 }],
+  Sheridan:      [{ day: 3, start: 6, end: 12 }, { day: 6, start: 13, end: 19 }],
+  Pendleton:     [{ day: 3, start: 13, end: 19 }, { day: 6, start: 6, end: 12 }],
+  McCordsville:  [{ day: 2, start: 6, end: 12 }, { day: 5, start: 13, end: 19 }],
+  Fortville:     [{ day: 2, start: 6, end: 12 }, { day: 5, start: 13, end: 19 }],
+}
 
   const formatHour = (h: number) => {
     const ampm = h >= 12 ? 'PM' : 'AM'
@@ -29,7 +34,7 @@ export default function HomeClient() {
 
   const faqs = [
     { q: 'What is a slatmill?', a: 'A slatmill is a non-motorized dog treadmill powered entirely by your dog. Unlike electric treadmills, the belt only moves when your dog walks or runs, making it safer, more natural, and more effective for building strength and endurance.' },
-    { q: 'What areas do you serve?', a: 'We currently serve Carmel, Zionsville, Fishers, Geist, Westfield, and Noblesville in Hamilton County, Indiana.' },
+    { q: 'What areas do you serve?', a: 'We currently serve Carmel, Zionsville, Fishers, Geist, Westfield, Noblesville, Whitestown, Sheridan, Pendleton, McCordsville, and Fortville in and around Hamilton County, Indiana.' },
     { q: 'How long is each session?', a: 'Each session is 30 minutes. We come to your home, set up in our van, and your dog gets a full workout while you relax inside.' },
     { q: 'What size dogs can use the slatmill?', a: 'Our slatmills accommodate most breeds and sizes. We will assess your dog on the first session to make sure they are comfortable and safe on the equipment.' },
     { q: 'Do I need to be home during the session?', a: 'No you do not. Although we encourage you to be home in case you would like to watch the session or bring your dog to us. If you are not home, you can leave a note in booking with how you would like us to retrieve your dog.' },
@@ -382,8 +387,8 @@ export default function HomeClient() {
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: '800', color: '#2c5a9e', margin: '0 0 16px 0', letterSpacing: '-0.5px' }}>We Come To You</h2>
           <p style={{ color: '#666', fontSize: '17px', margin: '0 0 48px 0' }}>Currently serving Hamilton County, Indiana, click your city to see our schedule</p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '32px' }}>
-            {['Carmel', 'Zionsville', 'Fishers', 'Geist', 'Westfield', 'Noblesville'].map(city => (
-              <button key={city} onClick={() => setSelectedCity(selectedCity === city ? null : city)}
+              {['Carmel', 'Zionsville', 'Fishers', 'Geist', 'Westfield', 'Noblesville', 'Whitestown', 'Sheridan', 'Pendleton', 'McCordsville', 'Fortville'].map(city => (
+                <button key={city} onClick={() => setSelectedCity(selectedCity === city ? null : city)}
                 style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: selectedCity === city ? '#2c5a9e' : '#eef2fb', border: `1px solid ${selectedCity === city ? '#2c5a9e' : '#c8d4f0'}`, borderRadius: '30px', padding: '10px 20px', cursor: 'pointer', transition: 'all 0.2s' }}>
                 <MapPin size={15} color={selectedCity === city ? 'white' : '#2c5a9e'} />
                 <span style={{ fontWeight: '600', color: selectedCity === city ? 'white' : '#2c5a9e', fontSize: '15px' }}>{city}</span>

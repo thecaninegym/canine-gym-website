@@ -83,6 +83,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+  url: `${base}/whitestown`,
+  lastModified: new Date(),
+  changeFrequency: 'monthly',
+  priority: 0.9,
+},
+{
+  url: `${base}/sheridan`,
+  lastModified: new Date(),
+  changeFrequency: 'monthly',
+  priority: 0.9,
+},
+{
+  url: `${base}/pendleton`,
+  lastModified: new Date(),
+  changeFrequency: 'monthly',
+  priority: 0.9,
+},
+{
+  url: `${base}/mccordsville`,
+  lastModified: new Date(),
+  changeFrequency: 'monthly',
+  priority: 0.9,
+},
+{
+  url: `${base}/fortville`,
+  lastModified: new Date(),
+  changeFrequency: 'monthly',
+  priority: 0.9,
+},
+    {
       url: `${base}/blog/why-regular-exercise-extends-your-dogs-life`,
       lastModified: new Date('2026-03-01'),
       changeFrequency: 'yearly',

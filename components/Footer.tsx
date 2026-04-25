@@ -25,8 +25,8 @@ export default function Footer() {
           </div>
           <div>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontWeight: '700', fontSize: '12px', letterSpacing: '1.5px', textTransform: 'uppercase', margin: '0 0 14px 0' }}>Service Areas</p>
-            {[['Carmel', '/carmel'], ['Zionsville', '/zionsville'], ['Fishers', '/fishers'], ['Geist', '/geist'], ['Westfield', '/westfield'], ['Noblesville', '/noblesville']].map(([city, href]) => (
-              <a key={city} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontSize: '14px', margin: '0 0 8px 0' }}>{city}</a>
+{[['Carmel', '/carmel'], ['Zionsville', '/zionsville'], ['Fishers', '/fishers'], ['Geist', '/geist'], ['Westfield', '/westfield'], ['Noblesville', '/noblesville'], ['Whitestown', '/whitestown'], ['Sheridan', '/sheridan'], ['Pendleton', '/pendleton'], ['McCordsville', '/mccordsville'], ['Fortville', '/fortville']].map(([city, href]) => (
+                <a key={city} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontSize: '14px', margin: '0 0 8px 0' }}>{city}</a>
             ))}
           </div>
         </div>
